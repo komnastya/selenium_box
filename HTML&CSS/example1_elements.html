@@ -1,0 +1,108 @@
+<!-- All HTML documents must start with a document type declaration.
+It must only appear once, at the top of the page (before any HTML tags).
+The <!DOCTYPE> declaration is not case sensitive. -->
+<!DOCTYPE html>
+
+<html>                          <!-- The HTML document itself begins with <html> and ends with </html>. -->
+<head>
+<title>Example 1</title>
+</head>
+<body>
+<!-- The visible part of the HTML document is between <body> and </body>. -->
+
+<h1>This is a Heading1</h1>
+<h1>HTML headings are defined with the 'h1' to 'h6' tags. </h1>
+<h1> 'h1' defines the most important heading.</h1>
+
+<h2>This is a Heading2</h2>
+<h6>This is a Heading6</h6>
+<h6>'h6' defines the least important heading</h6>
+
+<p>This is a paragraph.</p>
+<p> 'p' defines paragraph </p>
+<p>This is another paragraph.</p>
+
+<p> 'a' defines the link, the 'href' specifies the URL of the page the link goes to. </p>
+<a href="https://www.w3schools.com">This is a link</a>
+
+<br>
+
+<p> 'img' defines the picture. </p>
+<p> The source file (src), alternative text (alt), width, and height are provided as attributes <p>
+<img src="w3schools.png" alt="W3Schools.com" width="300" height="300">
+<!--
+The <scr> tag specifies the path to the image to be displayed.
+The <width> and the <height> tags specify the width and height of the image (in pixels).
+The required <alt> tag specifies an alternate text for an image, if the image for some reason cannot be displayed.
+This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.
+-->
+
+<p> The style attribute is used to add styles to an element, such as color, font, size, and more. </p>
+<p style="color:red;">This is a red paragraph.</p>
+
+<!-- Each HTML heading has a default size. However, you can specify the size for any heading with the style
+attribute, using the CSS font-size property: -->
+<h1 style="font-size:30px; color:orange">Orange heading 1</h1>
+
+
+<!-- With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+The browser will automatically remove any extra spaces and lines when the page is displayed -->
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+
+<!-- The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+The <hr> element is used to separate content (or define a change) in an HTML page -->
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+<!-- The <hr> tag is an empty tag, which means that it has no end tag. -->
+
+<!-- The HTML <br> element defines a line break.
+Use <br> if you want a line break (a new line) without starting a new paragraph.
+The <br> tag is an empty tag, which means that it has no end tag.-->
+<p>This is<br>a paragraph<br>with line breaks.</p>
+
+<!-- This poem will display on a single line: -->
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p>
+
+<!-- The HTML <pre> element defines preformatted text.
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves
+both spaces and line breaks. -->
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+
+
+</body>
+</html>

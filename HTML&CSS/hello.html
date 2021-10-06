@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1 id="my_h1" class="h1_elem">Hello World!</h1>
+<p>Lorem ispum dolor sit amed. <a href="https://realpython.com/">go to realpython</a></p>
+<ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+</ol>
+<table>
+    <tr>
+        <th>col1</th>
+        <th>col2</th>
+    </tr>
+    <tr>
+        <td>v1</td>
+        <td>v2</td>
+    </tr>
+</table>
+<button id="btn">Push me</button>
+<script>
+    document.getElementById("btn").addEventListener("click", () => { alert("OK"); });
+</script>
+</body>
+</html>
