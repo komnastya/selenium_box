@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image maps</title>
+</head>
+<body>
+<h1>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</h1>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="example7_computer.html">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="example7_phone.html">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="example7_coffee.html">
+</map>
+
+<h1>Click on the croissant to go to a new page and read more about the topic:</h1>
+
+<img src="croissant.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+<map name="foodmap">
+  <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+        alt="Croissant" href="example7_croissant.html">
+</map>
+
+<h1> A clickable area can also trigger a JavaScript function.
+Add a click event to the 'area' element to execute a JavaScript function</h1>
+<h2>Click the cup of coffee!</h2>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
+<map name="workmap2">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+
+
+</body>
+</html>
