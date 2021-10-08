@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+    <style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<h2>The HTML 'img' tag is used to embed an image in a web page.</h2>
+<h2>The required 'src' attribute specifies the path (URL) to the image.</h2>
+<h2>The required 'alt' attribute provides an alternate text for an image, if the user for some reason cannot
+    view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader):</h2>
+<img src="html.png" alt="HTML logo"> <!-- html.png does not exist -->
+
+<h2>You can use the 'style' attribute to specify the width and height of an image:</h2>
+<img src="html5.png" alt="HTML logo" style="width:150px;height:150px;">
+
+<h2>Alternatively, you can use the 'width' and 'height' attributes.</h2>
+<h2>However, we suggest using the style attribute. It prevents styles sheets from changing the size of images.</h2>
+<h2>And this happens because img width is specified in style section, but we use 'width' parameter inline:</h2>
+<img src="html5.png" alt="HTML logo" width="150" height="150">
+
+<!-- <h2>If you have your images in a sub-folder, you must include the folder name in the src attribute:</h2>
+<img src="/images/python.png" alt="Python Icon" style="width:310px;height:190px;"> It doesn't work-->
+
+<h2>Some websites point to an image on another server. To point to an image on another server, you must specify
+    an absolute (full) URL in the src attribute:</h2>
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:160px;height:190px;">
+<h3><ins><i>Notes on external images:</i></ins> External images might be under copyright. If you do not get permission
+    to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can
+    suddenly be removed or changed.</h3>
+
+<h2>Animated Images</h2>
+<h2>HTML allows moving images:</h2>
+<img src="programming.gif" alt="Computer man" style="width:400px;height:280px;">
+
+<h2>To use an image as a link, put the 'img' tag inside the 'a' tag:</h2>
+<a href="https://www.w3schools.com/html/">
+  <img src="htmltutorial.png" alt="HTML tutorial" style="width:400px;height:150px;"></a>
+
+<h2>Use the CSS float property to let the image float to the right or to the left of a text:</h2>
+<p><img src="programming.png" alt="computer" style="float:right;width:86px;height:88.4px;">
+The image will float to the right of the text.</p>
+
+<p><img src="programming.png" alt="computer" style="float:left;width:86px;height:88.4px;">
+The image will float to the left of the text.</p>
+
+
+</body>
+</html>
