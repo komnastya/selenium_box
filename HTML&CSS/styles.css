@@ -1,0 +1,12 @@
+/* The external style sheet can be written in any text editor.
+The file must not contain any HTML code, and must be saved with a .css extension. */
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}

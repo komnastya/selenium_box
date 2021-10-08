@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CSS can be added to HTML documents in 3 ways:
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file -->
+
+<!-- An internal CSS is used to define a style for a single HTML page.
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color
+of ALL the <p> elements to red. In addition, the page will be displayed with a "powderblue" background color: -->
+<head>
+    <meta charset="UTF-8">
+    <title>CSS styles</title>
+    <style>
+body {background-color:powderblue;}
+h1   {
+    color:DarkBlue;
+    font-family:verdana;
+    font-size:200%;
+    text-align:center;
+}
+h3 {    border:2px solid Olive;
+    padding:25px;
+    margin:30px;
+}
+p    {
+    color:DarkRed;
+    font-family:Georgia;
+    font-size:18px;
+    text-align:center;
+       }
+
+    </style>
+</head>
+<body>
+
+<h3> An inline CSS is used to apply a unique style to a single HTML element.
+    An inline CSS uses the style attribute of an HTML element.
+    The following example sets the text color of the 'h1' element to blue, and the text color of the 'p' element to red:</h3>
+<h1 style="font-size:20px">This heading is blue by using style element in head section</h1>
+<p>This paragraph is red by using style element in head section</p>
+<p>This is the second paragraph</p>
+
+<h3> The HTML 'a' tag defines a hyperlink. It has the following syntax: </h3>
+<p style="text-align:center;font-size:24px;color:Crimson"><b><i>< a > href="url">link text < / a ></i></b></p>
+
+<h3>The most important attribute of the 'a' element is the href attribute, which indicates the link's destination.
+    The link text is the part that will be visible to the reader.
+    Clicking on the link text, will send the reader to the specified URL address: </h3>
+<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+
+<h3>The target attribute specifies where to open the linked document.
+    Use target="_blank" to open the linked document in a new browser window or tab: </h3>
+<p><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools in a new tab!</a></p>
+<p><a href="https://www.w3schools.com/" target="_parent">Visit W3Schools in a new tab!</a></p>
+<p><a href="https://www.w3schools.com/" target="_top">Visit W3Schools in a new tab!</a></p>
+
+<h3> <i style="font-size:22px"><ins>Absolute URLs vs. Relative URLs.</ins></i>
+    <br><br>Both examples above are using an absolute URL (a full web address) in the href attribute.
+    A local link (a link to a page within the same website) is specified with a relative URL
+    (without the "https://www" part):
+    <br>Absolute URLs:</h3>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h3>Relative URLs:</h3>
+<p><a href="example1_elements.html">Example_1 is my first attempt to learn HTML</a></p>
+<p><a href="example2_attributes.html">Example_2 is my second attempt to learn HTML</a></p>
+
+<h3>To use an image as a link, just put the 'img' tag inside the 'a' tag: </h3>
+<a href="https://www.w3schools.com/">
+<img src="w3schools.png" alt="W3Schools.com" width="100" height="100">
+</a>
+
+<h3> Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send
+    a new email):</h3>
+<p><a href="mailto:someone@example.com">Send email</a></p>
+
+<h3> To use an HTML button as a link, you have to add some JavaScript code.
+    JavaScript allows you to specify what happens at certain events, such as a click of a button: </h3>
+<button onclick="document.location='https://www.w3schools.com/'">Go to w3school.com</button>
+
+<h3> The title attribute specifies extra information about an element. The information is most often shown
+    as a tooltip text when the mouse moves over the element: </h3>
+<p><a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a></p>
+
+</body>
+</html>
+/
