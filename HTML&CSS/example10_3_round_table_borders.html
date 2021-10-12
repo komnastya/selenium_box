@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Round table borders</title>
+</head>
+<body>
+
+<h2>Table With Rounded Borders</h2>
+
+<p>Use the CSS <i style="color:Crimson">border-radius</i> property to add rounded corners to the borders.</p>
+
+<table style="width:100%;border: 1px solid black;border-radius:10px;">
+  <tr>
+    <th style="border: 1px solid black;border-radius: 10px;">Firstname</th>
+    <th style="border: 1px solid black;border-radius: 10px;">Lastname</th>
+    <th style="border: 1px solid black;border-radius: 10px;">Age</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;border-radius: 10px;">Jill</td>
+    <td style="border: 1px solid black;border-radius: 10px;">Smith</td>
+    <td style="border: 1px solid black;border-radius: 10px;">50</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;border-radius: 10px;">Eve</td>
+    <td style="border: 1px solid black;border-radius: 10px;">Jackson</td>
+    <td style="border: 1px solid black;border-radius: 10px;">94</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;border-radius: 10px;">John</td>
+    <td style="border: 1px solid black;border-radius: 10px;">Doe</td>
+    <td style="border: 1px solid black;border-radius: 10px;">80</td>
+  </tr>
+</table>
+
+<p>Skip the border around the table by leaving out <i style="color:Crimson">border</i> and <i style="color:Crimson">
+    border radius</i> attribute from the css selector for
+    "table" tag:</p>
+<table style="width:100%;">
+  <tr>
+    <th style="border: 1px solid black;border-radius: 10px;">Firstname</th>
+    <th style="border: 1px solid black;border-radius: 10px;">Lastname</th>
+    <th style="border: 1px solid black;border-radius: 10px;">Age</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;border-radius: 10px;">Jill</td>
+    <td style="border: 1px solid black;border-radius: 10px;">Smith</td>
+    <td style="border: 1px solid black;border-radius: 10px;">50</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;border-radius: 10px;">Eve</td>
+    <td style="border: 1px solid black;border-radius: 10px;">Jackson</td>
+    <td style="border: 1px solid black;border-radius: 10px;">94</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;border-radius: 10px;">John</td>
+    <td style="border: 1px solid black;border-radius: 10px;">Doe</td>
+    <td style="border: 1px solid black;border-radius: 10px;">80</td>
+  </tr>
+</table>
+<br>
+<p>With the <i style="color:Crimson">border-color</i> property, you can set the color of the border.</p>
+<p>With the <i style="color:Crimson">border-style</i> property, you can set the appereance of the border.
+The following values are allowed:
+</p>
+<table style="border-style:dotted;border-color:Crimson;">
+    <tr>
+        <td>Dotted</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:dashed;border-color:Crimson;">
+    <tr>
+        <td>Dashed</td>
+    </tr>
+</table>
+<br><table style="border-style:solid;border-color:Crimson;">
+    <tr>
+        <td>Solid</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:double;border-color:Crimson;">
+    <tr>
+        <td>Double</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:groove;border-color:Crimson;">
+    <tr>
+        <td>Groove</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:ridge;border-color:Crimson;">
+    <tr>
+        <td>Ridge</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:inset;border-color:Crimson;">
+    <tr>
+        <td>Inset</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:outset;border-color:Crimson;">
+    <tr>
+        <td>Outset</td>
+    </tr>
+</table>
+<br>
+<br>
+<table style="border-style:hidden;border-color:Crimson;">
+    <tr>
+        <td>Hidden</td>
+    </tr>
+</table>
+<br>
+<table style="border-style:none;border-color:Crimson;">
+    <tr>
+        <td>None</td>
+    </tr>
+</table>
+<br>
+<p>To set the <i style="color:Crimson">width</i> of a table, add the <i style="color:Crimson">style</i> attribute
+    to the table element:</p>
+<table style="border: 1px solid black;width:100%">
+  <tr>
+    <th style="border: 1px solid black;">Firstname</th>
+    <th style="border: 1px solid black;">Lastname</th>
+    <th style="border: 1px solid black;">Age</th>
+  </tr>
+    <tr>
+    <td style="border: 1px solid black;">Jill</td>
+    <td style="border: 1px solid black;">Smith</td>
+    <td style="border: 1px solid black;">50</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">Eve</td>
+    <td style="border: 1px solid black;">Jackson</td>
+    <td style="border: 1px solid black;">94</td>
+  </tr>
+</table>
+<p>To set the <i style="color:Crimson">size</i> of a specific column, add the style attribute on a <i style="color:Crimson">th</i> or
+    <i style="color:Crimson">td</i> element:</p>
+<table style="width:100%">
+  <tr>
+    <th style="width:70%;border: 1px solid black;">Firstname</th>
+    <th style="border: 1px solid black;">Lastname</th>
+    <th style="border: 1px solid black;">Age</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">Jill</td>
+    <td style="border: 1px solid black;">Smith</td>
+    <td style="border: 1px solid black;">50</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">Eve</td>
+    <td style="border: 1px solid black;">Jackson</td>
+    <td style="border: 1px solid black;">94</td>
+  </tr>
+</table>
+<p>To set the <i style="color:Crimson">height</i> of a specific row, add the <i style="color:Crimson">style</i>
+    attribute on a table row element:</p>
+<table style="width:100%">
+  <tr>
+    <th style="border: 1px solid black;">Firstname</th>
+    <th style="border: 1px solid black;">Lastname</th>
+    <th style="border: 1px solid black;">Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td style="border: 1px solid black;">Jill</td>
+    <td style="border: 1px solid black;">Smith</td>
+    <td style="border: 1px solid black;">50</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">Eve</td>
+    <td style="border: 1px solid black;">Jackson</td>
+    <td style="border: 1px solid black;">94</td>
+  </tr>
+</table>
+</body>
+</html>
