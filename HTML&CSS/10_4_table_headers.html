@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table headers</title>
+    <style>
+        table, tr, td {border:1px solid black;}
+    </style>
+</head>
+<body>
+
+<h2>Table Headers</h2>
+<p>Use the <i style="color:Crimson;">th</i> element to define table headers.</p>
+<p>Table headers are defined with <i style="color:Crimson;">th</i> elements, each <i style="color:Crimson">th</i>
+    element represents a table cell:</p>
+<table style="width:50%;">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+<h2>Vertical table headers</h2>
+<p>To use the first column as table headers, define the first cell in each row as a th element:</p>
+<table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+<br>
+<h2>Align table headers</h2>
+<p>By default, table headers are bold and centered. To left-align the table headers, use the CSS
+    <i style="color:Crimson;">text-align</i> property. </p>
+<table style="width:50%">
+  <tr>
+    <th style="text-align: left;">Firstname</th>
+    <th style="text-align: left;">Lastname</th>
+    <th style="text-align: left;">Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+<h2>Header for multiple columns</h2>
+<p>You can have a header that spans over two or more columns. To do this, use the <i style="color:Crimson;">colspan</i>
+    attribute on the th element:
+</p>
+<table style="width:50%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+<h2>Table caption</h2>
+<p>You can add a caption that serves as a heading for the entire table. To add a caption to a table, use
+    the <i style="color:Crimson;">caption</i> tag. <br>
+    <strong>Note:</strong> The <i style="color:Crimson;">caption</i> tag should be inserted immediately after the
+    <i style="color:Crimson;">table</i> tag:</p>
+<table style="width:50%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<h2>Cell padding</h2>
+<p>Cell padding is the space between the cell edges and the cell content. By default the padding is set to 0.
+    To add padding on table cells, use the CSS <i style="color:Crimson;">padding</i> property</p>
+<p>In <i>this table</i> padding is 0 px be default:</p>
+<table style="width:50%">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<br>
+<p>In <i>this table</i> padding is 25px:</p>
+<table style="width:50%">
+  <tr>
+    <th style="padding:25px;">Month</th>
+    <th style="padding:25px;">Savings</th>
+  </tr>
+  <tr>
+    <td style="padding:25px;">January</td>
+    <td style="padding:25px;">$100</td>
+  </tr>
+  <tr>
+    <td style="padding:25px;">February</td>
+    <td style="padding:25px;">$50</td>
+  </tr>
+</table>
+<br>
+<p>We can specify different padding for all fours sides of the cell content:</p>
+<p>Here <i style="color:Crimson;">padding-top</i> is 15px, <i style="color:Crimson;">padding-bottom</i> is
+    15px, <i style="color:Crimson;">padding-left</i> is 5px, and <i style="color:Crimson;">padding-right</i> is 40px
+    (<i style="color:Crimson;">padding-left</i> is 70px and <i style="color:Crimson;">padding-right</i> is 5px
+    for the last row):</p>
+<table style="width:50%">
+  <tr>
+    <th style="padding-top:15px;padding-bottom:15px;">Month</th>
+    <th style="padding-top:15px;padding-bottom:15px;">Savings</th>
+  </tr>
+  <tr>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:5px;padding-right:40px;">January</td>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:5px;padding-right:40px;">$100</td>
+  </tr>
+  <tr>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:70px;padding-right:5px;">February</td>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:70px;padding-right:5px;">$50</td>
+  </tr>
+</table>
+<br>
+<h2>Cellspacing</h2>
+<p>Change the space between the cells with the <i style="color:Crimson;">border-spacing</i> property. Here
+<i style="color:Crimson;">border-spacing</i> is 20 px:</p>
+<table style="width:50%;border-spacing:20px">
+  <tr>
+    <th style="padding-top:15px;padding-bottom:15px;">Month</th>
+    <th style="padding-top:15px;padding-bottom:15px;">Savings</th>
+  </tr>
+  <tr>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:15px;">January</td>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:15px;">$100</td>
+  </tr>
+  <tr>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:15px;">February</td>
+    <td style="padding-top:15px;padding-bottom:15px;padding-left:15px;">$50</td>
+  </tr>
+</table>
+<br>
+<h2>Table Colspan</h2>
+<p>To make a cell span over multiple columns, use the <i style="color:Crimson;">colspan</i> attribute.
+    <br><strong>Note:</strong> The value of the colspan attribute represents the number of columns to span:</p>
+<table style="width:50%;border: 1px solid black;border-collapse: collapse;">
+  <tr style="border: 1px solid black;border-collapse: collapse;">
+    <th colspan="2" style="border: 1px solid black;border-collapse:collapse;">Name</th>
+    <th style="border: 1px solid black;border-collapse: collapse;">Age</th>
+  </tr>
+  <tr style="border:1px solid black;border-collapse:collapse;">
+    <td style="border: 1px solid black;border-collapse:collapse;">Jill</td>
+    <td style="border: 1px solid black;border-collapse: collapse;">Smith</td>
+    <td style="border: 1px solid black;border-collapse: collapse;">43</td>
+  </tr>
+  <tr style="border: 1px solid black;border-collapse:collapse;">
+    <td style="border: 1px solid black;border-collapse: collapse;">Eve</td>
+    <td style="border: 1px solid black;border-collapse: collapse;">Jackson</td>
+    <td style="border: 1px solid black;border-collapse: collapse;">57</td>
+  </tr>
+</table>
+<br>
+<h2>Table Rowspan</h2>
+<p>To make a cell span over multiple rows, use the <i style="color:Crimson;">rowspan</i> attribute.
+    <br><strong>Note:</strong> The value of the rowspan attribute represents the number of rows to span.</p>
+<table style="width:50%;border-collapse:collapse;">
+  <tr style="border: 1px solid black;border-collapse: collapse;">
+    <th style="border: 1px solid black;border-collapse: collapse;">Name</th>
+    <td style="border: 1px solid black;border-collapse: collapse;">Jill</td>
+  </tr>
+  <tr style="border: 1px solid black;border-collapse: collapse;">
+    <th rowspan="2" style="border: 1px solid black;border-collapse: collapse;">Phone</th>
+    <td style="border: 1px solid black;border-collapse: collapse;">555-1234</td>
+  </tr>
+  <tr style="border: 1px solid black;border-collapse: collapse;">
+    <td style="border: 1px solid black;border-collapse: collapse;">555-8745</td>
+</tr>
+</table>
+</body>
+</html>
