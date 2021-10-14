@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table styling</title>
+    <style>
+    table {border-collapse:collapse;}
+    th {text-align: left;  padding: 8px;}
+    td {text-align: left;  padding: 8px;}
+    #row_style:nth-child(even) {
+        background-color: #D6EEEE;}
+    #colon_style:nth-child(even) {
+            background-color: #D6EEEE;</style>
+</head>
+<body>
+<h1>Table Zebra Stripes</h1>
+<h2>Horizontal zebra stripes</h2>
+<p>If you add a background color on every other table row, you will get a nice zebra stripes effect. To style
+    every other table row element, use the <i style="color:Crimson;"> :nth-child(even) </i> selector like this:
+</p>
+<table style="width: 50%;">
+  <tr id="row_style">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr id="row_style">
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr id="row_style">
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr id="row_style">
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr id="row_style">
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+<h2>Vertical zebra stripes</h2>
+<p>To make vertical zebra stripes, style every other column, instead of every other row.
+Set the <i style="color:Crimson;"> :nth-child(even) </i> for table data elements like this:</p>
+<table style="width: 50%;">
+  <tr>
+  <th id="colon_style">First Name</th>
+  <th id="colon_style">Last Name</th>
+  <th id="colon_style">Points</th>
+  </tr>
+  <tr>
+  <td id="colon_style">Peter</td>
+  <td id="colon_style">Griffin</td>
+  <td id="colon_style">$100</td>
+  </tr>
+  <tr>
+  <td id="colon_style">Lois</td>
+  <td id="colon_style">Griffin</td>
+  <td id="colon_style">$150</td>
+  </tr>
+  <tr>
+  <td id="colon_style">Joe</td>
+  <td id="colon_style">Swanson</td>
+  <td id="colon_style">$300</td>
+  </tr>
+  <tr>
+  <td id="colon_style">Cleveland</td>
+  <td id="colon_style">Brown</td>
+  <td id="colon_style">$250</td>
+  </tr>
+</table>
+<br>
+<h2>Combine Vertical and Horizontal Zebra Stripes.</h2>
+<p>You can combine the styling from the two examples above and you will have stripes on every other row and
+    every other column.</p>
+<table style="width: 50%;">
+  <tr id="row_style">
+  <th id="colon_style">First Name</th>
+  <th id="colon_style">Last Name</th>
+  <th id="colon_style">Points</th>
+  </tr>
+  <tr id="row_style">
+  <td id="colon_style">Peter</td>
+  <td id="colon_style">Griffin</td>
+  <td id="colon_style">$100</td>
+  </tr>
+  <tr id="row_style">
+  <td id="colon_style">Lois</td>
+  <td id="colon_style">Griffin</td>
+  <td id="colon_style">$150</td>
+  </tr>
+  <tr id="row_style">
+  <td id="colon_style">Joe</td>
+  <td id="colon_style">Swanson</td>
+  <td id="colon_style">$300</td>
+  </tr>
+  <tr id="row_style">
+  <td id="colon_style">Cleveland</td>
+  <td id="colon_style">Brown</td>
+  <td id="colon_style">$250</td>
+  </tr>
+</table>
+<br>
+
+</body>
+</html>
