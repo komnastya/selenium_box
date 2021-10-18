@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class attribute</title>
+    <style>
+        p {font-size:20px}
+        .city {
+          background-color: tomato;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        .note {
+          font-size: 120%;
+          color: red;
+        }
+        .main {
+          text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<h1>HTML class Attribute</h1>
+<p>The HTML <span style="color:Crimson;">class</span> attribute is used to specify a class for an HTML element.
+    Multiple HTML elements can share the same class.</p>
+
+<h2>Using The class Attribute</h2>
+<p>The <b style="color:Crimson;">class</b> attribute is often used to point to a class name in a style sheet.
+    It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+    In the following example we have three <b style="color:Crimson;">div</b> elements with a class attribute
+    with the value of <b style="color:Crimson;">"city"</b>. All of the three <b style="color:Crimson;">div</b>
+    elements will be styled equally according to the <b style="color:Crimson;">.city</b> style definition in
+    the head section:</p>
+
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+<h2>Multiple classes</h2>
+<p>To define multiple classes, separate the class names with a space, e.g.
+    <span style="color:Blue;">div class</span><span style="color:DarkGreen">="city main"</span>. The element will be
+    styled according to all the classes specified.</p>
+<p>Here, all three elements belongs to the <b style="color:Crimson;">"city"</b> class. In addition, London also
+    belongs to the <b style="color:Crimson;">"main"</b> class, which <b style="color:Crimson;">center-aligns</b> the text.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+<h2>Different Elements Can Share Same Class</h2>
+<p>Different HTML elements can point to the same class name.</p>
+<p>In the following example, both <b>h2</b> and <b>p</b> points to the <b style="color:Crimson;">"city"</b> class and
+    will share the same style:
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+
+</body>
+</html>
