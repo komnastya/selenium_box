@@ -49,14 +49,18 @@
 <h2>Iframe - Remove the Border</h2>
 <p>By default, an iframe has a border around it. To remove the border, add the <span style="color:Crimson;">style</span>
     attribute and use the CSS <span style="color:Crimson;">border</span> property:</p>
-
 <iframe src="11_4_ordered_list.html" height="300" width="600" style="border:none;" title="Third Inframe Example"></iframe>
 
 <p>With CSS, you can also <b>change</b> the <b style="color:Crimson;">size</b>, <b style="color:Crimson;">style</b>
     and <b style="color:Crimson;">color</b> of the iframe's border:</p>
-
 <iframe src="13_class_attribute.html" height="300" width="600" style="border:10px solid Crimson;" title="Fourth Inframe Example"></iframe>
 
+<h2>Inframe - Target for link</h2>
+<p>An iframe can be used as the target frame for a link. The <b style="color:Crimson;">target</b> attribute of the
+    link must refer to the  <b style="color:Crimson;">name</b> attribute of the iframe.</p>
+<iframe src="14_1_id_attribute.html" name="iframe_a" height="300px" width="100%" title="Fifth Iframe Example"></iframe>
+<p><a href="14_2_bookmarks_with_id.html" target="iframe_a">HTML ID attribute</a></p>
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
 
 </body>
 </html>
