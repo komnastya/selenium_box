@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic elements</title>
+    <style>
+        p, ul {font-size:22px}
+    </style>
+</head>
+
+<body>
+
+<h2>HTML 'section' Element</h2>
+<p>The <b style="color:Crimson;">section</b> element defines a section in a document. According to W3C's HTML
+    documentation: "A <b>section</b> is a thematic grouping of content, typically with a heading."
+    Examples of where a <b style="color:Crimson;">section</b> element can be used: </p>
+<ul>
+    <li>Chapters</li>
+    <li>Introduction</li>
+    <li>News items </li>
+    <li>Contact information</li>
+</ul>
+
+<p>A web page could normally be split into sections for introduction, content, and contact information.</p>
+
+<section>
+<h3>WWF</h3>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation,
+    research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+<h3>WWF's Panda symbol</h3>
+<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi
+    that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+<h2>HTML 'article' Element</h2>
+<p>The <b style="color:Crimson;">article</b> element specifies independent, self-contained content. An article
+    should make sense on its own, and it should be possible to distribute it independently from the rest of the web
+    site. Examples of where the <b style="color:Crimson;">article</b> element can be used:</p>
+<ul>
+    <li>Forum posts</li>
+    <li>Blog posts</li>
+    <li>User comments</li>
+    <li>Product cards</li>
+    <li>Newspaper articles</li>
+</ul>
+
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+<h2>Mozilla Firefox</h2>
+<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+<article>
+<h2>Microsoft Edge</h2>
+<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+
+<h2>Nesting 'article' in 'section' or Vice Versa?</h2>
+<p>The <b style="color:Crimson;">article</b> element specifies independent, self-contained content.
+    The <b style="color:Crimson;">section</b> element defines a section in a document. Can we use the definitions
+    to decide how to nest those elements? No, we cannot! So, you will find HTML pages with
+    <b style="color:Crimson;">section</b> elements containing <b style="color:Crimson;">article</b> elements,
+    and <b style="color:Crimson;">article</b> elements containing <b style="color:Crimson;">section</b> elements.
+
+<h2>HTML 'header' Element</h2>
+<p>The <b style="color:Crimson;">header</b> element represents a container for introductory content or a set
+    of navigational links. A <b style="color:Crimson;">header</b> element typically contains:</p>
+<ul>
+    <li>one or more heading elements (<b style="color:Crimson;">< h1 ></b> - <b style="color:Crimson;">< h6 ></b>)</li>
+    <li>logo or icon</li>
+    <li>authorship information </li>
+</ul>
+
+<p><strong>Note:</strong> You can have several <b style="color:Crimson;">header</b> elements in one HTML document.
+However, <b style="color:Crimson;">header</b> cannot be placed within a <b style="color:Crimson;">footer</b>,
+    <b style="color:Crimson;">address</b> or another <b style="color:Crimson;">header</b> element.</p>
+
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+
+<h2>HTML 'footer' Element</h2>
+<p>The <b style="color:Crimson;">footer</b> element defines a footer for a document or section. This element typically
+    contains:</p>
+<ul>
+    <li>authorship information</li>
+    <li>copyright information</li>
+    <li>contact information</li>
+    <li>sitemap</li>
+    <li>back to top links</li>
+    <li>related documents</li>
+</ul>
+<p>You can have several <b style="color:Crimson;">footer</b> elements in one document.</p>
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+<h2>HTML 'figure' and 'figcaption' Elements</h2>
+<p>The <b style="color:Crimson;">figure</b> tag specifies self-contained content, like illustrations, diagrams, photos,
+    code listings, etc. The <b style="color:Crimson;">figcaption</b> tag defines a caption for a
+    <b style="color:Crimson;">figure</b> element. The <b style="color:Crimson;">figcaption</b> element can be placed
+    as the first or as the last child of a <b style="color:Crimson;">figure</b> element.
+    The <b style="color:Crimson;">img</b> element defines the actual image/illustration.
+<figure>
+  <img src="mac.jpg" alt="Trulli">
+  <figcaption>Fig1. - MacBook</figcaption>
+</figure>
+
+</body>
+</html>
