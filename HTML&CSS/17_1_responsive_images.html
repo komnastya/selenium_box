@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    p {font-size: 20 px}
+</head>
+<body>
+
+<h2>Responsive Images</h2>
+<p>Responsive images are images that scale nicely to fit any browser size. If the CSS <b style="color:Crimson;">width</b>
+    property is set to 100%, the image will be responsive and scale up and down: </p>
+<img src="coffeehouse.jpg" style="width:100%;">
+
+<p>Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution,
+    in many cases, will be to use the <b style="color:Crimson;">max-width</b>property instead.</p>
+
+<h2>Using the max-width Property</h2>
+<p>If the <b style="color:Crimson;">max-width</b> property is set to 100%, the image will scale down if it has to,
+    but never scale up to be larger than its original size:</p>
+<img src="coffeehouse.jpg" style="max-width:100%;height:auto;">
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>The HTML <b style="color:Crimson">picture</b> element allows you to define different images for different
+    browser window sizes. Resize the browser window to see how the image below change depending on the
+    <b style="color:Crimson;">width:</b></p>
+<picture>
+  <source srcset="coffeehouse.jpg" media="(max-width: 600px)">
+  <source srcset="cellphone.jpg" media="(max-width: 1500px)">
+  <source srcset="mac.jpg">
+  <img src="mac.jpg" alt="Mac Book">
+</picture>
+
+</body>
+</html>
