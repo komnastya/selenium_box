@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form attributes</title>
+    <style>
+        p, ul {font-size:1vw}
+    </style>
+</head>
+<body>
+<h1>Form attributes</h1>
+<h2>The 'action' attribute</h2>
+<p>The <b style="color:Crimson;">action</b> attribute defines the action to be performed when the form is submitted.
+    Usually, the form data is sent to a file on the server when the user clicks on the submit button. In the example
+    below, the form data is sent to a file called "action_page.php". This file contains a server-side script
+    that handles the form data:</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Tip:</strong> If the action attribute is omitted, the action is set to the current page.</p>
+
+<h2>The 'target' attribute</h2>
+<p>The <b style="color:Crimson;">target</b> attribute specifies where to display the response that is received after
+    submitting the form. The <b style="color:Crimson;">target</b> attribute can have one of the following values:</p>
+<ul>
+    <li><b>_blank</b> - the response is displayed in a new window or tab.</li>
+    <li><b>_self</b> - the response is displayed in the current window.</li>
+    <li><b>_parent</b> - the response is displayed in the parent frame.</li>
+    <li><b>_top</b> - the response is displayed in the full body of the window.</li>
+    <li><b>framename</b> - the response is displayed in a named iframe.</li>
+</ul>
+
+<p>For example <<span style="color:Blue">form action</span><span style="color:Green;">="/action_page.php"</span>
+    <span style="color:Blue;">target</span><span style="color:Green;">="_blank"</span>></p>
+
+<form action="/action_page.php" target="_blank"></form>
+
+<p>The default value is <span style="color:Crimson;">_self</span> which means that the response will open in the
+    current window.</p>
+
+<h2>The 'Method' Attribute</h2>
+<p>The <span style="color:Crimson;">method</span> attribute specifies the HTTP method to be used when submitting
+    the form data. The form-data can be sent as URL variables (with <span style="color:Crimson;">method="get"</span>)
+    or as HTTP post transaction (with <span style="color:Crimson;">method="post"</span>). The default HTTP method
+    when submitting form data is GET.</p>
+<p>This example uses the <span style="color:Crimson;">GET</span> method when submitting the form data:</p>
+<form action="/action_page.php" target="_blank" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>After you submit, notice that the form values is <ins>visible in the address bar of the new browser tab</ins>.</p>
+<br>
+
+<p>This example uses the <span style="color:Crimson;">POST</span> method when submitting the form data:</p>
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>After you submit, notice that, unlike the GET method, the form values is <ins><strong>NOT</strong> visible in
+    the address bar of the new browser tab.</p>
+
+<h2>The 'Autocomplete' Attribute</h2>
+<p>The <span style="color:Crimson;">autocomplete</span> attribute specifies whether a form should have autocomplete
+    on or off. When <span style="color:Crimson;">autocomplete</span> is on, the browser automatically complete
+    values based on values that the user has entered before.</p>
+<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+<p>Then, try to set autocomplete to "off".</p>
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<h2>The 'Novalidate' Attribute</h2>
+<p>The <span style="color:Crimson;">novalidate</span> attribute is a boolean attribute. The novalidate attribute
+    indicates that the form input is not to be validated on submit:</p>
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Safari 10 (or earlier).</p>
+
+
+
+</body>
+</html>
