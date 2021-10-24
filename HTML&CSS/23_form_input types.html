@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Input types</title>
     <style>
-        h1 {text-align: center}
-        p, ul, form {font-size: 1vw}
+        h1 {font-size: 2vw; text-align:center;}
+        h2 {font-size: 1.5vw;}
+        p, ul, form, label, input {font-size: 1.2vw}
     </style>
 </head>
 
 <body>
 <h1>Input types </h1>
-<p>Here are the different input types you can use in HTML:</p>
+<h2>There are different <ins>input types</ins>:</h2>
 <ul style="color:Crimson;">
     <li><a href="#button">&#60input type="button"&#62</a></li>
     <li><a href="#checkbox">&#60input type="checkbox"&#62</a></li>
@@ -39,7 +40,7 @@
 <p><strong>Tip:</strong> The default value of the type attribute is "text".</p>
 
 <h1 id="text">Input Type Text</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="text"</span>> defines <b>a single-line
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="text"</b>> defines <b>a single-line
     text input field:</b></p>
 <form>
   <label for="fname">First name:</label><br>
@@ -47,7 +48,7 @@
 </form>
 
 <h1 id="password">Input Type Password</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="password"</span>> defines <b>a password
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="password"</b>> defines <b>a password
     field:</b></p>
 <form>
   <label for="username">Username:</label><br>
@@ -58,7 +59,7 @@
 <p><strong>Note:</strong><i>The characters in a password field are masked (shown as asterisks or circles).</i></p>
 
 <h1 id="submit" style="text-align:Crimson;">Input Type Submit</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="submit"</span>> defines <b>a button for
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="submit"</b>> defines <b>a button for
     submitting form data to a form-handler.</b> The form-handler is typically a server page with a script for processing
     input data. The form-handler is specified in the form's <b style="color:Crimson;">action</b> attribute:</p>
 <form action="/action_page.php">
@@ -70,7 +71,7 @@
 </form>
 
 <h1 id="reset">Input Type Reset</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="reset"</span>> defines <b>a reset button
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="reset"</b>> defines <b>a reset button
     that will reset all form values to their default values:</b></p>
 <form action="/action_page.php">
   <label for="fname3">First name:</label><br>
@@ -84,7 +85,7 @@
     default values.</p>
 
 <h1 id="radio">Input Type Radio</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="radio"</span>> defines <b>a radio
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="radio"</b>> defines <b>a radio
     button.</b> Radio buttons let a user select <strong>ONLY ONE</strong> of a limited number of choices:</p>
 <form>
   <input type="radio" id="html" name="fav_language" value="HTML">
@@ -96,7 +97,7 @@
 </form>
 
 <h1 id="checkbox">Input Type Checkbox</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="checkbox"</span>> defines <b>a
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="checkbox"</b>> defines <b>a
     checkbox</b>. Checkboxes let a user select <strong>ZERO or MORE</strong> options of a limited number of choices:</p>
 <form>
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -108,11 +109,11 @@
 </form>
 
 <h1 id="button">Input Type Button</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="button"</span>> defines <b>a button:</b></p>
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="button"</b>> defines <b>a button:</b></p>
 <input type="button" onclick="alert('Hello World!')" value="Click Me!">
 
 <h1 id="color">Input Type Color</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="color"</span>> is used <b>for input
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="color"</b>> is used <b>for input
     fields that should contain a color</b>. Depending on browser support, a color picker can show up in the input field:</p>
 <form>
   <label for="favcolor">Select your favorite color:</label>
@@ -120,7 +121,7 @@
 </form>
 
 <h1 id="date">Input Type Date</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="data"</span>> is used <b>for input fields
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="data"</b>> is used <b>for input fields
     that should contain a date</b>. Depending on browser support, a date picker can show up in the input field:</p>
 <form>
   <label for="birthday">Birthday:</label>
@@ -137,7 +138,7 @@
 </form>
 
 <h1 id="datetime-local">Input Type Datetime-local</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="datetime-local"</span>> specifies <b>a
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="datetime-local"</b>> specifies <b>a
     date and time input field</b>, with no time zone. Depending on browser support, a date picker can show up in the
     input field:</p>
 <form>
@@ -146,7 +147,7 @@
 </form>
 
 <h1 id="email">Input Type Email</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="email"</span>> is used <b>for input
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="email"</b>> is used <b>for input
     fields that should contain an e-mail address</b>. Depending on browser support, the e-mail address can be
     automatically validated when submitted. Some smartphones recognize the email type, and add ".com" to the keyboard
     to match email input:</p>
@@ -156,7 +157,7 @@
 </form>
 
 <h1 id="file">Input Type File</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="file"</span>> defines <b>a file-select
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="file"</b>> defines <b>a file-select
     field and a "Browse" button for file uploads:</b></p>
 <form>
   <label for="myfile">Select a file:</label>
@@ -164,7 +165,7 @@
 </form>
 
 <h1 id="hidden">Input Type Hidden</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="hidden"</span>> defines <b>a hidden
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="hidden"</b>> defines <b>a hidden
     input field (not visible to a user)</b>. A hidden field let web developers include data that cannot be seen or
     modified by users when a form is submitted. A hidden field often stores what database record that needs to be
     updated when the form is submitted.<br>
@@ -181,17 +182,17 @@
     sent when the form is submitted.</p>
 
 <h1 id="month">Input Type Month</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="month"</span>> allows the user <b>to
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="month"</b>> allows the user <b>to
     select a month and year</b>. Depending on browser support, a date picker can show up in the input field:</p>
 <form>
   <label for="bdaymonth">Birthday (month and year):</label>
   <input type="month" id="bdaymonth" name="bdaymonth">
 </form>
-<p><strong>Note:</strong> The <span style="color:Blue;">input type</span><span style="color:Green;">="month"</span>> is
+<p><strong>Note:</strong> The <b style="color:Blue;">input type</b><b style="color:Green;">="month"</b>> is
     not supported in Firefox, Safari, or Internet Explorer 11.</p>
 
 <h1 id="number">Input Type Number</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="month"</span>> defines <b>a numeric
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="month"</b>> defines <b>a numeric
     input field</b>. You can also set restrictions on what numbers are accepted. The following example displays a
     numeric input field, where you can enter a value from 1 to 5:</p>
 <form>
@@ -207,10 +208,10 @@
 </form>
 
 <h1 id="range">Input Type Range</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="month"</span>> defines <b>a control for
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="month"</b>> defines <b>a control for
     entering a number whose exact value is not important (like a slider control)</b>. Default range is 0 to 100.
-    However, you can set restrictions on what numbers are accepted with the <span style="color:Crimson;">min</span>,
-    <span style="color:Crimson;">max</span>, and <span style="color:Crimson;">step</span> attributes:</p>
+    However, you can set restrictions on what numbers are accepted with the <b style="color:Crimson;">min</b>,
+    <b style="color:Crimson;">max</b>, and <b style="color:Crimson;">step</b> attributes:</p>
 <form>
   <label for="vol">Volume (between 0 and 50):</label>
   <input type="range" id="vol" name="vol" min="0" max="50">
@@ -218,7 +219,7 @@
 </form>
 
 <h1 id="search">Input Type Search</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="search"</span>> is used <b>for
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="search"</b>> is used <b>for
     search fields (a search field behaves like a regular text field)</b>:</p>
 <form>
   <label for="gsearch">Search Google:</label>
@@ -227,8 +228,8 @@
 </form>
 
 <h1 id="tel">Input Type Tel</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="tel"</span>> is used <b>for input fields
-    that should contain a telephone number</b:</p>
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="tel"</b>> is used <b>for input fields
+    that should contain a telephone number</b>:</p>
 <form action="/action_page.php">
   <label for="phone">Enter a phone number:</label><br><br>
   <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
@@ -238,18 +239,18 @@
 </form>
 
 <h1 id="time">Input Type Time</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="time"</span>> allows the user <b>to
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="time"</b>> allows the user <b>to
     select a time (no time zone)</b>. Depending on browser support, a time picker can show up in the input field:</p>
 <form action="/action_page.php">
   <label for="appt">Select a time:</label>
   <input type="time" id="appt" name="appt">
   <input type="submit" value="Submit">
 </form>
-<p><strong>Note:</strong> The <span style="color:Blue;">input type</span><span style="color:Green;">="time"</span>> is
+<p><strong>Note:</strong> The <b style="color:Blue;">input type</b><b style="color:Green;">="time"</b>> is
     not supported in Internet Explorer 11 or prior Safari 14.1.</p>
 
 <h1 id="url">Input Type Url</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="url"</span>> is used <b>for input fields
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="url"</b>> is used <b>for input fields
     that should contain a URL address</b>. Depending on browser support, the url field can be automatically validated
     when submitted. Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.</p>
 <form action="/action_page.php">
@@ -259,18 +260,18 @@
 </form>
 
 <h1 id="week">Input Type Week</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="week"</span>> allows the user <b>to
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="week"</b>> allows the user <b>to
     select a week and year</b>. Depending on browser support, a date picker can show up in the input field.</p>
 <form action="/action_page.php">
   <label for="week2">Select a week:</label>
   <input type="week" id="week2" name="week">
   <input type="submit" value="Submit">
 </form>
-<p><strong>Note:</strong> <<span style="color:Blue;">input type</span><span style="color:Green;">="week"</span>>
+<p><strong>Note:</strong> <<b style="color:Blue;">input type</b><b style="color:Green;">="week"</b>>
     is not supported in Firefox, Safari or Internet Explorer 11.</p>
 
 <h1 id="image">Input Type Image</h1>
-<p>The <<span style="color:Blue;">input type</span><span style="color:Green;">="image"</span>> defines <b>an image
+<p>The <<b style="color:Blue;">input type</b><b style="color:Green;">="image"</b>> defines <b>an image
     as a submit button</b>. The path to the image is specified in the src attribute.</p>
 <form action="/action_page.php">
   <label for="fname5">First name: </label>
@@ -279,7 +280,7 @@
   <input type="text" id="lname5" name="lname"><br><br>
   <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
 </form>
-<p><strong>Note:</strong>The <<span style="color:Blue;">input type</span><span style="color:Green;">="image"</span>>
+<p><strong>Note:</strong>The <<b style="color:Blue;">input type</b><b style="color:Green;">="image"</b>>
     sends the X and Y coordinates of the click that activated the image button.</p>
 
 </body>
