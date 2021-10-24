@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input form attributes</title>
+    <style>
+        p, ul, form, label, input {font-size: 1.2vw}
+        h1 {font-size: 2vw; text-align:center;}
+    </style>
+</head>
+
+<body>
+
+<h1>Input form* attributes</h1>
+<h2 style="font-size:1.5vw;">Input form attributes are:</h2>
+<ul>
+    <li><<a href="#form">form</a>></li>
+    <li><<a href="#formaction">formaction</a>></li>
+    <li><<a href="#formecntype">formenctype</a>></li>
+    <li><<a href="#formmethod">formmethod</a>></li>
+    <li><<a href="#formtarget">formtarget</a>></li>
+    <li><<a href="#formnovalidate">formnovalidate</a>></li>
+    <li><<a href="#novalidate">novalidate</a>></li>
+</ul>
+
+<h1 id="form">The form Attribute</h1>
+<p>The input <<b style="color:Crimson;">form</b>> attribute <b>specifies the form the
+    <<span style="color:Blue;">input</span>> element belongs to</b>. The value of this attribute must be equal to the
+    <b style="color:Crimson;">id</b> attribute of the <<b style="color:Blue;">form</b>> element it
+    belongs to.</p>
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+<p>The <b>"Last name"</b> field below is outside the form element, but still part of the form.</p>
+
+
+<h1 id="formaction">The formaction Attribute</h1>
+<p>The input <b style="color:Crimson;">formaction</b> attribute <b>specifies the URL of the file that will
+    process the input when the form is submitted</b>.</p>
+<p><strong>Note:</strong> This attribute overrides the action attribute of the <<b style="color:Blue;">form</b>>
+    element.</p>
+<p>The <b style="color:Crimson;">formaction</b> attribute works with the following input types:
+    <i><ins>submit and image</ins></i>.</p>
+<form action="/action_page.php">
+  <label for="fname2">First name:</label>
+  <input type="text" id="fname2" name="fname2"><br><br>
+  <label for="lname2">Last name:</label>
+  <input type="text" id="lname2" name="lname2"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+</form>
+
+<h1 id="formecntype">The formenctype Attribute</h1>
+<p>The input <b style="color:Crimson;">formenctype</b> attribute <b>specifies how the form-data should be encoded
+    when submitted (only for forms with method="post")</b>.</p>
+<p><strong>Note:</strong> This attribute overrides the enctype attribute of the <<b style="color:Blue;">form</b>>
+    element.</p>
+<p>The <b style="color:Crimson;">formenctype</b> attribute works with the following input types:
+    <i><ins>submit and image</ins></i>.</p>
+<form action="/action_page_binary.asp" method="post">
+  <label for="fname3">First name:</label>
+  <input type="text" id="fname3" name="fname3"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+
+<h1 id="formmethod">The formmethod Attribute</h1>
+<p>The input <b style="color:Crimson;">formmethod</b> attribute <b>defines the HTTP method for sending form-data to
+    the action URL</b>.</p>
+<p><strong>Note:</strong> This attribute overrides the method attribute of the <<span style="color:Blue;">form</span>>
+    element.</p>
+<p>The input <b style="color:Crimson;">formmethod</b> attribute works with the following input types:
+    <i><ins>submit and image</ins></i>.</p>
+<p>The form-data can be sent <b>as URL variables (method="get")</b> or as <b>an HTTP post transaction (method=
+    "post")</b>.</p>
+<p>A form with two submit buttons. The first sends the form-data with method="get". The second sends the form-data
+    with method="post":</p>
+<form action="/action_page.php" method="get">
+  <label for="fname4">First name:</label>
+  <input type="text" id="fname4" name="fname4"><br><br>
+  <label for="lname4">Last name:</label>
+  <input type="text" id="lname4" name="lname4"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+
+<h1 id="formtarget">The formtarget Attribute</h1>
+<p>The input <b style="color:Crimson;">formtarget</b> attribute <b>specifies a name or a keyword that indicates
+    where to display the response that is received after submitting the form</b>.</p>
+<p><strong>Note:</strong> This attribute overrides the target attribute of the <<b style="color:Blue;">form</b>>
+    element.</p>
+<p>The <b style="color:Crimson;">formtarget</b> attribute works with the following input types: <i><ins>submit and
+    image</ins></i>.</p>
+<form action="/action_page.php">
+  <label for="fname5">First name:</label>
+  <input type="text" id="fname5" name="fname5"><br><br>
+  <label for="lname5">Last name:</label>
+  <input type="text" id="lname5" name="lname5"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+</form>
+
+<h1 id="formnovalidate">The formnovalidate Attribute</h1>
+<p>The input <b style="color:Crimson;">formnovalidate</b> attribute <b>specifies that an
+    <<span style="color:Blue;">input</span>> element should not be validated when submitted</b>.</p>
+<p><strong>Note:</strong> This attribute overrides the novalidate attribute of the <<b style="color:Blue;">form</b>>
+    element.</p>
+<p>The <b style="color:Crimson;">formnovalidate</b> attribute works with the following input types:
+    <i><ins>submit</ins></i>.</p>
+<form action="/action_page.php">
+  <label for="email1">Enter your email:</label>
+  <input type="email" id="email1" name="email1"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate"
+  value="Submit without validation">
+</form>
+<p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+<h1 id="novalidate">The novalidate Attribute</h1>
+<p>The <b style="color:Crimson;">novalidate</b> attribute is a <<b style="color:Blue;">form</b>> attribute.
+    When present, novalidate <b>specifies that all of the form-data should not be validated when submitted</b>.</p>
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
