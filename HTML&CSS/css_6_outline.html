@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outline</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size:1.4vw
+            }
+        p, ul {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        p.outline {
+              border: 2px solid black;
+              outline: #4CAF50 solid 10px;
+              margin: auto;
+              padding: 20px;
+              text-align: center;
+            }
+        p.ex1 {
+              border: 5px dotted red;
+              outline-style: solid;
+              outline-color: orange;
+              outline-width: 10px;
+              padding: 5px;
+            }
+
+        p.ex2 {
+              border: 10px solid green;
+              outline: 5px dashed DarkGreen;
+            }
+
+        p.ex3 {
+              border: 5px solid black;
+              outline: outset grey thick;
+            }
+        p.ex4 {
+              margin: 30px;
+              border: 5px solid black;
+              outline: 5px solid brown;
+              outline-offset: 15px;
+            }
+    </style>
+</head>
+<body>
+<h1>CSS Outline</h1>
+<p class="outline">An <b class="property">outline</b> is a line that <b>is drawn around elements, OUTSIDE the borders, to make the
+    element <ins>"stand out"</ins></b>.</p>
+<p>CSS has the following <b class="property">outline</b> properties:</p>
+<ul>
+    <li><b class="property">outline-style</b></li>
+    <li><b class="property">outline-color</b></li>
+    <li><b class="property">outline-width</b></li>
+    <li><b class="property">outline-offset</b></li>
+    <li><b class="property">outline</b></li>
+</ul>
+<p><mark><strong>Note:</strong> <ins>Outline differs from borders!</ins> Unlike border, the outline is drawn
+    <ins>outside the element's border, and may overlap other content</ins>. Also, the outline is <ins>NOT a part
+        of the element's dimensions; the element's total width and height is not affected by the width of the
+        outline</ins>.</mark></p>
+<p>Outline has the same properties of <b class="property">outline-style</b> attribute as borders. Also user can set
+    the color and width of the whe whole outline with <b class="property">outline-color</b> and
+    <b class="property">outline-width</b> attribute.</p>
+<p>The <b class="property">outline</b> property is a shorthand property for setting the following
+    individual outline properties (the same as border):</p>
+<ul>
+    <li><b class="property">outline-width</b></li>
+    <li><b class="property">outline-style (required)</b></li>
+    <li><b class="property">outline-color</b></li>
+</ul>
+<p>The <b class="property">outline</b> property is <b>specified as one, two, or three values</b> from the list above.
+    The order of the values does not matter.</p>
+<h2>Examples:</h2>
+<p class="ex1">A solid orange outline and red dotted border.</p>
+<p class="ex2">A solid green outline and darkgreen dashed border.</p>
+<p class="ex3">An outset grey outline and black border.</p>
+
+<h2>CSS Outline Offset</h2>
+<p>The <b class="property">outline-offset</b> property <b>adds space between an outline and the edge/border of an
+    element</b>. The space between an element and its outline is <b><ins>transparent</ins></b>.
+<p class="ex4">This paragraph has an outline 15px outside the border edge.</p>
+
+</body>
+</html>
