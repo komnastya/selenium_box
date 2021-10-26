@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Padding</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size:1.4vw
+            }
+        p, ul {font-size: 1.2vw;}
+        b.property {
+            background-color:LightGrey;
+            color:Crimson;
+            }
+        p.pad70 {
+          padding: 70px;
+          border: 2px solid #4CAF50;
+        }
+        p.individual {
+          border: 1px solid black;
+          background-color: lightblue;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-bottom: 50px;
+          padding-left: 80px;
+        }
+        p.four {
+          padding: 25px 50px 75px 100px;
+          border: 1px solid black;
+          background-color: lightblue;
+        }
+        p.three {
+          padding: 25px 50px 75px;
+          border: 1px solid black;
+          background-color: lightblue;
+        }
+        p.two {
+          padding: 25px 50px;
+          border: 1px solid black;
+          background-color: lightblue;
+        }
+        p.one{
+            padding: 35px;
+          border: 1px solid black;
+          background-color: lightblue;
+        }
+        p.ex1 {
+          width: 300px;
+          background-color: yellow;
+        }
+        p.ex2 {
+          width: 300px;
+          padding: 25px;
+          background-color: lightblue;
+        }
+        p.ex3 {
+          width: 300px;
+          padding: 25px;
+          box-sizing: border-box;
+          background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<h1>Padding</h1>
+<p>The CSS <b class="property">padding</b> properties are used to <b>generate space around an element's content,
+    inside of any defined borders</b>.</p>
+<p class="pad70">This element has a padding of 70px.</p>
+<h2>Padding - Individual Sides</h2>
+<p>CSS has properties for specifying the padding <b>for each side of an element</b>:</p>
+<ul>
+    <li><b class="property">padding-top</b></li>
+    <li><b class="property">padding-right</b></li>
+    <li><b class="property">padding-bottom</b></li>
+    <li><b class="property">padding-left</b></li>
+</ul>
+<p>All the padding properties can have the following values:</p>
+<ul>
+    <li>length - specifies a padding in px, pt, cm, etc.</li>
+    <li>% - specifies a padding in % of the width of the containing element</li>
+    <li>inherit - specifies that the padding should be inherited from the parent element</li>
+</ul>
+<p><strong>Tip:</strong> Negative values are <b>NOT</b> allowed.</p>
+
+<h2>Using individual padding properties</h2>
+<p class="individual">This p element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px,
+    and a left padding of 80px.</p>
+
+<h2>Padding Shorthand Property</h2>
+<p>The <b class="property">padding</b> property is a shorthand property for the following individual padding
+    properties:</p>
+<ul>
+    <li><b class="property">padding-top</b></li>
+    <li><b class="property">padding-right</b></li>
+    <li><b class="property">padding-bottom</b></li>
+    <li><b class="property">padding-left</b></li>
+</ul>
+
+<p>So, here is how it works:</p>
+<p>If the <b class="property">padding</b> property has <b>four</b> values:</p>
+<ul>
+    <li><b>padding: 25px 50px 75px 100px;</b>
+        <ul>
+            <li>top padding is 25px</li>
+            <li>right padding is 50px</li>
+            <li>bottom padding is 75px</li>
+            <li>left padding is 100px</li>
+        </ul>
+    </li>
+</ul>
+<p class="four">The padding shorthand property - 4 values. <br>
+    This p element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of
+    100px.</p>
+
+<p>If the <b class="property">padding</b> property has <b>three</b> values:</p>
+<ul>
+    <li><b>padding: 25px 50px 75px;</b>
+        <ul>
+            <li>top padding is 25px</li>
+            <li>right and left paddings are 50px</li>
+            <li>bottom padding is 75px</li>
+        </ul>
+    </li>
+</ul>
+<p class="three">The padding shorthand property - 3 values<br>
+    This p element has a top padding of 25px, a right and left padding of 50px, and a bottom padding of 75px.</p>
+
+<p>If the <b class="property">padding</b> property has <b>two</b> values:</p>
+<ul>
+    <li><b>padding: 25px 50px;</b>
+        <ul>
+            <li>top and bottom paddings are 25px</li>
+            <li>right and left paddings are 50px</li>
+        </ul>
+    </li>
+</ul>
+<p class="two">The padding shorthand property - 2 values<br>
+    This p element has a top and bottom padding of 25px, and a right and left padding of 50px.</p>
+
+<p>If the <b class="property">padding</b> property has <b>one</b> value:</p>
+<ul>
+    <li><b>padding: 25px;</b>
+        <ul><li>all four paddings are 25px</li>
+        </ul>
+    </li>
+</ul>
+
+<p class="one">The padding shorthand property - 1 value<br>
+    This p element has a top, bottom, left, and right padding of 25px.</p>
+
+<h1>Padding and Element Width</h1>
+<p>The CSS <b class="property">width</b> property <b>specifies the width of the element's content area</b>.
+    The content area is the <b>portion inside the padding, border, and margin</b> of an element (the box model).</p>
+
+<p>So, if an element has a specified <b class="property">width</b>, the <b class="property">padding</b> added to that
+    element <b>will be added to the total width of the element</b>. This is often an undesirable result.</p>
+<p class="ex1">This paragraph is 300px wide.</p>
+<p class="ex2">The width of this paragraph is 350px, even though it is defined as 300px in the CSS.</p>
+
+<p>To keep the width at 300px, no matter the amount of padding, you can use the <b class="property">box-sizing</b>
+    property. This causes the element <b>to maintain its actual width;</b> if you i<b><ins>increase the padding</ins></b>,
+    the available <b><ins>content space will decrease</ins></b>.</p>
+<p class="ex1">This paragraph is 300px wide.</p>
+<p class="ex3">The width of this paragraph remains at 300px, in spite of the 50px of total left and right padding,
+    because of the <b class="property">box-sizing: border-box property</b>.</p>
+
+
+</body>
+</html>
