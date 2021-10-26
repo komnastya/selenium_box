@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border width and color</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, ul {font-size: 1.4vw;}
+        b.attribute {
+            background-color:LightGrey;
+            color:Crimson;
+            }
+        p.one {
+          border-style: solid;
+          border-width: 5px;
+        }
+        p.two {
+          border-style: solid;
+          border-width: medium;
+          border-color: red;
+        }
+        p.three {
+          border-style: dotted;
+          border-width: 2px;
+          border-color:orange;
+        }
+        p.four {
+          border-style: dotted;
+          border-width: thick;
+          border-color:yellow;
+        }
+        p.five {
+          border-style: double;
+          border-width: 15px;
+          border-color:green;
+        }
+        p.six {
+          border-style: double;
+          border-width: thick;
+          border-color:blue;
+        }
+        p.seven {
+          border-style: solid;
+          border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+        }
+        p.eight {
+          border-style: solid;
+          border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+        }
+        p.nine {
+          border-style: solid;
+          border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+          border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+        }
+
+        </style>
+</head>
+
+<body>
+<h1>CSS Border Width and Color</h1>
+<p>The <b class="attribute">border-width</b> property <b>specifies the width of the four borders</b>.</p>
+<p>The width can be <b>set as a specific size (in px, pt, cm, em, etc)</b> or by using one of the three <b>pre-defined
+    values: thin, medium, or thick</b>.</p>
+<p>The <b class="attribute">border-color</b> property is used to set the color of the four borders.<br>
+    The color can be set by:</p>
+<ul>
+    <li>name - specify a color name, like "red"</li>
+    <li>HEX - specify a HEX value, like "#ff0000"</li>
+    <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+    <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+    <li>transparent</li>
+</ul>
+<p><strong>Note:</strong> If <b>border-color</b> is not set, it inherits the color of the element.</p>
+
+<p class="one">solid 5px border colored black (be default).</p>
+<p class="two">solid medium border colored red.</p>
+<p class="three">dotted 2px border colored orange.</p>
+<p class="four">dotted thick border colored yellow.</p>
+<p class="five">double 15px border colored green.</p>
+<p class="six">double thick border colored blue.</p>
+<p><strong>Note:</strong> The <b class="attribute">border-width</b> property does not work if it is used alone.
+    Always specify the <b style="attribute">border-style</b> property to set the borders first.</p><br>
+
+<h1>Specific Side Widths and Color</h1>
+<p>The <b class="attribute">border-width</b> property can have <b>from one to four values (for the top border,
+    right border, bottom border, and the left border)</b>.</p>
+<p>The <b class="attribute">border-color</b> property also can have <b>from one to four values (for the top border,
+    right border, bottom border, and the left border)</b>.
+<p class="seven">5px top and bottom, 20px on the sides.</p>
+<p class="eight">20px top and bottom, 5px on the sides.</p>
+<p class="nine">25px red top, 10px green right, 4px blue bottom and 35px yellow left.</p>
+
+</body>
+</html>

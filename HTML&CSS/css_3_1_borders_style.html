@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borders style</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;}
+        p, ul {font-size: 1.2vw;}
+        b.attribute {
+            background-color:LightGrey;
+            color:Crimson;
+            }
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+    </style>
+</head>
+<body>
+<h1>The border-style Property</h1>
+<p>The <b class="attribute">border-style</b> property specifies <b>what kind of border to display</b>.<br>
+    The following values are allowed:</p>
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<br>
+<h1>Also it is possible to set different border-style to each of the borders:</h1>
+<p class="mix">A mixed border.</p>
+<p>So, here is how it works:</p>
+<p>If the <b class="attribute">border-style</b> property has <b>four</b> values:</p>
+<ul>
+    <li><b>border-style: dotted solid double dashed;</b>
+        <ul>
+            <li>top border is dotted</li>
+            <li>right border is solid</li>
+            <li>bottom border is double</li>
+            <li>left border is dashed</li>
+        </ul>
+    </li>
+</ul>
+
+<p>If the <b class="attribute">border-style</b> property has <b>three</b> values:</p>
+<ul>
+    <li><b>border-style: dotted solid double;</b>
+        <ul>
+            <li>top border is dotted</li>
+            <li>right and left borders are solid</li>
+            <li>bottom border is double</li>
+        </ul>
+    </li>
+</ul>
+
+<p>If the <b class="attribute">border-style</b> property has <b>two</b> values:</p>
+<ul>
+    <li><b>border-style: dotted solid;</b>
+        <ul>
+            <li>top and bottom borders are dotted</li>
+            <li>right and left borders are solid</li>
+        </ul>
+    </li>
+</ul>
+
+<p>If the <b class="attribute">border-style</b> property has <b>one</b> value:</p>
+<ul>
+    <li><b>border-style: dotted;</b>
+        <ul><li>all four borders are dotted</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
