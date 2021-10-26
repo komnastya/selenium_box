@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <style>
+        h1 {font-size: 2vw; text-align:center;}
+        h2 {font-size: 1.5vw;}
+        p, pre {font-size: 1.2vw}
+        p.center {
+            text-align: center;
+            color: red;
+        }
+        p.large {
+          font-size: 300%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>The CSS class Selector</h1>
+<p>The class selector selects HTML elements with a specific class attribute.</p>
+<p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+
+<h1 class="center">This heading will not be affected</h1>
+<p class="center">This paragraph will be red and center-aligned.</p>
+<p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+
+<h1>The CSS Universal Selector</h1>
+<p>The universal selector <b>(*)</b> selects all HTML elements on the page.</p>
+<pre>
+    * {
+        text-align: center;
+        color: blue;
+       } </pre>
+
+</body>
+</html>
