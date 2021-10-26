@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Image Repeat</title>
+    <style>
+        h1 {
+            font-size: 2vw
+            }
+        p, pre {
+            font-size: 1.4vw
+            }
+        .colored_attribute {
+           color:Crimson;
+           }
+        body {
+          background-image: url("gradient_bg.jpg");
+          background-repeat: repeat-x;
+           }
+        b {background-color:LightGrey;}
+
+    </style>
+</head>
+<body>
+<h1>CSS background-repeat</h1>
+<p>By default, the <b class="colored_attribute">background-image</b> property repeats an image both <b>horizontally
+    and vertically</b>.</p>
+<p>Some images should be repeated only horizontally or vertically, or they will look strange. </p>
+<p>If the image above is repeated only <b>horizontally</b> (<b class="colored_attribute">background-repeat:
+    repeat-x;</b>), the background will look better, like this turquois stripe.</p>
+<p>To repeat an image <b>vertically</b>, set <b class="colored_attribute">background-repeat: repeat-y;</b>
+<p><b>Showing the background image only once</b> is also specified by the
+    <b class="colored_attribute">background-repeat</b> property with <b>no-repeat</b> meaning.</p>
+<br>
+
+<h1>CSS background position</h1>
+<p>In the example above, the background image is placed in the same place as the text. We want to change the
+    position of the image, so that it does not disturb the text too much.</p>
+<p>The <b class="colored_attribute">background-position</b> property is used to <b>specify the position of
+    the background image</b>:</p>
+<pre>
+        body {
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+        background-position: <b>right top</b>;
+            }
+</pre>
+</body>
+</html>

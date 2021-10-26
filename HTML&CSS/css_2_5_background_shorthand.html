@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background shorthand</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            }
+        p, pre, li {
+            font-size: 1.4vw;
+            width:55%;
+            }
+        b.attribute {
+            background-color:LightGrey;
+            color:Crimson;
+            }
+        body {
+          background: #ffffff url("programming.png") no-repeat right top;
+          margin-right: 200px;
+         }
+    </style>
+</head>
+<body>
+<h1>CSS background shorthand Property</h1>
+<p>To shorten the code, it is also possible to <b>specify all the background properties in one single property</b>.
+    This is called a <b>shorthand property</b>. Instead of writing:</p>
+<pre>
+    body {
+    <b class="attribute">background-color</b>: #ffffff;
+    <b class="attribute">background-image</b>: url("programming.png");
+    <b class="attribute">background-repeat</b>: no-repeat;
+    <b class="attribute">background-position</b>: right top;
+    }
+</pre>
+
+<p>You can use the <b>shorthand</b> property background:</p>
+<pre><b>
+    body {
+    <b class="attribute">background</b>: #ffffff url("programming.png") no-repeat right top;
+    }
+</b></pre>
+
+<p>When using the shorthand property the order of the property values is:</p>
+<ul>
+    <li><b class="attribute">background-color</b></li>
+    <li><b class="attribute">background-image</b></li>
+    <li><b class="attribute">background-repeat</b></li>
+    <li><b class="attribute">background-attachment</b></li>
+    <li><b class="attribute">background-position</b></li>
+</ul>
+<p>It does not matter if one of the property values is missing, as long as the other ones are in this order.
+    Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+
+</body>
+</html>
