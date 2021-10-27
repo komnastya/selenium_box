@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lists</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, ul {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        ul.image {
+            list-style-image: url('sqpurple.gif');
+            }
+       ul.a {
+            list-style-position: outside;
+            width:50%;
+            }
+       ul.b {
+            list-style-position: inside;
+            width:50%;
+            }
+       ul.demo {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            }
+        ul.shorthand {
+            list-style: square inside url("sqpurple.gif");
+        }
+
+    </style>
+</head>
+<body>
+<h1>Lists</h1>
+<p>The <b class="property">list-style-type</b> property specifies <b>the type of list item marker</b>.</p>
+<p>The <b class="property">list-style-image</b> property specifies an <b>image as the list item marker</b>:</p>
+<ul class="image">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+
+<h1>Position The List Item Markers</h1>
+<p>The <b class="property">list-style-position</b> property <b>specifies the position of the list-item markers
+    (bullet points).</b>
+
+<p><b class="property">"list-style-position: outside;"</b> means that the bullet points will be
+        outside the list item. The <b>start of each line</b> of a list item will be <b>aligned vertically</b>.
+        This is default:</p>
+<ul class="a">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<p><b class="property">"list-style-position: inside;"</b> means that the bullet points will be inside the list
+    item. As it is part of the list item, <b>it will be part of the text and push the text at the start</b>:</p>
+<ul class="b">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<h1>Remove Default Settings</h1>
+<p>The <b class="property">list-style-type:none</b> property can also be used to <b>remove the markers/bullets</b>.
+    Note that the list also has default margin and padding. To remove this, add <b class="property">margin:0</b> and
+    <b class="property">padding:0</b> to <<span style="color:Blue;">ul</span>> or <<span style="color:Blue;">ol</span>>:
+<p>Default list:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Remove bullets, margin and padding from list:</p>
+<ul class="demo">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h1>List - Shorthand Property </h1>
+<p>The <b class="property">list-style</b> property is a <b>shorthand property</b>. It is used <b>to set all the list
+    properties in one line</b>:</p>
+<p>When using the shorthand property, the order of the property values are:</p>
+<ul class="shorthand">
+    <li><b class="property">list-style-type</b>(if a list-style-image is specified, the value of this property will be
+        displayed if the image for some reason cannot be displayed)</li>
+    <li><b class="property">list-style-position</b> (specifies whether the list-item markers should appear inside or
+        outside the content flow)</li>
+    <li><b class="property">list-style-image</b> (specifies an image as the list item marker)</li></ul>
+<p>If one of the property values above are missing, the default value for the missing property will be
+    inserted, if any.</p>
+</body>
+</html>
