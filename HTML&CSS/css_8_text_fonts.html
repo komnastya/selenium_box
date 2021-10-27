@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text fonts</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size:1.4vw;
+            }
+        p, ul {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        li.normal {
+            font-style: normal;
+            }
+        li.italic {
+            font-style: italic;
+            }
+        li.oblique {
+            font-style: oblique;
+            }
+        li.light {
+          font-weight: lighter;
+            }
+        li.thick {
+          font-weight: bold;
+            }
+        li.thicker {
+          font-weight: 900;
+            }
+        li.normalvariant {
+          font-variant: normal;
+            }
+        li.smallcapsvariant {
+          font-variant: small-caps;
+            }
+        p.sofia {
+            font-family: "Sofia", sans-serif;
+            }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+</head>
+
+<body>
+<h1>Text Fonts</h1>
+
+<h1>Font Style</h1>
+<p>The <b class="property">font-style</b> property is mostly used to <b>specify <i>italic</i> text</b>:</p>
+<p>This property has three values:</p>
+<ul>
+    <li class="normal">normal - The text is shown normally</li>
+    <li class="italic">italic - The text is shown in italics</li>
+    <li class="oblique">oblique - The text is "leaning" (oblique is very similar to italic, but less supported)</li>
+</ul>
+
+<h1>Font Weight</h1>
+<p>The <b style="property">font-weight</b> property <b>specifies the weight of a font</b>:</p>
+<ul>
+    <li class="normal">This is normal paragraph.</li>
+    <li class="light">This is light paragraph.</li>
+    <li class="thick">This is thick paragraph.</li>
+    <li class="thicker">This is thicker paragraph.</li>
+</ul>
+
+<h1>Font Variant</h1>
+<p>The <b class="property">font-variant</b> property <b>specifies whether or not a text should be displayed in a
+    small-caps font</b>. In a small-caps font, all lowercase letters are converted to uppercase letters. However,
+    the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.</p>
+<ul>
+    <li class="normalvariant">This is usual text with font-variant:normal</li>
+    <li class="smallcapsvariant">This text is diaplayed in small-caps text - font-variant:normal</li>
+</ul>
+
+<h2>Set Font Size With Em</h2>
+<p>To allow users to <b>resize the text (in the browser menu)</b>, many developers use em instead of pixels.
+    1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of
+    1em is 16px. The size can be <b>calculated from pixels to em using this formula: pixels/16=em</b>.</p>\
+<p style="font-size:1.25em">This text is 1.1 em which is equal to 20px</p>
+<p style="font-size:20px">This text is 20px</p>
+<p style="font-size:1.75em">This text is 1.75 em which is equal to 28px</p>
+<p style="font-size:28px">This text is 28px</p>
+
+<h1>Google Fonts and effects</h1>
+<p>Just add a special style sheet link in the <<span style="clor:Blue">head</span>> section and then refer to
+    the font in the CSS.</p>
+<p class="sofia">This paragraph uses Sofia Google font</p>
+<h2>Add effects to the Google styles</h2>
+<p>First add <b class="property">effect=effectname</b> to the Google API, then <b>add a special class name to the
+    element that is going to use the special effect</b>. The class name always starts with
+    <b class="property">font-effect-</b> and ends with the <b class="property">effectname</b>.</p>
+<p class="sofia font-effect-fire">This paragraph uses Sofia Google font with fire effect</p>
+
+</body>
+</html>
