@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, table {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        table, td, th {
+            border: 1px solid black;
+            }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+        td {
+            height: 50px;
+            vertical-align: bottom;
+            }
+        th {
+            background-color: #04AA6D;
+            color: white;
+            }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:hover {background-color: yellow;}
+    </style>
+</head>
+<body>
+<h1>Tables</h1>
+<p>The <b class="property">vertical-align</b> property <b>sets the vertical alignment (like top, bottom, or middle)</b>
+    of the content in <<b style="color:Blue">th</b>> or <<b style="color:Blue">td</b>>.</p>
+<p><b>By default</b>, the <b>vertical alignment</b> of the content in a table is <b>middle</b> (for both
+    <<b style="color:Blue">th</b>> and <<b style="color:Blue">td</b>> elements).<br>
+    The following example sets the vertical text alignment to bottom for <<b style="color:Blue;">td</b>> elements.</p>
+<p>Also use the <b class="property">:hover</b> selector on <<b style="color:Blue;">tr</b>> to <b>highlight table rows
+    on mouse over</b></p>
+<p><b>For zebra-striped tables</b>, use the <b class="property">nth-child()</b> selector and add a
+    <b class="property">background-color</b> to all even (or odd) table rows:</p>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+</body>
+</html>
