@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.7vw;
+            }
+        p, ul, span, a {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        a, span {
+            display: block;
+            }
+        li {
+             display: inline;
+           }
+        h1.display_none {
+             display: none;
+           }
+        h1.hidden {
+            visibility: hidden;
+           }
+    </style>
+</head>
+
+<body>
+<h1>CSS layout - The display Property</h1>
+<p>The <b class="property">display</b> property <b>specifies if/how an element is displayed</b>.</p>
+<p>Every HTML element has a default display value depending on what type of element it is. The default display value
+    for most elements is <b class="property">block</b> or <b class="property">inline</b>. <b class="property">none</b>
+value is used for <<b style="color:Blue">script</b>> tag as default.</p>
+
+<h1>Override the Default Display Value</h1>
+<p>As mentioned, every element has a default display value. However, you can override this using <b>inline|block</b>
+    value for <b class="property">display</b> proprety:</p>
+<h2>Display links as block elements</h2>
+<a href="https://www.w3schools.com/html" target="_blank">HTML</a>
+<a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+<a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+
+<h2>Display span elements as block elements</h2>
+<span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span
+    elements.</span>
+
+<h2>Display a list of links as a horizontal menu:</h2>
+<ul>
+   <li><a href="https://www.w3schools.com/html" target="_blank">HTML</a></li>
+   <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+   <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+
+<h1>Hide an Element - display:none or visibility:hidden?</h1>
+<p><b>Hiding</b>an element can be done by setting the <b class="property">display</b> property to
+    <b class="property">none</b>. The element will be hidden, and <b>the page will be displayed as if the element is
+        not there</b>:</p>
+<h1>This is a visible heading</h1>
+<h1 class="display_none">This is a hidden heading</h1>
+<p>Notice that the h1 element with <b class="property">display: none;</b> <b>does not take up any space</b>.</p>
+
+<h1>This is a visible heading</h1>
+<h1 class="hidden">This is a hidden heading</h1>
+<p>Notice that with the <b class="property">visibility: hidden</b> <b>heading still takes up space</b>.</p>
+
+</body>
+</html>
