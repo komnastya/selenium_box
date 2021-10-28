@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border Properties</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.7vw;
+            }
+        p, ul, table {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        table, td, th {
+              border: 5px solid DarkGreen;
+            }
+        #table1 {
+            border-collapse: separate;
+            border-spacing: 10px;
+            border-color: Navy;
+            }
+        #table2 {
+            border-collapse: collapse;
+            border-spacing: 10px;
+            }
+        #cap_bottom {
+            caption-side: bottom;
+            border-collapse: collapse;
+            }
+        #cap_top {
+            caption-side: top;
+            border-collapse: collapse;
+            }
+        #hide_border {
+            empty-cells: hide;
+            }
+        #show_border {
+            empty-cells: show;
+            }
+        table.a {
+            table-layout: auto;
+            width: 180px;
+            }
+        table.b {
+            table-layout: fixed;
+            width: 180px;
+            }
+        table.c {
+            table-layout: auto;
+            width: 100%;
+            }
+        table.d {
+            table-layout: fixed;
+            width: 100%;
+            }
+    </style>
+</head>
+<body>
+
+<h1>CSS border-collapse Property</h1>
+<p>The <b class="property">border-collapse</b> property <b>sets whether table borders should collapse into a single
+    border or be separated as in standard HTML.</b>
+<p>There are four possible values for <b class="property">border-collapse</b>:</p>
+<ul>
+    <li><b>separate</b>: borders are separated; each cell will display its own borders (<ins>default</ins>)</li>
+    <li><b>collapse</b>: borders are collapsed into a single border when possible (border-spacing and empty-cells
+        properties have no effect).</li>
+    <li><b>initial</b>:	sets this property to its default value.</li>
+    <li><b>inherit</b>:	inherits this property from its parent element.</li>
+</ul>
+<h2>border-collapse: separate</h2>
+<p>When using "border-collapse: separate", the border-spacing property can be used to set the space between the cells:</p>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>border-collapse: collapse</h2>
+<p>When using "border-collapse: collapse", the border-spacing property has no effect:</p>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h1>CSS caption-side Property</h1>
+<p>The <b class="property">caption-side</b> property <b>specifies the placement of a table caption</b>.</p>
+<p>There are four possible values for <b class="property">caption-side</b>:</p>
+<ul>
+    <li><b>top</b>: puts the caption above the table (<ins>default</ins>)</li>
+    <li><b>bottom</b>: puts the caption below the table</li>
+    <li><b>initial</b>:	sets this property to its default value</li>
+    <li><b>inherit</b>:	inherits this property from its parent element</li>
+</ul>
+<h2>caption-side: bottom:</h2>
+<table id="cap_bottom">
+    <caption style="color:navy;"><b>Table 1.1 Customers</b></caption>
+<tr>
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+</tr>
+<tr>
+  <td>Alfreds Futterkiste</td>
+  <td>Maria Anders</td>
+  <td>Germany</td>
+</tr>
+<tr>
+  <td>Berglunds snabbköp</td>
+  <td>Christina Berglund</td>
+  <td>Sweden</td>
+</tr>
+<tr>
+  <td>Centro comercial Moctezuma</td>
+  <td>Francisco Chang</td>
+  <td>Mexico</td>
+</tr>
+<tr>
+  <td>Ernst Handel</td>
+  <td>Roland Mendel</td>
+  <td>Austria</td>
+</tr>
+</table>
+
+<h2>caption-side: top (default):</h2>
+<table id="cap_top">
+    <caption style="color:navy;"><b>Table 1.1 Customers</b></caption>
+<tr>
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+</tr>
+<tr>
+  <td>Alfreds Futterkiste</td>
+  <td>Maria Anders</td>
+  <td>Germany</td>
+</tr>
+<tr>
+  <td>Berglunds snabbköp</td>
+  <td>Christina Berglund</td>
+  <td>Sweden</td>
+</tr>
+<tr>
+  <td>Centro comercial Moctezuma</td>
+  <td>Francisco Chang</td>
+  <td>Mexico</td>
+</tr>
+<tr>
+  <td>Ernst Handel</td>
+  <td>Roland Mendel</td>
+  <td>Austria</td>
+</tr>
+</table>
+
+<h1>CSS empty-cells Property</h1>
+<p>The <b class="property">empty-cells</b> property sets <b>whether or not to display borders on empty cells in
+    a table</b>.</p>
+<p>There are four possible values for <b class="property">empty-cell</b>:</p>
+<ul>
+    <li><b>show</b>: display borders on empty cells (<ins>default</ins>)</li>
+    <li><b>hide</b>: hide borders on empty cells</li>
+    <li><b>initial</b>:	sets this property to its default value</li>
+    <li><b>inherit</b>:	inherits this property from its parent element</li>
+</ul>
+<p><strong>Note:</strong> This property has <b>no effect if border-collapse is <ins>"collapse"</ins></b>.</p>
+<h2>empty-cells: hide:</h2>
+<table id="hide_border">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>empty-cells: show (default):</h2>
+<table id="show_border">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td></td>
+  </tr>
+</table>
+
+<h1>CSS table-layout Property</h1>
+<p>The <b class="property">table-layout</b> property <b>defines the algorithm used to lay out table cells, rows, and
+    columns</b>.</p>
+<p><strong>Tip:</strong> The main benefit of table-layout: <b>fixed</b>; is that the table renders much faster.
+    On large tables, users will not see any part of the table until the browser has rendered the whole table. So,
+    if you use <b class="property">table-layout: fixed</b>, users will see the top of the table while the browser
+    loads and renders rest of the table. This gives the impression that the page loads a lot quicker!</p>
+<p>There are four possible values for <b class="property">table-layout</b>:</p>
+<ul>
+    <li><b>auto</b>: browsers use an <b>automatic table layout algorithm</b>. The column width is set <b>by the widest
+        unbreakable content</b> in the cells. The content will dictate the layout.</li>
+    <li><b>fixed</b>: sets a <b>fixed table layout algorithm</b>. The table and column widths are set <b>by the widths
+        of table and col or by the width of the first row of cells</b>. Cells in other rows do not affect column
+        widths. If no widths are present on the first row, the column widths are divided equally across the table,
+        regardless of content inside the cells</li>
+    <li><b>initial</b>: sets this property to its default value.</li>
+    <li><b>inherit</b>: inherits this property from its parent element.</li>
+</ul>
+<h2>table-layout: auto; width: 180px:</h2>
+<table class="a">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: fixed; width: 180px:</h2>
+<table class="b">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: auto; width: 100%:</h2>
+<table class="c">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: fixed; width: 100%:</h2>
+<table class="d">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+</body>
+</html>
