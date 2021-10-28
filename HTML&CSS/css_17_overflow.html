@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, ul, div {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        div.visible {
+            background-color: #eee;
+            width: 300px;
+            height: 120px;
+            border: 1px dotted black;
+            overflow: visible;
+            }
+        div.hidden {
+            background-color: #eee;
+            width: 300px;
+            height: 120px;
+            border: 1px dotted black;
+            overflow: hidden;
+        }
+        div.scroll {
+            background-color: #eee;
+            width: 300px;
+            height: 120px;
+            border: 1px dotted black;
+            overflow: scroll;
+            }
+        div.auto {
+            background-color: #eee;
+            width: 300px;
+            height: 120px;
+            border: 1px dotted black;
+            overflow: auto;
+            }
+        div.xy {
+          background-color: #eee;
+          width: 300px;
+          height: 120px;
+          border: 1px dotted black;
+          overflow-x: hidden;
+          overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+<h1>CSS Overflow</h1>
+<p>The <b class="property">overflow</b> property <b>specifies whether to clip the content or to add scrollbars when
+    the content of an element is too big to fit in the specified area</b>.</p>
+
+<p>The <b class="property">overflow</b> property has the following values:</p>
+<ul>
+    <li><a href="#visible">visible</a>: the overflow is not clipped, the content renders
+        outside the element's box (<ins>default</ins>)</li>
+    <li><a href="hidden">hidden</a>: the overflow is clipped, and the rest of the content will be invisible</li>
+    <li><a href="scroll">scroll</a>: the overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+    <li><a href="auto">auto</a>: similar to scroll, but it adds scrollbars only when necessary
+</ul>
+<p><strong>Note:</strong> The <b class="property">overflow</b> property only works for block elements <b>with a
+    specified height</b>.</p>
+
+<h1 id="visible">overflow: visible</h1>
+<p>The <b class="property">overflow: visible</b> means that it is <b>not clipped and it renders outside
+    the element's box</b>:</p>
+<div class="visible">You can use the overflow property when you want to have better control of the layout.
+    The overflow property specifies what happens if content overflows an element's box.</div>
+
+<h1 id="hidden">overflow: hidden</h1>
+<p>With the <b class="property">overflow: hidden</b>, the <b>overflow is clipped</b>, and the <b>rest of the content is
+    hidden</b>:</p>
+<div class="hidden">You can use the overflow property when you want to have better control of the layout. The
+    overflow property specifies what happens if content overflows an element's box.</div>
+
+<h1 id="scroll">overflow: scroll</h1>
+<p>With the <b class="property">overflow: scroll</b>, the <b>overflow is clipped</b> and a <b>scrollbar is added to
+    scroll inside the box</b>. Note that this will add a scrollbar <i>both horizontally and vertically</i> (even if
+    you do not need it):</p>
+<div class="scroll">You can use the overflow property when you want to have better control of the layout. The
+    overflow property specifies what happens if content overflows an element's box.</div>
+
+<h1 id="auto">overflow: auto</h1>
+<p>The <b class="property">auto</b> value is similar to <b class="property">scroll</b>, but it <b>adds scrollbars only
+    when necessary</b>:</p>
+<div class="auto">You can use the overflow property when you want to have better control of the layout. The overflow
+    property specifies what happens if content overflows an element's box.</div>
+
+<h1>overflow-x and overflow-y</h1>
+<p>The <b class="property">overflow-x</b> and <b class="property">overflow-y</b> properties <b>specifies whether to
+    change the overflow of content just horizontally or vertically (or both)</b>:</p>
+<ul>
+    <li><b class="property">overflow-x</b>: specifies what to do with the <b>left/right edges</b> of the content.</li>
+    <li><b class="property">overflow-y</b>: specifies what to do with the <b>top/bottom edges</b> of the content.</li>
+</ul>
+<div class="xy">You can use the overflow property when you want to have better control of the layout. The overflow
+    property specifies what happens if content overflows an element's box.</div>
+
+</body>
+</html>
