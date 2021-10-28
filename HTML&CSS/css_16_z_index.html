@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z index</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, div {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            }
+        .container {
+              position: relative;
+            }
+        .black-box {
+              position: relative;
+              z-index: 1;
+              border: 2px solid black;
+              height: 100px;
+              margin: 30px;
+            }
+        .gray-box {
+              position: absolute;
+              z-index: 3; /* gray box will be above both green and black box */
+              background: lightgray;
+              height: 60px;
+              width: 70%;
+              left: 50px;
+              top: 50px;
+            }
+        .green-box {
+              position: absolute;
+              z-index: 2; /* green box will be above black box */
+              background: lightgreen;
+              width: 35%;
+              left: 270px;
+              top: -15px;
+              height: 100px;
+            }
+    </style>
+</head>
+
+<body>
+<h1>The Z index Property</h1>
+<p>When elements are positioned, they can overlap other elements. The <b class="property">z-index</b> property
+    <b>specifies the stack order of an element</b> (which element should be placed in front of, or behind, the others).</p>
+<p>An element can have a <b>positive or negative stack order</b>.</p>
+<p><strong>Note:</strong> <b class="property">z-index</b> only works on <b>positioned elements</b> (<ins>position:
+    absolute, position: relative, position: fixed, or position: sticky</ins>) and <b>flex items</b> (<ins>elements
+    that are direct children of display: flex elements</ins>)</p>.
+<h1>This is a heading</h1>
+<img src="w3schools.png" width="217.5" height="205.4">
+<p>Because the image has a z-index of -1, w3school image will be placed behind the text.</p>
+
+<h1>Z-index Example</h1>
+<p>An element with greater stack order is always above an element with a lower stack order.</p>
+<div class="container">
+  <div class="black-box">Black box one (z-index: 1)</div>
+  <div class="gray-box">Gray box two (z-index: 3)</div>
+  <div class="green-box">Green box three (z-index: 2)</div>
+</div>
+
+</body>
+</html>
