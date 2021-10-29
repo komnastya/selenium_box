@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float and clear</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.5vw;
+            }
+        p, div, pre, ul {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+       img.right {
+            float: right;
+            }
+       img.left {
+            float: left;
+            }
+       img.none {
+            float: none;
+            }
+       .div1 {
+          background: red;
+          float: left;
+          padding: 15px;
+            }
+       .div2 {
+          background: yellow;
+          float: left;
+          padding: 15px;
+            }
+       .div3 {
+          background: green;
+          float: left;
+          padding: 15px;
+            }
+       .div_float_left {
+          float: left;
+          padding: 10px;
+          border: 3px solid #73AD21;
+            }
+       .div_without_clear {
+          padding: 10px;
+          border: 3px solid red;
+            }
+       .div_with_clear {
+          padding: 10px;
+          border: 3px solid red;
+          clear: left;
+            }
+       .div4 {
+          border: 3px solid #4CAF50;
+          padding: 5px;
+            }
+       .clearfix {
+          overflow: auto;
+            }
+    </style>
+</head>
+
+<body>
+<h1>The float Property</h1>
+<p>The <b class="property">float</b> property is used for <b>positioning and formatting content</b> e.g. <b>let an
+    image float left to the text in a container</b>.</p>
+<p>The<b class="property">float</b> property can have one of the following values:</p>
+<ul>
+    <li><b class="property">left</b>:  the element floats to the <b>left of its container</b></li>
+    <li><b class="property">right</b>: the element floats to the <b>right of its container</b></li>
+    <li><b class="property">none</b>: the element <b>does not float</b> (will be <b>displayed just where it occurs in
+        the text</b> - <ins>default</ins></li>
+    <li><b class="property">inherit</b>: the element <b>inherits the float value of its parent</b></li>
+</ul>
+<p>In its simplest use, the float property can be used to wrap text around images.</p>
+
+<h2>The following example specifies that an image should float to the right in a text - <b class="property">
+    float:right</b>:</h2>
+<p  style="width:75%"><img src="mac.jpg" alt="Mac Book" style="width:300px;height:200px;margin-left:15px;" class="right">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+    vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+    odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+    eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+    Cras ac leo purus. Mauris quis diam velit.</p>
+
+<h2>The following example specifies that an image should float to the left in a text - <b class="property">
+    float:left</b>:</h2>
+<p  style="width:75%"><img src="mac.jpg" alt="Mac Book" style="width:300px;height:200px;margin-right:15px;" class="left">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+    vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+    odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+    eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+    Cras ac leo purus. Mauris quis diam velit.</p>
+<br><br><br>
+
+<h2>In the following example the image will be displayed just where it occurs in the text - <b class="property">
+    float: none</b>:</h2>
+<p  style="width:75%"><img src="programming.png" alt="Mac Book" style="width:300px;height:200px;margin-right:15px;"
+                           class="none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+    vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+    odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+    ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui
+    eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+    Cras ac leo purus. Mauris quis diam velit.</p>
+
+<h1>Float Next To Each Other</h1>
+<p>Normally <<b style="color:Blue;">div</b>> elements will be <b>displayed on top of each other</b>. However, if we use
+    <b class="property">float: left</b> we can <b>let elements float next to each other</b>:</p>
+<div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<div class="div3">Div 3</div><br><br><br>
+
+<h1>The clear Property</h1>
+<p>When we use the <b class="property">float</b> property, and we want the next element below (not on right or
+    left), we will have to use the <b class="property;">clear</b> property.</p>
+<p>The <b class="property">clear</b> property <b>specifies what should happen with the element that is next to a
+    floating element</b>.</p>
+<p>The <b class="property">clear</b> property can have one of the following <b>values</b>:</p>
+<ul>
+    <li><b>none</b>: the element is <i>not pushed below left or right floated elements (<ins>default</ins>)</i></li>
+    <li><b>left</b>: the element is <i>pushed below left floated elements</i></li>
+    <li><b>right</b>: the element is <i>pushed below right floated elements</i></li>
+    <li><b>both</b>: the element is <i>pushed below both left and right floated elements</i></li>
+    <li><b>inherit</b>: the element <i>inherits the clear value from its parent</i></li>
+</ul>
+<p>When <b>clearing floats</b>, you should <b>match the clear to the float</b>: If an element is floated to the left,
+    then you should clear to the left. Your floated element will continue to float, but the cleared element will
+    appear below it on the web page.</p>
+
+<h2>Without clear</h2>
+<div class="div_float_left">div1</div>
+<div class="div_without_clear">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to
+    the left, the text in div2 flows around div1.</div>
+<br><br>
+
+<h2>With clear</h2>
+<div class="div_float_left">div3</div>
+<div class="div_with_clear">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left"
+    clears elements floated to the left. You can also clear "right" and "both".</div>
+
+<h1>The clearfix Hack</h1>
+<p>If a floated element is taller than the containing element, it will "overflow" outside of its container. We can
+    then add a <b class="property">clearfix</b> hack to solve this problem.</p>
+
+<h2>Without Clearfix</h2>
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside
+    of its container:</p>
+
+<div class="div4">
+  <img src="mac.jpg" alt="Mac Book" style="width:300px;height:200px;margin-left:15px;" class="right">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<h2 style="clear:right">With Clearfix</h2>
+<p>We can fix this by adding a <b class="property">clearfix class with overflow: auto;</b> to the containing element:</p>
+<div class="clearfix div4">
+  <img src="mac.jpg" alt="Mac Book" style="width:300px;height:200px;margin-left:15px;" class="left">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<p>The <b class="property">overflow: auto</b> clearfix works well as long as you are able to keep control of your
+    margins and padding (else you might see scrollbars). The <b>new, modern clearfix hack</b> however, is safer to use,
+    and the following code is used for most webpages:</p>
+<pre>
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+    }</pre>
+
+</body>
+</html>

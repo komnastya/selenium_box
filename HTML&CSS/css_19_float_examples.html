@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLoat examples</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.5vw;
+            }
+        p, div, pre {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        * {
+            box-sizing: border-box;
+            }
+        .box, box2 {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            }
+         .box2 {
+            height: 300px;
+            }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: green;
+            }
+        .box3 {
+            background-color: #f1f1f1;
+            width: 50%;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            }
+    </style>
+</head>
+<body>
+<h2>What is box-sizing?</h2>
+<p style="width:50%">You can easily create three floating boxes side by side. However, when you add something that
+    enlarges the width of each box (e.g. padding or borders), the box will break. The <b class="property">box-sizing</b>
+    property allows us to include the padding and border in the box's total width (and height), making sure that the
+    padding stays inside of the box and that it does not break.</p>
+<pre>
+    * {
+        box-sizing: border-box;
+        }
+</pre>
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow.
+We also use the box-sizing property to make sure that the box doesn't break due to extra padding.</p>
+
+<h2>Equal Height Boxes</h2>
+<p>Floating boxes with equal heights:</p>
+
+<div class="clearfix">
+  <div class="box box2" style="background-color:#bbb">
+  <h2>Box 1</h2>
+  <p style="font-size:20px;">Some content, some content, some content</p>
+  </div>
+  <div class="box box2" style="background-color:#ccc">
+  <h2>Box 2</h2>
+  <p style="font-size:20px;">Some content, some content, some content</p>
+  <p style="font-size:20px;">Some content, some content, some content</p>
+  <p style="font-size:20px;">Some content, some content, some content</p>
+  </div>
+</div>
+
+<p>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the
+    same amount of content in them, but that's not always the case. If you try the example above on a mobile phone
+    (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
+<p>This is where <b class="property">CSS3 Flexbox</b> comes in handy - as it can automatically stretch boxes to be as
+    long as the longest box.</p>
+
+<h1>Flexible Boxes</h1>
+<p>You should write flex property for the container of two boxes:</p>
+<pre>{
+  display: flex;
+  flex-wrap: nowrap;
+}
+</pre>
+<div class="flex-container">
+  <div class="box3">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+  <div class="box3">Box 2 - My height will follow Box 1.</div>
+</div>
+
+<p>Try to resize the browser window to see the flexible layout.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+
+</body>
+</html>
