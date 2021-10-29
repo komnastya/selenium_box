@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo classes</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, div {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        div.hover {
+            background-color: DarkCyan;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            }
+        div.hover:hover {
+            background-color: DarkGreen;
+            }
+        div.tooltip:hover p {
+             display: block;
+            }
+        p.tooltip {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+            }
+        p:first-child {
+            color: blue;
+            }
+        p i:first-child {
+            color: blue;
+            }
+        q:lang(no) {
+            quotes: "~" "~";
+            }
+    </style>
+</head>
+<body>
+<h1>Pseudo classes</h1>
+<p>A pseudo-class is used to define a special state of an element.</p>
+<p>An example of using the <b class="property">:hover</b> pseudo-class on a <b style="color:Blue">div</b>> element:</p>
+<div class="hover">Mouse Over Me</div>
+
+<h1>Simple Tooltip Hover</h1>
+<p>Hover over a <b style="color:Blue;">div</b>> element to show a <<b style="color:Blue;">p</b>> element (like a tooltip):
+<div class="tooltip">Hover over this div element to show the p element
+  <p class="tooltip">Tada! Here I am!</p>
+</div>
+<h1>The :first-child Pseudo-class</h1>
+<p>The <b class="property">:first-child</b> pseudo-class matches a <b>specified element that is the first child of
+    another element</b>.</p>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<h1>The :lang Pseudo-class</h1>
+<p>The <b class="property">:lang</b> pseudo-class allows you to <b>define special rules for different languages</b>.</p>
+<p>In the example below, <b class="property">:lang</b> defines the quotation marks for <<b style="color:Blue">q</b>>
+    elements with lang="no":</p>
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+</body>
+</html>
