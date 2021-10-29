@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline block</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, div, li {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        span.a {
+            display: inline; /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+        span.b {
+           display: inline-block;
+           width: 100px;
+           height: 100px;
+           padding: 5px;
+           border: 1px solid blue;
+           background-color: yellow;
+        }
+        span.c {
+           display: block;
+           width: 100px;
+           height: 100px;
+           padding: 5px;
+           border: 1px solid blue;
+           background-color: yellow;
+            }
+        .nav {
+           background-color: yellow;
+           list-style-type: none;
+           text-align: center;
+           margin: 0;
+           padding: 0;
+            }
+        .nav li {
+           display: inline-block;
+           font-size: 20px;
+           padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>The display: inline-block Value</h1>
+<p>Compared to <b class="property">display: inline</b>, the major difference is that <b class="property">display:
+    inline-block</b> allows to <b>set a width and height on the element</b>.</p>
+<p>Also, with <b class="property">display: inline-block</b>, the <b>top and bottom margins/paddings are respected</b>,
+    but with <b class="property">display: inline</b> <b>they are not</b>.</p>
+<p>Compared to <b class="property">display: block</b>, the major difference is that <b class="property">display:
+    inline-block</b> does <b>not add a line-break</b> after the element, so the element can sit next to other elements.</p>
+<p>The following example shows the different behavior of <b class="property">display: inline</b>,
+    <b class="property">display: inline-block</b> and <b class="property">display: block</b>.</p>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat.
+    Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet
+    facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat.
+    Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet
+    facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat.
+    Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis.
+    Nullam cursus fermentum velit sed laoreet. </div>
+
+<h1>Using inline-block to Create Navigation Links</h1>
+<p>One common use for <b class="property">display: inline-block</b> is to display list items horizontally instead of
+    vertically. The following example creates horizontal navigation links.</p>
+<p>By default, list items are displayed vertically. In this example we use <b class="property">display: inline-block</b>
+    to display them horizontally (side by side).</p>
+<p><b>Note:</b> If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+<ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#clients">Our Clients</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+
+</body>
+</html>
