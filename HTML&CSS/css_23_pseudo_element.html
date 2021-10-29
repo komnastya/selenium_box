@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo elements</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.7vw;
+            text-align:center;
+            }
+        p, ul, ol {font-size: 1.2vw;}
+        b.property {
+            color:Crimson;
+            }
+        p.first_line::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+            }
+        p.first_letter::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+            }
+        h2.before::before {
+            text-align: center;
+            content: url(sqpurple.gif);
+            }
+        h2.after::after {
+            text-align: center;
+            content: url(sqpurple.gif);
+            }
+        ::marker {
+            color: red;
+            font-size: 23px;
+            }
+        ::selection {
+            color: red;
+            background: yellow;
+            }
+    </style>
+</head>
+
+<body>
+<h1>Pseudo elements</h1>
+<ul>
+    <li><a href="#firtstline">::first:line</a></li>
+    <li><a href="#firtstletter">::first:letter</a></li>
+    <li><a href="#before">::before</a></li>
+    <li><a href="#after">::after</a></li>
+    <li><a href="#marker">::marker</a></li>
+    <li><a href="#selection">::selection</a></li>
+</ul>
+
+<p>A CSS <b class="property">pseudo-element</b> is used to <b>style specified parts of an element</b>.<br>
+For example, it is used to <i>style the first letter, or line of an element, insert content before, or after,
+        the content of an element</i>.</p>
+
+<h1 id="fitstline">The ::firstline Pseudo-element</h1>
+<p class="first_line">You can use the ::first-line pseudo-element to add a special effect to the first line of a
+    text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and
+    more, and more, and more, and more.</p>
+<p><b>Notice the double colon notation</b> - <b class="property">::first-line</b> versus
+    <b class="property">:first-line</b>. The <b>double colon</b> replaced the <b>single-colon</b> notation
+    for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between <b>pseudo-classes</b> and
+    <b>pseudo-elements</b>.</p>
+
+<h1 id="fitstletter">The ::firstletter Pseudo-element</h1>
+<p class="first_letter">You can use the <b class="property">::first-letter</b> pseudo-element to add a special effect
+    to the first character of a text!</p>
+
+<h1 id="before">The ::before Pseudo-element</h1>
+<p>The <b class="property">::before</b> <b>pseudo-element</b> can be used to <b>insert some content before the
+    content of an element.</b>
+<p>The following example inserts an image before the content of <ins>heading</ins> element:</p>
+
+<h2 class="before">This is a heading with picture before it</h2>
+
+<h1 id="after">The ::after Pseudo-element</h1>
+<p>The <b class="property">::after</b> pseudo-element can be used to <b>insert some content after the content of
+    an element</b>.</p>
+<p>The following example inserts an image after the content of each <ins>heading</ins> element:
+
+<h2 class="after">This is a heading with picture after it</h2>
+
+<h1 id="marker">The ::marker Pseudo-element</h1>
+<p>The <b class="property">::marker</b> pseudo-element <b>selects the markers of list items</b>.</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<h1 id="selection">The ::selection Pseudo-element</h1>
+<p>The <b class="property">::selection</b> pseudo-element <b>matches the portion of an element that is selected by a
+    user</b>.</p>
+<p>The following CSS properties can be applied to <b class="property">::selection</b>: <b class="property">color</b>,
+    <b class="property">background</b>, <b class="property">cursor</b>, and <b class="property">outline</b>.</p>
+<p>This example makes the selected text red on a yellow background</p>
+
+</body>
+</html>
