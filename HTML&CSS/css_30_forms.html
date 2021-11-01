@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+       h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+       h2 {
+            font-size: 1.7vw;
+            text-align:center;
+            }
+       p, div, form, input, pre, select {
+            font-size: 1.4vw;
+            }
+       b.property {
+            color:Crimson;
+            }
+       input[type=text], select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: width 0.4s ease-in-out;
+            }
+       input[type=text]:focus {
+            border: 3px solid #555;
+            background-color:snow;
+            }
+       input[type=text]:focus {
+            width: 50%;
+            }
+       textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+            }
+       select {
+            width: 50%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+            }
+    </style>
+</head>
+<body>
+<h1>Using CSS to style an HTML Form</h1>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+    <br>
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+</form>
+
+<p>By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can
+    remove this behavior by adding outline: none; to the input.
+    <br>Use the <b class="property">:focus</b> selector to <b>do something with the input field when it gets focus</b>.</p>
+
+<p>Use the CSS <b class="property">transition</b> property to animate the width of the search input when it gets focus.</p>
+
+<p><strong>Tip:</strong> Use the <b class="property">resize</b> property to prevent textareas from being
+    resized (disable the "grabber" in the bottom right corner):</p>
+
+<form>
+  <textarea>Some text...</textarea>
+</form>
+
+<h2>Styling a select menu</h2>
+
+<form>
+  <select id="country" name="country">
+  <option value="au">Australia</option>
+  <option value="ca">Canada</option>
+  <option value="usa">USA</option>
+  </select>
+</form>
+
+
+</body>
+</html>
