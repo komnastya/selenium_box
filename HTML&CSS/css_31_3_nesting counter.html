@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nesting counter</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.7vw;
+            text-align:center;
+            }
+        p, ol, pre {
+            font-size: 1.4vw
+            }
+        b {
+            color:Crimson;
+            }
+        ol {
+          counter-reset: section;
+          list-style-type: none;
+            }
+        li::before {
+          counter-increment: section;
+          content: counters(section,".") " ";
+            }
+    </style>
+</head>
+<body>
+
+<p>A counter can also be useful to make outlined lists because <b>a new instance of a counter is automatically
+    created in child elements</b>. Here we use the <b>counters()</b> function to insert a string between different
+    levels of nested counters:</p>
+<pre>
+        ol {
+          counter-reset: section;
+          list-style-type: none;
+            }
+        li::before {
+          counter-increment: section;
+          content: counters(section,".") " ";
+            }
+</pre>
+<ol>
+  <li>item</li>
+  <li>item
+  <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    </li>
+    <li>item</li>
+  </ol>
+  </li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<ol>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+
+</body>
+</html>

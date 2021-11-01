@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counters</title>
+    <style>
+        body {
+          counter-reset: section;
+            }
+        h2::before {
+          counter-increment: section;
+          content: "Section " counter(section) ": ";
+            }
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.7vw;
+            text-align:center;
+            }
+        p, ul, pre {
+            font-size: 1.4vw
+            }
+        b.property {
+            color:Crimson;
+            }
+    </style>
+</head>
+<body>
+<h1>Counters</h1>
+<h1>Automatic Numbering With Counters</h1>
+<p>CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many
+    times they are used).</p>
+<p>To work with CSS counters we will use the following properties:</p>
+<ul>
+    <li><b class="property">counter-reset</b> creates or resets a counter</li>
+    <li><b class="property">counter-increment</b> increments a counter value</li>
+    <li><b class="property">content</b> inserts generated content</li>
+    <li><b class="property">counter()</b> or <b class="property">counters()</b> functions add the value of a counter
+        to an element</li>
+</ul>
+<p>To use a CSS counter, it must first be created with counter-reset.</p>
+<p>The following example creates a counter for the page (in the body selector), then increments the counter value
+    for each <<b style="color:Blue;">h2</b>> element and adds "Section "value of the counter": to the beginning of
+    each <<b style="color:Blue;">h2</b>> element:
+<pre>
+        body {
+          counter-reset: section;
+            }
+        h2::before {
+          counter-increment: section;
+          content: "Section " counter(section) ": ";
+            }
+</pre>
+
+<h1>Using CSS Counters</h1>
+
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Python Tutorial</h2>
+<h2>SQL Tutorial</h2>
+
+</body>
+</html>

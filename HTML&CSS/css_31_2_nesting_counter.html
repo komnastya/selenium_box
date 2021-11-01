@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nesting counter</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        h2 {
+            font-size: 1.7vw;
+            text-align:center;
+            }
+        p, ol {
+            font-size: 1.4vw
+            }
+        b {
+            color:Crimson;
+            }
+        body {
+            counter-reset: section;
+            }
+        h1 {
+          counter-reset: subsection;
+           }
+        h1::before {
+          counter-increment: section;
+          content: "Section " counter(section) ". ";
+           }
+        h2::before {
+          counter-increment: subsection;
+          content: counter(section) "." counter(subsection) " ";
+            }
+        ol {
+          counter-reset: section;
+          list-style-type: none;
+            }
+        li::before {
+          counter-increment: section;
+          content: counters(section,".") " ";
+            }
+    </style>
+</head>
+<body>
+<h1>Nesting Counters</h1>
+<p>The following example creates one counter for the page (section) and one counter for each h2 element (subsection).
+    The <b>"section"</b> counter will be counted for each <b>h1</b> element with <b><"Section "value
+        of the section counter>"</b>, and the <b>"subsection"</b> counter will be counted for each h2
+    element with <b><"value of the section counter.value of the subsection counter"></b>:</p>
+<h1>HTML/CSS Tutorials</h1>
+<h2>HTML</h2>
+<h2>CSS</h2>
+<h2>Bootstrap</h2>
+<h2>W3.CSS</h2>
+
+<h1>Scripting Tutorials</h1>
+<h2>JavaScript</h2>
+<h2>jQuery</h2>
+<h2>React</h2>
+
+<h1>Programming Tutorials</h1>
+<h2>Python</h2>
+<h2>Java</h2>
+<h2>C++</h2>
+
+</body>
+</html>
