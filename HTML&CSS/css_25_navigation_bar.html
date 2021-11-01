@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+  <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            left-margin: 25%;
+            }
+        h2 {
+            font-size: 1.7vw;
+            text-align:center;
+            left-margin: 25%;
+            }
+        h3 {
+            font-size: 1.4vw;
+            text-align:center;
+            left-margin: 25%;
+            }
+        p, ul {
+            font-size: 1.4vw
+            }
+        b.property {
+            color:Crimson;
+            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+           }
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            }
+        /* Change the link color on hover */
+         li a:hover {
+             background-color: #555;
+             color: white;
+            }
+         .active {
+             background-color: #04AA6D;
+             color: white;
+            }
+         p, h2, h3 {
+             margin-left: 25%;
+             padding: 10px;
+             }
+  </style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h1>Navigation Bar = List of links.</h1>
+<p>A navigation bar is basically a list of links, so using the <<b style="color:Blue;">ul</b>> and
+  <<b style="color:Blue;">li</b>> elements makes perfect sense, the bullets should be removed from the list and
+  the margins and padding should be changed.</p>
+<p><b class="property">display: block;</b> displays the links as block elements <b>makes the whole link area clickable</b>
+  (not just the text), and it <b>allows us to specify the width</b> (and padding, margin, height, etc. if you want)</p>
+
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this p element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this p.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+
+</body>
+</html>
