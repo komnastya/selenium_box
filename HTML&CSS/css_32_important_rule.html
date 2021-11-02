@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Impoirtant rule</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, pre {
+            font-size: 1.4vw
+            }
+        b.important {
+            color:Crimson;
+            }
+        .button {
+          background-color: #8c8c8c;
+          color: white;
+          padding: 5px;
+          border: 1px solid black;
+            }
+        .myDiv a {
+          color: red;
+          background-color: yellow;
+            }
+        .important_button {
+          background-color: #8c8c8c !important;
+          color: white !important;
+          padding: 5px !important;
+          border: 1px solid black !important;
+            }
+        .red {
+          color: red;
+          }
+</style>
+</head>
+
+<body>
+<h1>The !important Rule</h1>
+<h2>What is !important?</h2>
+<p>The <b class="important">!important</b> rule in CSS is used to <b>add more importance to a property/value than
+    normal</b>.</p>
+<p>In fact, if you use the <b class="important">!important</b> rule, it will <b>override <ins>ALL</ins> previous
+    styling rules for that specific property on that element</b>!</p>
+<p>The only way to override an <b class="important">!important</b> rule is to include another
+    <b class="important">!important</b> rule on a declaration with the same (or higher) specificity in the source
+    code - and here the problem starts!</p>
+<p>One way to use <b class="important">!important</b> is if you have to override a style that cannot be
+    overridden in any other way. Assume you want a special look for all buttons on a page. Here, buttons are
+    styled with a gray background color, white text, and some padding and border:</p>
+<pre>
+        .button {
+          background-color: #8c8c8c;
+          color: white;
+          padding: 5px;
+          border: 1px solid black;
+        }
+</pre>
+
+<p>Standard button: <a class="button" href="https://www.w3schools.com/html/default.asp">CSS Tutorial</a></p>
+<p>Standard button: <a class="button" href="https://www.w3schools.com/css/default.asp">HTML Tutorial</a></p>
+
+<p>The look of a button can sometimes change if we put it inside another element with higher specificity, and
+    the properties get in conflict. Here is an example of this:</p>
+<pre>
+    #myDiv a {
+      color: red;
+      background-color: yellow;
+    }
+</pre>
+
+<div class="myDiv">
+<p>A link text inside myDiv: <a href="/html/">HTML Tutorial</a></p>
+<p>A link button inside myDiv: <a href="/html/" class="button">HTML Tutorial</a></p>
+</div>
+
+<p>To "force" all buttons to have the same look, no matter what, we can add the <b class="important">!important</b>
+    rule to the properties of the button, like this:</p>
+<pre>
+    .button {
+    background-color: #8c8c8c <b class="red">!important</b>;
+      color: white <b class="red">!important</b>;
+      padding: 5px <b class="red">!important</b>;
+      border: 1px solid black <b class="red">!important</b>;
+    }
+</pre>
+<p>Standard button: <a class="button" href="default.asp">CSS Tutorial</a></p>
+
+<div class="myDiv">
+<p>A link text inside myDiv: <a href="/html/">HTML Tutorial</a></p>
+<p>A link button inside myDiv: <a href="/html/" class="important_button">HTML Tutorial</a></p>
+</div>
+
+</body>
+</html>
