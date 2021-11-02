@@ -1,0 +1,47 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.8vw;
+    text-align:center;
+    }
+p, div {
+    font-size: 1.2vw;
+    }
+b.keyword {
+    color:Crimson;
+    }
+.background {
+  background-image: url("paper.gif");
+}
+div.ex1 {
+  background-color: lightgreen;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 0 50px;
+    }
+div.ex2 {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 0 50px;
+    }
+.div1 {
+  color: MidnightBlue;
+  border: 10px solid currentcolor;
+    }
+div.bodycolorisgreen {
+  color: green;
+    }
+p.colorlikebody {
+  box-shadow: 0px 0px 15px currentcolor;
+  border: 5px solid currentcolor;
+  padding: 15px;
+    }
+div.inherit {
+  border: 2px solid red;
+    }
+span.inherit {
+  border: inherit;
+    }
