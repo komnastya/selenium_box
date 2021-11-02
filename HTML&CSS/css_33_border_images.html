@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border Images</title>
+    <style>
+        h1 {
+            font-size: 2vw;
+            text-align:center;
+            }
+        p, ul {
+            font-size: 1.4vw
+            }
+        b.property {
+            color:Crimson;
+            }
+        #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 30 round;
+            }
+        #borderimg_stretch {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 30 stretch;
+            }
+        #borderimg1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 50 round;
+            }
+        #borderimg2 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 20% round;
+            }
+        #borderimg3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 30% round;
+            }
+        #borderimg4 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 20% stretch;
+            }
+        #borderimg5 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(border.png) 30% stretch;
+            }
+    </style>
+</head>
+
+<body>
+<h1>CSS border-image Property</h1>
+<p>The CSS <b style="property">border-image</b> property allows you to <b>specify an image to be used instead of
+    the normal border around an element</b>.</p>
+<p>The property has three parts:</p>
+<ul>
+    <li>The image to use as the border</li>
+    <li>Where to slice the image</li>
+    <li>Define whether the middle sections should be repeated or stretched</li>
+</ul>
+
+<p>The <b class="property">border-image</b> property <b>takes the image and slices it into nine sections</b>, like a
+    tic-tac-toe board. It then <b>places the corners at the corners, and the middle sections are repeated or stretched
+        as you specify</b>.</p>
+<p><strong>Note:</strong> For <b class="property">border-image</b> to work, the element also needs the border
+    <b class="property">property</b> set!</p>
+
+<p>Here is the original image:</p><img src="border.png">
+
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+<p>Here, the middle sections of the image are stretched to create the border:</p>
+<p id="borderimg_stretch">border-image: url(border.png) 30 stretch;</p>
+
+<p><strong>Tip:</strong> The <b class="property">border-image</b> property is actually a shorthand property for the
+    <b class="property">border-image-source</b>, <b class="property">border-image-slice</b>,
+    <b class="property">border-image-width</b>, <b class="property">border-image-outset</b> and
+    <b class="property">border-image-repeat</b> properties.</p>
+
+<p>Different slice values completely changes the look of the border:</p>
+<p id="borderimg1">border-image: url(border.png) 50 round;</p>
+<p id="borderimg2">border-image: url(border.png) 20% round;</p>
+<p id="borderimg3">border-image: url(border.png) 30% round;</p>
+<p id="borderimg4">border-image: url(border.png) 20% stretch;</p>
+<p id="borderimg5">border-image: url(border.png) 30% stretch;</p>
+
+</body>
+</html>
