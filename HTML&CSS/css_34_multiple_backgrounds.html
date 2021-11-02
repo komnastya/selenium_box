@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple backgrounds</title>
+    <link rel="stylesheet" href="style34.css">
+</head>
+
+<body>
+<h1>CSS Multiple Backgrounds</h1>
+<p>CSS allows you to add multiple background images for an element, through the <b class="property">background-image
+    property</b>.</p>
+<p>The different background images are <b>separated by commas</b>, and the images <b>are stacked on top of each other</b>,
+    where the first image is closest to the viewer.</p>
+
+<p>The following div element has two background images:</p>
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      commodo consequat.</p>
+</div>
+
+<p>Multiple background images can be specified using either the individual background properties (as above) or the
+    <b class="property">background shorthand property</b>.</p>
+<p>The following example uses the background shorthand property (same result as example above):</p>
+
+<pre>
+    #example1 {
+      background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+    }
+</pre>
+
+<h1>CSS Background Size</h1>
+<p>The CSS <b class="property">background-size property</b> allows you to <b>specify the size of background images</b>.</p>
+<p>The size can be specified <b>in lengths, percentages,</b> or by using one of the two keywords: <b>contain or cover</b>.</p>
+<p>The following example resizes a background image to much smaller than the original image (using pixels):</p>
+
+<p><b class="property">Resized</b> background-image:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+      ea commodo consequat.</p>
+</div>
+
+<p><b class="property">Original</b> size of the background-image:</p>
+<div id="example3">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      commodo consequat.</p>
+</div>
+
+<p>The two other possible values for background-size are <b class="property">contain</b> and <b class="property">cover</b>.
+<p>The <b class="property">contain</b> keyword <b>scales the background image to be as large as possible (but both its
+    width and its height must fit inside the content area)</b>. As such, depending on the proportions of the
+    background image and the background positioning area, there may be some areas of the background
+    which are not covered by the background image.</p>
+<p>The <b class="property">cover</b> keyword <b>scales the background image so that the content area is
+    completely covered by the background image (both its width and height are equal to or exceed the content area)</b>.
+    As such, some parts of the background image may not be visible in the background positioning area.</p>
+<p>The following example illustrates the use of contain and cover:</p>
+<h2>background-size: contain:</h2>
+<div id="example4">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h2>background-size: cover:</h2>
+<div id="example5">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h2>No background-size defined:</h2>
+<div id="example6">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<h1>CSS background-origin Property</h1>
+<p>The CSS <b class="property">background-origin</b> property <b>specifies where the background image is positioned</b>.</p>
+
+<p>The <b class="property">property</b> takes three different values:</p>
+<ul>
+    <li><b class="property">border-box</b>: the background image starts <b>from the upper left corner of the border</b>;</li>
+    <li><b class="property">padding-box</b>: the background image starts <b>from the upper left
+        corner of the padding edge</b> (<ins>default</ins>);</li>
+    <li><b class="property">content-box</b>: the background image starts <b>from the upper left corner of the content</b>;</li>
+</ul>
+
+<p><b class="property">background-origin: padding-box</b>:</p>
+<div id="example7">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p><b class="property">background-origin: border-box</b>:</p>
+<div id="example8">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p><b class="property">background-origin: content-box</b>:</p>
+<div id="example9">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      commodo consequat.</p>
+</div>
+
+<h1>CSS background-clip Property</h1>
+<p>The CSS <b class="property">background-clip</b>  property <b>specifies the painting area of the background</b>.</p>
+<p>The property takes three different values:</p>
+<ul>
+    <li><b class="property">border-box</b>: the background is painted <b>to the outside edge of the border</b>
+        (<ins>default</ins>);</li>
+    <li><b class="property">padding-box</b>: the background is painted <b>to the outside edge of the padding</b>;</li>
+    <li><b class="property">content-box</b>: the background is painted <b>within the content box</b>;</li>
+</ul>
+<p><b class="property">background-clip: border-box</b>:</p>
+<div id="example10">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+</div>
+<p><b class="property">background-clip: padding-box</b>:</p>
+<div id="example11">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+</div>
+<p><b class="property">background-clip: content-box</b>:</p>
+<div id="example12">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>
+</div>
+
+</body>
+</html>
