@@ -1,0 +1,86 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size:1.4vw;
+    }
+h3 {
+    font-size: 1.3vw;
+    text-align:center;
+    }
+p {font-size: 1.2vw;}
+b.property {
+    color:Crimson;
+    }
+p.text_dir {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+    }
+img.a {
+      vertical-align: baseline;
+    }
+img.b {
+      vertical-align: text-top;
+    }
+img.c {
+      vertical-align: text-bottom;
+    }
+img.d {
+      vertical-align: sub;
+    }
+img.e {
+      vertical-align: super;
+    }
+a {
+      text-decoration: none;
+    }
+p.overline {
+      text-decoration: overline;
+    }
+p.line_throught {
+      text-decoration: line-through;
+    }
+p.underline {
+      text-decoration: underline;
+    }
+p.uppercase {
+      text-transform: uppercase;
+    }
+p.lowercase {
+      text-transform: lowercase;
+    }
+p.capitalize {
+      text-transform: capitalize;
+    }
+p.indent {
+      text-indent: 50px;
+    }
+h2.spacing1 {
+      letter-spacing: 5px;
+    }
+h2.spacing2 {
+      letter-spacing: -2px;
+    }
+p.small {
+      line-height: 0.8;
+    }
+p.big {
+      line-height: 1.8;
+    }
+p.one {
+      word-spacing: 10px;
+    }
+p.two {
+      word-spacing: -2px;
+    }
+p.unwrapped {
+      white-space: nowrap;
+    }
+h2.shadow {
+      text-shadow: 2px 2px 5px red;
+    }
+h2.shadow2 {
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }

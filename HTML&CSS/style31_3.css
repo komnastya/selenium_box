@@ -1,0 +1,22 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.7vw;
+    text-align:center;
+    }
+p, ol, pre {
+    font-size: 1.4vw
+    }
+b {
+    color:Crimson;
+    }
+ol {
+  counter-reset: section;
+  list-style-type: none;
+    }
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+    }

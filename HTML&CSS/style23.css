@@ -1,0 +1,36 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.7vw;
+    text-align:center;
+    }
+p, ul, ol {font-size: 1.2vw;}
+b.property {
+    color:Crimson;
+    }
+p.first_line::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+    }
+p.first_letter::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    }
+h2.before::before {
+    text-align: center;
+    content: url(sqpurple.gif);
+    }
+h2.after::after {
+    text-align: center;
+    content: url(sqpurple.gif);
+    }
+::marker {
+    color: red;
+    font-size: 23px;
+    }
+::selection {
+    color: red;
+    background: yellow;
+    }

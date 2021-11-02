@@ -1,0 +1,14 @@
+h1 {
+    font-size: 2vw
+    }
+p, pre {
+    font-size: 1.4vw
+    }
+.colored_attribute {
+   color:Crimson;
+   }
+body {
+  background-image: url("gradient_bg.jpg");
+  background-repeat: repeat-x;
+   }
+b {background-color:LightGrey;}

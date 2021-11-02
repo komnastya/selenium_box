@@ -1,0 +1,21 @@
+h1 {
+    font-size: 2vw;
+    }
+p, pre {
+    font-size: 1.4vw;
+    width:55%;
+    }
+.colored_attribute {
+   color:Crimson;
+   }
+b.attribute {
+    background-color:LightGrey;
+    color:Crimson;
+    }
+body {
+  background-image: url("programming.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}

@@ -1,0 +1,40 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.5vw;
+    }
+p, div, pre {font-size: 1.2vw;}
+b.property {
+    color:Crimson;
+    }
+* {
+    box-sizing: border-box;
+    }
+.box, box2 {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    }
+ .box2 {
+    height: 300px;
+    }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: green;
+    }
+.box3 {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    }

@@ -1,0 +1,46 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.7vw;
+    text-align:center;
+    }
+p, a, div, form, input, pre {
+    font-size: 1.4vw;
+    }
+b.attribute {
+    color:Crimson;
+    }
+a[target] {
+    background-color: yellow;
+    }
+a[target="_blank"] {
+  background-color: Cyan;
+    }
+[title~="mac"] {
+  border: 15px solid yellow;
+    }
+[class|="top"] {
+  background: Lavender;
+    }
+[class^="topp"] {
+  background: LavenderBlush;
+    }
+[class$="test"] {
+  background: HoneyDew;
+    }
+[class*="tee"] {
+  background: LightGreen;
+    }
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: LightYellow;
+    }
+input[type="button"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+    }

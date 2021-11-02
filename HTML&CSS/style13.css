@@ -1,0 +1,23 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.7vw;
+    }
+p, ul, span, a {font-size: 1.2vw;}
+b.property {
+    color:Crimson;
+    }
+a.block, span {
+    display: block;
+    }
+li.inline {
+     display: inline;
+   }
+h1.display_none {
+     display: none;
+   }
+h1.hidden {
+    visibility: hidden;
+   }

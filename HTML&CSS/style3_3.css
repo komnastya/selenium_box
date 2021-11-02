@@ -1,0 +1,38 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;}
+p, ul, pre {font-size: 1.2vw;}
+b.attribute {
+    background-color:LightGrey;
+    color:Crimson;
+    }
+p.red {
+     border: 5px solid red;
+    }
+p.redleft {
+      border-left: 6px solid red;
+      background-color: lightgrey;
+    }
+p.redbottom {
+      border-bottom: 6px solid red;
+      background-color: lightgrey;
+    }
+p.normal {
+      border: 2px solid red;
+      padding: 5px;
+    }
+p.round1 {
+      border: 2px solid red;
+      border-radius: 5px;
+      padding: 5px;
+    }
+p.round2 {
+      border: 2px solid red;
+      border-radius: 8px;
+      padding: 5px;
+    }
+p.round3 {
+      border: 2px solid red;
+      border-radius: 12px;
+      padding: 5px;
+    }

@@ -1,0 +1,21 @@
+body {
+  counter-reset: section;
+    }
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+    }
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.7vw;
+    text-align:center;
+    }
+p, ul, pre {
+    font-size: 1.4vw
+    }
+b.property {
+    color:Crimson;
+    }

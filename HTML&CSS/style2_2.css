@@ -1,0 +1,19 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    background-color:AntiqueWhite;
+        }
+p {
+    font-size:1.4vw;
+    background-color:AntiqueWhite;
+        }
+body {
+    background-image:url("mac.jpg")
+        }
+pre {
+    background-color:AntiqueWhite;
+    font-size:1.2vw;
+    }
+.colored_attribute {
+    color:Crimson;
+        }

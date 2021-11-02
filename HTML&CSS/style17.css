@@ -1,0 +1,44 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+p, ul, div {font-size: 1.2vw;}
+b.property {
+    color:Crimson;
+    }
+div.visible {
+    background-color: #eee;
+    width: 300px;
+    height: 120px;
+    border: 1px dotted black;
+    overflow: visible;
+    }
+div.hidden {
+    background-color: #eee;
+    width: 300px;
+    height: 120px;
+    border: 1px dotted black;
+    overflow: hidden;
+}
+div.scroll {
+    background-color: #eee;
+    width: 300px;
+    height: 120px;
+    border: 1px dotted black;
+    overflow: scroll;
+    }
+div.auto {
+    background-color: #eee;
+    width: 300px;
+    height: 120px;
+    border: 1px dotted black;
+    overflow: auto;
+    }
+div.xy {
+  background-color: #eee;
+  width: 300px;
+  height: 120px;
+  border: 1px dotted black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

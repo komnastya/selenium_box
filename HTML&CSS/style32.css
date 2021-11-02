@@ -1,0 +1,29 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+p, pre {
+    font-size: 1.4vw
+    }
+b.important {
+    color:Crimson;
+    }
+.button {
+  background-color: #8c8c8c;
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+    }
+.myDiv a {
+  color: red;
+  background-color: yellow;
+    }
+.important_button {
+  background-color: #8c8c8c !important;
+  color: white !important;
+  padding: 5px !important;
+  border: 1px solid black !important;
+    }
+.red {
+  color: red;
+  }

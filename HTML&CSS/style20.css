@@ -1,0 +1,44 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+p, div, li {font-size: 1.2vw;}
+b.property {
+    color:Crimson;
+    }
+span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+span.b {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   padding: 5px;
+   border: 1px solid blue;
+   background-color: yellow;
+}
+span.c {
+   display: block;
+   width: 100px;
+   height: 100px;
+   padding: 5px;
+   border: 1px solid blue;
+   background-color: yellow;
+    }
+.nav {
+   background-color: yellow;
+   list-style-type: none;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+    }
+.nav li {
+   display: inline-block;
+   font-size: 20px;
+   padding: 20px;
+}

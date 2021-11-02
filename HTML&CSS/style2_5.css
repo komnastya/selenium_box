@@ -1,0 +1,15 @@
+h1 {
+    font-size: 2vw;
+    }
+p, pre, li {
+    font-size: 1.4vw;
+    width:55%;
+    }
+b.attribute {
+    background-color:LightGrey;
+    color:Crimson;
+    }
+body {
+  background: #ffffff url("programming.png") no-repeat right top;
+  margin-right: 200px;
+ }

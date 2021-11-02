@@ -3,31 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Display</title>
-    <style>
-        h1 {
-            font-size: 2vw;
-            text-align:center;
-            }
-        h2 {
-            font-size: 1.7vw;
-            }
-        p, ul, span, a {font-size: 1.2vw;}
-        b.property {
-            color:Crimson;
-            }
-        a, span {
-            display: block;
-            }
-        li {
-             display: inline;
-           }
-        h1.display_none {
-             display: none;
-           }
-        h1.hidden {
-            visibility: hidden;
-           }
-    </style>
+    <link rel="stylesheet" href="style13.css">
 </head>
 
 <body>
@@ -41,9 +17,9 @@ value is used for <<b style="color:Blue">script</b>> tag as default.</p>
 <p>As mentioned, every element has a default display value. However, you can override this using <b>inline|block</b>
     value for <b class="property">display</b> proprety:</p>
 <h2>Display links as block elements</h2>
-<a href="https://www.w3schools.com/html" target="_blank">HTML</a>
-<a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
-<a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+<a class="block" href="https://www.w3schools.com/html" target="_blank">HTML</a>
+<a class="block" href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+<a class="block" href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
 
 <h2>Display span elements as block elements</h2>
 <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span
@@ -51,9 +27,9 @@ value is used for <<b style="color:Blue">script</b>> tag as default.</p>
 
 <h2>Display a list of links as a horizontal menu:</h2>
 <ul>
-   <li><a href="https://www.w3schools.com/html" target="_blank">HTML</a></li>
-   <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
-   <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
+   <li class="inline"><a href="https://www.w3schools.com/html" target="_blank">HTML</a></li>
+   <li class="inline"><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+   <li class="inline"><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
 </ul>
 
 <h1>Hide an Element - display:none or visibility:hidden?</h1>

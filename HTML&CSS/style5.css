@@ -1,0 +1,59 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size:1.4vw
+    }
+p, ul {font-size: 1.2vw;}
+b.property {
+    background-color:LightGrey;
+    color:Crimson;
+    }
+p.pad70 {
+  padding: 70px;
+  border: 2px solid #4CAF50;
+}
+p.individual {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+p.four {
+  padding: 25px 50px 75px 100px;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+p.three {
+  padding: 25px 50px 75px;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+p.two {
+  padding: 25px 50px;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+p.one{
+    padding: 35px;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+p.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+p.ex2 {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+}
+p.ex3 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}

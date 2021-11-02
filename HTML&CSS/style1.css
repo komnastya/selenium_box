@@ -1,0 +1,10 @@
+h1 {font-size: 2vw; text-align:center;}
+h2 {font-size: 1.5vw;}
+p, pre {font-size: 1.2vw;}
+p.center {
+    text-align: center;
+    color: red;
+}
+p.large {
+  font-size: 300%;
+}
