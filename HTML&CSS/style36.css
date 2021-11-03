@@ -1,0 +1,151 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.8vw;
+    text-align:center;
+    }
+h3 {
+    font-size:1.5vw;
+   }
+p, ul, pre, div {
+    font-size: 1.2vw;
+    }
+b.property {
+    color:Crimson;
+    }
+div {
+    text-align:center;
+    }
+#grad1 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(IndianRed, Gold);
+    }
+#grad2 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, IndianRed, Gold);
+    }
+#grad3 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, IndianRed, Gold);
+    }
+#grad0 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, IndianRed, Gold);
+    }
+#grad90 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, IndianRed, Gold);
+    }
+#grad-90 {
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, IndianRed, Gold);
+    }
+#grad180 {
+    height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, IndianRed, Gold);
+    }
+#grad4 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, DarkOliveGreen, DarkSeaGreen, DeepSkyBlue);
+    }
+#grad5 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, LightCoral, LightPink, LightSalmon, LightGoldenRodYellow, LightGreen, LightSeaGreen,
+    LightSkyBlue);
+    }
+#grad6 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, DarkGreen, DarkOliveGreen, DarkKhaki, DarkSeaGreen, DarkTurquoise, DeepSkyBlue);
+  background-image: linear-gradient(red 10%, green 85%, blue 90%);
+    }
+#grad7 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(Pink 10%, Plum 50%, Purple 90%);
+    }
+#grad8 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,140,70,0), rgba(255,140,70,1));
+    }
+#grad9 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(DarkOliveGreen, DarkSeaGreen, DeepSkyBlue);
+    }
+#grad10 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(DarkOliveGreen 5%, DarkSeaGreen 15%, DeepSkyBlue 60%);
+    }
+#grad11 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+    }
+#grad12 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(circle, red, yellow, green);
+    }
+#grad13 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green);
+    }
+#grad14 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, black);
+    }
+#grad15 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+    }
+#grad16 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+    }
+#grad17 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+  border-radius: 50%;
+    }
+#grad18 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+  border-radius: 50%;
+    }
+#grad19 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(at 60% 45%, red, yellow, green);
+  border-radius: 50%;
+    }

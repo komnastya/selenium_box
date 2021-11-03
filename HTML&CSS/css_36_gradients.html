@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradients</title>
+    <link rel="stylesheet" href="style36.css">
+</head>
+
+<body>
+<h1>Gradients</h1>
+<p>CSS defines three types of gradients:</p>
+<ul>
+    <li><a href="#linear">Linear Gradients</a> (goes down/up/left/right/diagonally)</li>
+    <li><a href="#radial">Radial Gradients</a> (defined by their center)</li>
+    <li><a href="#conic">Conic Gradients</a> (rotated around a center point)</li>
+</ul>
+
+<h1 id="linear">Linear gradient</h1>
+<p>To create a linear gradient you must define at least <i>two color stops</i>. Color stops are the colors you want
+    to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with
+    the gradient effect. Syntax:</p>
+<pre>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</pre>
+
+<h2>Direction - <b class="property">Top to Bottom</b> (<b><ins>this is default</ins></b>)</h2>
+<p>The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow
+    - <b class="property">background-image: linear-gradient(red, yellow)</b>:</p>
+<div id="grad1"></div>
+
+<h2>Direction - <b class="property">Right To Left</b></h2>
+<p>The following example shows a linear gradient that starts from the left. It starts red, transitioning to yellow
+    - <b class="property">linear-gradient(to right, red , yellow)</b>:</p>
+<div id="grad2"></div>
+
+<h2>Direction - <b class="property">Diagonal</b></h2>
+<p>You can make a gradient diagonally by specifying <b>the the horizontal and vertical starting positions</b>.
+    The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red,
+    transitioning to yellow - <b class="property">background-image: linear-gradient(to bottom right, red,
+        yellow)</b>:</p>
+<div id="grad3"></div>
+
+<h2>Using Angles</h2>
+<p>If you want more control over the direction of the gradient, you can <b>define an angle, instead of the predefined
+    directions</b> (to bottom, to top, to right, to left, to bottom right, etc.). <br>
+<b>0deg</b> = <b class="property">"to top"</b>; <br>
+<b>90deg</b> = <b class="property">"to right"</b>; <br>
+<b>180deg</b> = <b class="property">"to bottom"</b>;</p>
+<p>The following example shows how to use angles on linear gradients - <b class="property">background-image:
+    linear-gradient(0/90/180/-90deg, red, yellow)</b>:</p>
+<div id="grad0"><b>0deg</b></div>
+<br>
+<div id="grad90"><b>90deg</b></div>
+<br>
+<div id="grad180"><b>180deg</b></div>
+<br>
+<div id="grad-90"><b>-90deg</b></div>
+
+<h2>Using Multiple Color Stops</h2>
+<p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+<p>The following example shows a linear gradient <b>(from top to bottom) with multiple color stops</b> -
+    <b class="property">linear-gradient(180deg, DarkOliveGreen, DarkSeaGreen, DeepSkyBlue)</b>:</p>
+<div id="grad4"><b>3 Color Stops (evenly spaced)</b></div><br><br>
+<div id="grad5"><b>7 Color Stops (evenly spaced)</b></div><br><br>
+<p>The following example shows a linear gradient <b> from top to bottom with NOT evenly spaced colors</b> -
+<b class="property">background-image: linear-gradient(Pink 10%, Plum 50%, Purple 90%)</b></p>
+<div id="grad7"><b>3 Color Stops (not evenly spaced)</b></div>
+
+<h2>Linear Gradient - Transparency</h2>
+<p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba()
+    function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency,
+    1 indicates full color (no transparency) - <b class="property">  background-image: linear-gradient(to right,
+        rgba(255,140,70,0), rgba(255,140,70,1));</b></p>
+<div id="grad8"></div>
+
+<h1 id="radial">Radial gradient</h1>
+<p>A radial gradient is defined by its center. To create a radial gradient you must also define at least
+    two color stops. Syntax:</p>
+<pre>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</pre>
+<p>By default, shape is ellipse, size is farthest-corner, and position is center.</p>
+
+<h2>Radial Gradient - Evenly Spaced Color Stops (this is default)</h2>
+<p>The following example shows a radial gradient with evenly spaced color stops - <b class="property">
+      background-image: radial-gradient(DarkOliveGreen, DarkSeaGreen, DeepSkyBlue)</b>:</p>
+<div id="grad9"><b>Radial 3 color gradient (default)</b></div>
+
+<h2>Radial Gradient - Differently Spaced Color Stops</h2>
+<p>The following example shows a radial gradient with differently spaced color stops - <b class="property">
+      background-image: radial-gradient(DarkOliveGreen 5%, DarkSeaGreen 15%, DeepSkyBlue 60%)</b>:</p>
+<div id="grad10"><b>Radial 3 color gradient spaced differently</b></div>
+
+<h2>Set Shape</h2>
+<p>The <b class="property">shape</b> parameter defines the shape. It can take the value <b class="property">circle</b>
+    or <b class="property">ellipse</b>. The default value is ellipse.</p>
+<p>The following example shows a radial gradient with the shape of a circle - <b class="property">
+      background-image: radial-gradient(circle, red, yellow, green);</b>:</p>
+<h3>Ellipse (this is default):</h3>
+<div id="grad11"></div>
+<h3><strong>Circle:</strong></h3>
+<div id="grad12"></div>
+
+<h1 id="conic">Conic Gradients</h1>
+<p>A conic gradient is a gradient with color transitions rotated around a center point. To create a conic gradient
+    you must define at least two colors. Syntax:</p>
+<pre>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</pre>
+<p>By default, <i>angle</i> is 0deg and <i>position</i> is center. If no degree is specified, the colors will be
+    spread equally around the center point.</p>
+
+<h2>Conic Gradient: Three Colors</h2>
+<p>The following example shows a conic gradient with three colors - <b class="property">background-image:
+    conic-gradient(red, yellow, green)</b>:</p>
+<h3>A conic gradient with three colors:</h3>
+<div id="grad13"></div>
+<h3>A conic gradient with 5 colors:</h3>
+<div id="grad14"></div>
+
+<h2>Conic Gradient: Three Colors and Degrees</h2>
+<p>The following example shows a conic gradient with three colors and a degree for each color -
+    <b class="property">background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg)</b>:</p>
+<div id="grad15"></div>
+
+<h2>Create Pie Charts</h2>
+<p>Just add border-radius: 50% to make the conic gradient look like a pie - <b class="property">background-image:
+    conic-gradient(red, yellow, green, blue, black)</b>:</p>
+<div id="grad16"></div>
+
+<p>Here is another pie chart with defined degrees for all the colors - <br>
+    <b class="property">background-image:
+    conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg); <br>
+        border-radius: 50%;</b></p>
+<div id="grad17"></div>
+
+<h2>Conic Gradient With Specified From Angle</h2>
+<p>The <b class="property">[from <i>angle</i>]</b> specifies an <b>angle that the entire conic gradient is
+    rotated by</b>.</p>
+<p>The following example shows a conic gradient with a from angle of 90deg - <b class="property">background-image:
+    conic-gradient(from 90deg, red, yellow, green);</b></p>
+<div id="grad18"></div>
+
+<h2>Conic Gradient With Specified Center Position</h2>
+<p>The <b class="property">[at position]</b> specifies <b>the center of the conic gradient</b>.</p>
+<p>The following example shows a conic gradient with a center position of 60% 45% -
+    <b class="property">background-image: conic-gradient(at 60% 45%, red, yellow, green);</b></p>
+<div id="grad19"></div>
+
+</body>
+</html>
