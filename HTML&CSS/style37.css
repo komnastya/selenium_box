@@ -1,0 +1,67 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.8vw;
+    text-align:center;
+    }
+p, ul, div {
+    font-size: 1.3vw;
+    }
+b.property {
+    color:Crimson;
+    }
+p.effect1 {
+    text-shadow: 2px 2px Salmon;
+    }
+p.effect2 {
+    text-shadow: 2px 2px 5px Salmon;
+    }
+p.effect3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    }
+p.effect4 {
+    text-shadow: 0 0 3px IndianRed;
+    }
+p.effect5 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    }
+p.effect6 {
+    color: Gold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+.div1 {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px grey;
+    }
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px grey;
+    }
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+    }
+div.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 50%;
+  font-size: 3vw;
+    }
+div.container {
+  padding: 10px;
+    }
+div.polaroid {
+  width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+    }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shadow effects</title>
+    <link rel="stylesheet" href="style37.css">
+</head>
+
+<body>
+<h1>Shadow effects</h1>
+<ul>
+    <li><a href="#text">text effects</a></li>
+    <li><a href="#box">box effects</a></li>
+</ul>
+
+<h2 id="text">CSS Text Shadow</h2>
+<p>The CSS <b class="property">text-shadow</b> property applies shadow to text. In its simplest use, you only
+    <i>specify the <ins>horizontal shadow (2px)</ins> and the <ins>vertical shadow (2px)</ins>, and <ins>add
+    color</ins></i>:</p>
+
+<p class="effect1"> This text shadow effect is <ins>2px 2px orange</ins></p>
+<p>Then, add a <i><ins>blur</ins></i> effect to the shadow:</p>
+<p class="effect2"> This text shadow effect is <ins>2px 2px 5px orange</ins></p>
+<p>The following example shows a white text with black shadow:</p>
+<p class="effect3"> This text shadow effect is <ins>2px 2px 4px black</ins></p>
+<p>The following example shows a red neon glow shadow:</p>
+<p class="effect4"> This text shadow effect is <ins>0 0 4px red</ins>
+
+<h3>Multiple Shadows</h3>
+<p>To add more than one shadow to the text, you can add a comma-separated list of shadows. The following example
+    shows a red and blue neon glow shadow:</p>
+<p class="effect5"> This text shadow effect is <ins>0 0 3px #FF0000, 0 0 5px #0000FF;</ins>
+<h3>You can also use the text-shadow property to create a plain border around some text (without shadows):</h3>
+<p class="effect6"> This text shadow effect is <ins>-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;</ins></p>
+
+<h2 id="box">CSS box-shadow Property</h2>
+<p>The CSS <b class="property">box-shadow</b> property applies shadow to elements. To add shadow to the box, you also
+should <i>specify the <ins>horizontal shadow (2px)</ins> and the <ins>vertical shadow (2px)</ins>, and <ins>add
+    color</ins></i>:</p>
+<div class="div1">This is a div element with grey box-shadow</div>
+
+<p>Next, add a blur effect to the shadow:</p>
+<div class="div2">This is a div element with grey box-shadow and blur effect</div>
+
+<h2>Cards</h2>
+<p>You can also use the box-shadow property to create paper-like cards</p>
+<div class="card">
+  <div class="header">
+    <h1>1</h1>
+  </div>
+  <div class="container">
+    <p>November 3, 2021</p>
+  </div>
+</div>
+
+<p>Or make card-picture:</p>
+<div class="polaroid">
+    <img src="coffeehouse.jpg" alt="Coffee" width=100%>
+    <div class="container">
+        Coffee
+    </div>
+</div>
+
+</body>
+</html>
