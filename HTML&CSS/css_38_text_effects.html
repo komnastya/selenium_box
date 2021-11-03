@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text effects</title>
+    <link rel="stylesheet" href="style38.css">
+</head>
+
+<body>
+<h1>Text effects</h1>
+<ul>
+    <li><b class="property"><a href="#overflow">text-overflow</a></b></li>
+    <li><b class="property"><a href="wordwrap">word-wrap</a></b></li>
+    <li><b class="property"><a href="#wordbreak">word-break</a></b></li>
+    <li><b class="property"><a href="#writingmode">writing-mode</a></b></li>
+    <li><b class="property"><a href="#justify">text-justify</a></b></li>
+</ul>
+
+<h1 id="overflow">CSS Text Overflow</h1>
+<p>The CSS <b class="property">text-overflow</b> property <b>specifies how overflowed content that is not
+displayed should be signaled to the user</b>.</p>
+<p>Some information about <b class="property">overflow</b> property is <a href="css_17_overflow.html"
+    target="_blank">here</a>.</p>
+
+<h3>Text can be clipped:</h3>
+<pre><b class="property">overflow: hidden;
+text-overflow: clip;</b></pre>
+<p class="clipped">This is some long text that will not fit in the box</p><br>
+
+<h3>...or it can be rendered as an ellipsis (...):</h3>
+<pre><b class="property">overflow: hidden;
+text-overflow: ellipsis;</b></pre>
+<p class="ellipsis">This is some long text that will not fit in the box</p>
+
+<p>The following example shows how you can display the overflowed content when hovering over the element:</p>
+<p class="clipped visible">This is some long text that will not fit in the box</p>
+<p class="ellipsis visible">This is some long text that will not fit in the box</p>
+
+<h1 id="wordwrap">CSS Word Wrapping</h1>
+<p>The CSS <b class="property">word-wrap</b> property <b>allows long words to be able to be broken and wrap onto
+    the next line</b>. The <b class="property">word-wrap</b> property <b>allows you to force the text to wrap -
+    even if it means splitting it in the middle of a word</b>:</p>
+<pre><b class="property">word-wrap: break-word;</b></pre>
+<p class="wrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word
+    will break and wrap to the next line.</p>
+
+<p><strong>WITHOUT</strong> <b class="property">word-wrap</b> property:</p>
+<p class="nowrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word
+    will NOT break and wrap to the next line.</p>
+
+<h1 id="wordbreak">CSS Word Breaking</h1>
+<p>The CSS <b class="property">word-break</b> property <b>specifies line breaking rules</b>.</p>
+<pre><b class="property">word-break: keep-all;</b></pre>
+<p class="keepall">This paragraph contains some text. This line will-break-at-hyphens.</p>
+<pre><b class="property">word-break: break-all;</b></pre>
+<p class="breakall">This paragraph contains some text. The lines will break at any character.</p>
+
+<h1 id="writingmode">CSS Writing Mode</h1>
+<p>The CSS <b class="property">writing-mode</b> property <b>specifies whether lines of text are laid out
+    <i>horizontally</i> or <i>vertically</i></b>.</p>
+<p>The following example shows some different writing modes:</p>
+
+<pre><b class="property">writing-mode: horizontal-tb:</b></pre>
+<p class="default_writting_mode">Some text with default writing-mode.</p>
+
+<pre><b class="property">span:writing-mode: vertical-rl:</b></pre>
+<p>Some text with a span element with a <span class="vertical">vertical-rl</span> writing-mode.</p>
+
+<pre><b class="property">p:writing-mode: vertical-rl:</b></pre>
+<p class="vertical">Some text with writing-mode: vertical-rl.</p>
+
+<h1 id="justify">CSS text-justify Property</h1>
+<p>The <b class="property">text-justify</b> property <b>specifies the justification method of text when
+    text-align: justify</b>.</p>
+<ul>
+    <li><b class="property">auto</b><b> the browser determines the justification algorithm</b>;</li>
+    <li><b class="property">inter-word</b> <b>increases/decreases the space between words (resize the browser
+        window to see how the value "justify" works)</b>:<br>
+        <div class="interword">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dictum fusce ut
+            placerat orci. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Aliquet lectus
+            proin nibh nisl. Scelerisque felis imperdiet proin fermentum. Feugiat nisl pretium fusce id velit ut
+            tortor. Nec nam aliquam sem et tortor. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus
+            est. Diam vel quam elementum pulvinar etiam non quam. Sit amet facilisis magna etiam. Sapien nec sagittis
+            aliquam malesuada bibendum arcu vitae.</div></li>
+    <li><b class="property">inter-character</b> <b>increases/decreases the space between characters:</b>
+        <div class="intercharacter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dictum fusce ut
+            placerat orci. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Aliquet lectus
+            proin nibh nisl. Scelerisque felis imperdiet proin fermentum. Feugiat nisl pretium fusce id velit ut
+            tortor. Nec nam aliquam sem et tortor. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus
+            est. Diam vel quam elementum pulvinar etiam non quam. Sit amet facilisis magna etiam. Sapien nec sagittis
+            aliquam malesuada bibendum arcu vitae.</div></li>
+    <li><b class="property">none</b><b>: disables justification methods</b>;</li>
+    <li><b class="property">initial</b><b>: sets this property to its default value</b>;</li>
+    <li><b class="property">inherit</b><b>: inherits this property from its parent element</b>.</li>
+</ul>
+
+</body>
+</html>

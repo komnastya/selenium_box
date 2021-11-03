@@ -1,0 +1,74 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h3 {
+    font-size: 1.5vw;
+    }
+p, ul, div {
+    font-size: 1.3vw;
+    }
+pre {
+    font-size:1.15vw;
+    }
+pre b.property {
+    color:FireBrick;
+    }
+b.property {
+    color:Crimson;
+    background-color: #f1f1f1;
+    }
+p.clipped {
+    white-space: nowrap;
+    width: 250px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+    }
+p.ellipsis {
+    white-space: nowrap;
+    width: 250px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+.visible:hover {
+    width: 50%;
+    overflow: visible;
+    }
+p.wrap {
+  width: 11em;
+  border: 1px solid #000000;
+  word-wrap: break-word;
+    }
+p.nowrap {
+  width: 11em;
+  border: 1px solid #000000;
+    }
+p.keepall {
+  width: 140px;
+  border: 1px solid #000000;
+  word-break: keep-all;
+    }
+p.breakall {
+  width: 140px;
+  border: 1px solid #000000;
+  word-break: break-all;
+    }
+p.default_writting_mode {
+  writing-mode: horizontal-tb;
+    }
+span.vertical {
+  writing-mode: vertical-rl;
+    }
+p.vertical {
+  writing-mode: vertical-rl;
+    }
+div.interword {
+  text-align: justify;
+  text-justify: inter-word;
+    }
+div.intercharacter {
+  text-align: justify;
+  text-justify: inter-word;
+    }
