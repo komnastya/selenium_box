@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Transforms</title>
+    <link rel="stylesheet" href="style39.css">
+</head>
+
+<body>
+<h1>CSS 2D Transforms</h1>
+<p>CSS <b class="method">transform</b> property <b>allows you to move, rotate, scale, and skew elements</b>.</p>
+<p>With the CSS transform property you can use the following 2D transformation methods:</p>
+<ul>
+    <li><a href="#translate">translate()</a></li>
+    <li><a href="#rotate">rotate()</a></li>
+    <li><a href="#scalex">scaleX()</a></li>
+    <li><a href="#scaley">scaleY()</a></li>
+    <li><a href="#scale">scale()</a></li>
+    <li><a href="#skewx">skewX()</a></li>
+    <li><a href="#skewy">skewY()</a></li>
+    <li><a href="#skew">skew()</a></li>
+    <li><a href="#matrix">matrix()</a></li>
+  </ul>
+
+<h2 id="translate">The translate() Method</h2>
+<p>The <b class="method">translate()</b> method <b>moves an element from its current position (according to the
+  parameters given for the X-axis and the Y-axis)</b>.</p>
+<p>The following example moves the <<span>div</span>> element 50 pixels to the right, and 100 pixels down from
+  its current position:</p>
+<pre>transform: <b>translate(50px, 100px)</b>;</pre>
+<div class="transform">
+    This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+<h2 id="rotate">The rotate() Method</h2>
+<p>The <b class="method">rotate()</b> method <b>rotates an element clockwise or counter-clockwise according to
+  a given degree</b>.</p>
+<p>The following example moves the <<span>div</span>> element clockwise with 20 degrees:</p>
+<pre>transform: <b>rotate(20deg);</b></pre>
+<div class="normal">
+    This a normal div element.
+</div>
+<div class="rotate">
+    This div element is rotated clockwise 20 degrees.
+</div>
+
+<p>Using <b>negative</b> values will rotate the element counter-clockwise. The following example rotates the
+  <<span>div</span>> element counter-clockwise with 20 degrees:</p>
+<pre>transform: <b>rotate(-20deg);</b></pre>
+
+<div class="counter_rotate">
+    This div element is rotated counter-clockwise with 20 degrees.
+</div>
+
+<h2>The scale() Method</h2>
+<p>The <b class="method">scale()</b> method <b>increases or decreases the size of an element (according to the
+  parameters given for the width and height)</b>.</p>
+<p>The following example <b>increases</b> the <<span>div</span>> element to be <i>two times of its original width</i>,
+    and <i>three times of its original height</i>:</p>
+<pre>transform: <b>scale(2, 3)</b>;</pre>
+
+<div class="transform_inc">
+    This div element is two times of its original width, and three times of its original height.
+</div>
+
+<p>The following example <b>decreases</b> the <<span>div</span>> element to be half of its original width and height: </p>
+<pre>transform: <b>scale(0.5, 0.5)</b>;</pre>
+<div class="transform_dec">
+    This div element is decreased to be half of its original width and height.
+</div>
+
+<h2 id="scalex">The scaleX() Method</h2>
+<p>The <b class="method">scaleX()</b> method <b>increases or decreases the <ins>width</ins> of an element</b>.</p>
+<p>The following example increases the <<span>div</span>> element to be two times of its original width:</p>
+<pre>transform: <b>scaleX(2)</b>;</pre>
+<div class="scale_x_bigger">
+    This div element is two times of its original width.
+</div>
+<pre>transform: <b>scaleX(0.5)</b>;</pre>
+<div class="scale_x_smaller">
+    This div element is two times of its original width.
+</div>
+
+<h2 id="scaley">The scaleY() Method</h2>
+<p>The <b class="method">scaleY()</b> method <b>increases or decreases the <ins>height</ins> of an element</b>.</p>
+<p>The following example increases the <<span>div</span>> element to be three times of its original height:</p>
+<pre>transform: <b>scaleY(3)</b>;</pre>
+<div class="scale_y_bigger">
+    This div element is three times of its original height.
+</div>
+<p>The following example decreases the <<span>div</span>> element to be half of its original height:</p>
+<pre>transform: <b>scaleY(0.5)</b>;</pre>
+<div class="scale_y_smaller">
+    This div element is three times of its original height.
+</div>
+
+<h2 id="skewx">The skewX() Method</h2>
+<p>The <b class="method">skewX()</b> method <b>skews an element along the X-axis by the given angle</b>.</p>
+<p>The following example skews the <<span>div</span>> element 20 degrees along the X-axis:</p>
+<pre>transform: <b>skewX(20deg)</b>;</pre>
+<div class="normal">
+    This a normal div element.
+</div>
+<div class="skew_x normal">
+    This div element is skewed 20 degrees along the X-axis.
+</div>
+
+<h2 id="skewy">The skewY() Method</h2>
+<p>The <b class="method">skewY()</b> method <b>skews an element along the Y-axis by the given angle</b>.</p>
+<p>The following example skews the <<span>div</span>> element 20 degrees along the Y-axis:</p>
+<pre>transform: <b>skewY(20deg)</b>;</pre>
+<div class="normal">
+    This a normal div element.
+</div>
+<div class="skew_y normal">
+    This div element is skewed 20 degrees along the Y-axis.
+</div>
+
+<h2 id="skew">The skew() Method</h2>
+<p>The <b class="method">skew() method</b> <b>skews an element along the X and Y-axis by the given angles</b>.</p>
+<p>The following example skews the <<span>div</span>> element 20 degrees along the X-axis, and 10 degrees along
+    the Y-axis:</p>
+<pre>transform: <b>skew(20deg, 10deg)</b>;</pre>
+<div class="skew normal">
+    This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div>
+
+<p>If the second parameter is not specified, it has a zero value. So, the following example skews the <<span>div</span>>
+    element 20 degrees along the X-axis:</p>
+<pre>transform: <b>skew(20deg)</b>;</pre>
+<div class="skew_only_x normal">
+    This div element is skewed 20 degrees along the X-axis.
+</div>
+
+<h2 id="matrix">The matrix() Method</h2>
+<p>The <b class="method">matrix()</b> method <b>combines all the 2D transform methods into one</b>.</p>
+<p>The <b class="method">matrix()</b> method take <b class="method">six parameters</b>, containing mathematic
+    functions, which allows you to <b>rotate, scale, move (translate), and skew elements</b>.</p>
+<p>The parameters are as follow: <b class="method">matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),
+    translateY())</b></p>
+<pre>transform: <b>matrix(1, -0.3, 0, 1, 0, 0);</b></pre>
+<div class="matrix_one normal" style="margin:100px;">Using the matrix() method</div>
+<pre>transform: <b>matrix(1, 0, 0.5, 1, 150, 0);</b></pre>
+<div class="matrix_two normal" style="margin:100px;">Using the matrix() method</div>
+
+</body>
+</html>

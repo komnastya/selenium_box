@@ -1,0 +1,119 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.8vw;
+    }
+p, ul, div {
+    font-size: 1.3vw;
+    }
+span {
+    color: Blue;
+    }
+b.method {
+    color:Crimson;
+    background-color: #f1f1f1;
+    }
+pre {
+    font-size:1.15vw;
+    }
+pre b {
+    color:FireBrick;
+    }
+div.transform {
+  margin: 150px;
+  width: 450px;
+  height: 120px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+    }
+div.normal {
+  margin: 50px;
+  width: 450px;
+  height: 120px;
+  background-color: yellow;
+  border: 1px solid black;
+    }
+div.rotate {
+  margin: 120px 30px;
+  transform: rotate(20deg);
+  width: 450px;
+  height: 120px;
+  background-color: yellow;
+  border: 1px solid black;
+  }
+div.counter_rotate {
+  margin: 120px 30px;
+  transform: rotate(-20deg);
+  width: 450px;
+  height: 120px;
+  background-color: yellow;
+  border: 1px solid black;
+  }
+div.transform_inc {
+  margin: 200px;
+  width: 350px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);
+    }
+div.transform_dec {
+  width: 350px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(0.5, 0.5);
+    }
+div.scale_x_bigger {
+  margin: 50px 120px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(2);
+    }
+div.scale_x_smaller {
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(0.5);
+    }
+div.scale_y_bigger {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(3);
+    }
+div.scale_y_smaller {
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(0.5);
+    }
+div.skew_x {
+  transform: skewX(20deg);
+    }
+div.skew_y {
+  transform: skewY(20deg);
+    }
+div.skew {
+  transform: skew(20deg, 10deg);
+    }
+div.skew_only_x {
+  transform: skew(20deg);
+    }
+.matrix_one {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+.matrix_two {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+    }
