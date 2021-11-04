@@ -1,0 +1,36 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.8vw;
+    }
+p, ul, div {
+    font-size: 1.3vw;
+    }
+b.method {
+    color:Crimson;
+    background-color: #f1f1f1;
+    }
+pre {
+    font-size:1.15vw;
+    }
+pre b {
+    color:FireBrick;
+    }
+div {
+  width: 450px;
+  height: 120px;
+  background-color: yellow;
+  border: 1px solid black;
+    }
+div.rotatex {
+  transform: rotateX(150deg);
+    }
+div.rotatey {
+  transform: rotateY(150deg);
+    }
+div.rotatez {
+  transform: rotateZ(90deg);
+  margin: 25px;
+    }
