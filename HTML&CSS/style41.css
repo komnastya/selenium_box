@@ -1,0 +1,97 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+h2 {
+    font-size: 1.8vw;
+    }
+p, ul, div {
+    font-size: 1.3vw;
+    }
+b.method, li b {
+    color:Crimson;
+    background-color: #f1f1f1;
+    }
+pre {
+    font-size:1.15vw;
+    }
+pre b {
+    color:FireBrick;
+    }
+span {
+    color: Blue;
+    }
+div#red {
+  margin: 0 30px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+    }
+div#red:hover {
+  width: 300px;
+    }
+div#orange {
+  margin: 0 30px;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  transition: width 2s, height 4s;
+    }
+div#orange:hover {
+  width: 300px;
+  height: 300px;
+    }
+div.yellow{
+  width: 100px;
+  height: 100px;
+  background: Gold;
+  transition: width 2s, height 4s;
+    }
+.linear {transition-timing-function: linear;}
+.ease {transition-timing-function: ease;}
+.ease-in {transition-timing-function: ease-in;}
+.ease-out {transition-timing-function: ease-out;}
+.ease-in-out {transition-timing-function: ease-in-out;}
+div.yellow:hover{
+    width: 550px;
+    }
+div.green{
+  margin: 0 30px;
+  width: 100px;
+  height: 100px;
+  background: DarkGreen;
+  transition: width 3s;
+  transition-delay: 2s;
+    }
+div.green:hover {
+  width: 300px;
+    }
+div.blue{
+  margin: 0 30px;
+  width: 100px;
+  height: 100px;
+  background: MidNightBlue;
+  transition: width 2s, height 2s, transform 2s;
+    }
+div.blue:hover {
+  margin: 0 30px;
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+    }
+div.purple {
+  margin: 0 30px;
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition-property: width, height, transform;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+    }
+div.purple:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+    }
