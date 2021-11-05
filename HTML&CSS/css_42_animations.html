@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <link rel="stylesheet" href="style42.css">
+</head>
+
+<body>
+<h1>CSS Animations</h1>
+<p>CSS allows animation of HTML elements without using JavaScript or Flash!</p>
+<p>It can be done using the following properties</p>
+<ul>
+    <li>@keyframes</li>
+    <li>animation-name</li>
+    <li>animation-duration</li>
+    <li>delay">animation-delay</li>
+    <li>animation-iteration-count</li>
+    <li>animation-direction</li>
+    <li>animation-timing-function</li>
+    <li>animation-fill-mode</li>
+    <li>animation</li>
+</ul>
+
+<h1>CSS Animations</h1>
+<h1>The @keyframes Rule</h1>
+<p>When you specify CSS styles inside the <b class="property">@keyframes</b> rule, the animation will <b>gradually
+    change from the current style to the new style at certain times</b>.</p>
+<p>To get an animation to work, you must <b>bind the animation to an element</b>.</p>
+<p>The following example binds the "example" animation to the <<span>div</span>> element. The animation will last
+    for 4 seconds, and it will gradually change the background-color of the <div> element from "red" to "yellow":</div>
+<div class="red"></div>
+<p><strong>Note:</strong> The <b class="property">animation-duration</b> property defines <b>how long an animation
+    should take to complete</b>. If the <b class="property">animation-duration</b> is <b>not specified</b>, <b>no
+    animation will occur</b>, because the default value is 0s (0 seconds).</p>
+
+<p>In the example above we have specified when the style will change by using the keywords <b>"from"</b> and <b>"to"</b>
+    (which represents 0% (start) and 100% (complete)). It is also possible to use percent. By using percent,
+    you can add as many style changes as you like.</p>
+<p>The following example will change the background-color of the <<span>div</span>> element when the
+    animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+
+<div class="red2"></div>
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+<p>The following example will change both the background-color and the position of the <<span>div</span>> element
+    when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+<div class="red3"></div>
+
+<h1>Delay an Animation</h1>
+<p>The <b class="property">animation-delay</b> property <b>specifies a delay for the start of an animation</b>.</p>
+<pre><b>animation-delay: 2s;</b></pre>
+<p>Negative values are also allowed. If using negative values, the animation will start as if it had already been
+    playing for N seconds.</p>
+    <pre><b>animation-delay: -2s;</b></pre>
+<div class="red4"></div>
+
+<h1>Set How Many Times an Animation Should Run</h1>
+<p>The <b class="property">animation-iteration-count</b> property <b>specifies the number of times an animation
+    should run</b>.</p>
+<p>The following example will run the animation 3 times before it stops:</p>
+<div class="red5"></div>
+
+<p>The following example uses the value "infinite" to make the animation continue for ever:</p>
+<pre><b>animation-iteration-count: infinite;</b></pre>
+<div class="red6"></div>
+
+<h1>Run Animation in Reverse Direction or Alternate Cycles</h1>
+<p>The <b class="property">animation-direction</b> property <b>specifies whether an animation should be played forwards,
+    backwards or in alternate cycles</b>.</p>
+<p>The <b class="property">animation-direction</b> property can have the following values:</p>
+<ul>
+    <li><b>normal</b>: the animation is played as normal (forwards) (<ins>default</ins>)</li>
+    <li><b>reverse</b>: the animation is played in reverse direction (backwards)</li>
+    <li><b>alternate</b>: the animation is played forwards first, then backwards</li>
+    <li><b>alternate-reverse</b>: the animation is played backwards first, then forwards</li>
+</ul>
+<p>The following example will run the animation in <b class="property">alternative-reverse</b> direction
+    (<ins>backwards</ins>, then <ins>forwards</ins>):</p>
+<div class="red7"></div>
+
+<h1>Specify the Speed Curve of the Animation</h1>
+<p>The <b class="property">animation-timing-function</b> property <b>specifies the speed curve of the animation</b>.</p>
+<p>The <b class="property">animation-timing-function</b> property can have the following values:</p>
+<ul>
+    <li><b>ease</b>: specifies an animation with a slow start, then fast, then end slowly (default)</li>
+    <li><b>linear</b>: specifies an animation with the same speed from start to end</li>
+    <li><b>ease-in</b>: specifies an animation with a slow start</li>
+    <li><b>ease-out</b>: specifies an animation with a slow end</li>
+    <li><b>ease-in-out</b>: specifies an animation with a slow start and end</li>
+    <li><b>cubic-bezier(n,n,n,n)</b>: lets you define your own values in a cubic-bezier function</li>
+</ul>
+
+<div class="red8" id="div1">linear</div>
+<div class="red8" id="div2">ease</div>
+<div class="red8" id="div3">ease-in</div>
+<div class="red8" id="div4">ease-out</div>
+<div class="red8" id="div5">ease-in-out</div>
+
+<p>The following example lets the <span>div</span>> element retain the style values from the <b>last keyframe</b> when
+    the <b>animation ends</b>:</p>
+<pre><b>animation-fill-mode:</b> forwards;</pre>
+<div class="red9"></div>
+
+<p>The following example lets the <<span>div</span>> element <b>get the style values set by the first keyframe
+    before the animation starts</b> (during the animation-delay period):</p>
+<pre><b>animation-fill-mode:</b> backwards;</pre>
+<div class="red10"></div>
+
+<p>The following example lets the <<span>div</span>> element <b>get the style values set by the first keyframe
+    before the animation starts</b>, and <b>retain the style values from the last keyframe when the animation ends</b>:</p>
+<pre><b>animation-fill-mode:</b> both;</pre>
+<div class="red11"></div>
+
+</body>
+</html>

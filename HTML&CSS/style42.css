@@ -1,0 +1,163 @@
+h1 {
+    font-size: 2vw;
+    text-align:center;
+    }
+p, ul, div {
+    font-size: 1.3vw;
+    }
+b.property, li b {
+    color:Crimson;
+    background-color: #f1f1f1;
+    }
+pre {
+    font-size:1.15vw;
+    }
+pre b {
+    color:FireBrick;
+    }
+span {
+    color: Blue;
+    }
+div.red {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+    }
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+    }
+div.red2 {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 4s;
+    }
+@keyframes example2 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+    }
+div.red3 {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+    }
+@keyframes example3 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+    }
+div.red4 {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-delay: -2s;
+    }
+div.red5 {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+    }
+div.red6 {
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+    }
+div.red7 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+    }
+div.red8 {
+  width: 150px;
+  height: 50px;
+  background-color: Crimson;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+    }
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 450px;}
+    }
+div.red9 {
+  margin: 10px 0 200px 20px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example4;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  }
+@keyframes example4 {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+    }
+div.red10 {
+  margin: 10px 0 200px 20px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example5;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+    }
+@keyframes example5 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px;}
+    }
+div.red11 {
+  margin: 10px 0 200px 20px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example6;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+    }
+@keyframes example6 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+    }
