@@ -46,7 +46,7 @@ div.yellow{
   width: 100px;
   height: 100px;
   background: Gold;
-  transition: width 2s, height 4s;
+  transition: width 2s;
     }
 .linear {transition-timing-function: linear;}
 .ease {transition-timing-function: ease;}
