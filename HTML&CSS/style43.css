@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    }
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    text-align: center;
+    }
+p, div {
+    font-size:1.5vw;
+    }
+b.property {
+    color: Crimson;
+    }
+.tooltipL {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+    }
+.tooltipL .tooltiptextL {
+  visibility: hidden;
+  width: 16vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+    }
+.tooltipL:hover .tooltiptextL {
+  visibility: visible;
+    }
+.tooltipR {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+    }
+.tooltipR .tooltiptextR {
+  visibility: hidden;
+  width: 16vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+    }
+.tooltipR:hover .tooltiptextR {
+  visibility: visible;
+    }
+.tooltiptopT {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+    }
+.tooltiptopT .tooltiptextT {
+  visibility: hidden;
+  width: 16vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8vw;
+    }
+.tooltiptopT:hover .tooltiptextT {
+  visibility: visible;
+    }
+.tooltipB {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+    }
+.tooltipB .tooltiptextB {
+  visibility: hidden;
+  width: 16vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -8vw;
+    }
+.tooltipB:hover .tooltiptextB {
+  visibility: visible;
+    }
