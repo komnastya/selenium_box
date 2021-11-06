@@ -1,0 +1,29 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    }
+p {
+    font-size:1.5vw;
+    }
+b.property {
+    color: Crimson;
+    }
+img.below {
+    margin: 0 0 380px 20px;
+    -webkit-box-reflect: below;
+    }
+img.right {
+    margin: 0 20px;
+    -webkit-box-reflect: right;
+    }
+img.gap {
+    margin: 0 0 380px 20px;
+    -webkit-box-reflect: below 40px;
+    }
+img.grad {
+    margin: 0 0 380px 20px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
