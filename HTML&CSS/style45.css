@@ -1,0 +1,50 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    }
+p, li {
+    font-size:1.5vw;
+    }
+b.property, li b{
+    color: Crimson;
+    }
+img.cover {
+  border: 2px solid grey;
+  height: 200px;
+  width: 379px;
+  object-fit: cover;
+    }
+img.contain {
+  border: 2px solid grey;
+  height: 200px;
+  width: 379px;
+  object-fit: contain;
+    }
+img.fill {
+  border: 2px solid grey;
+  height: 200px;
+  width: 379px;
+  object-fit: fill;
+    }
+img.fill {
+  border: 2px solid grey;
+  height: 200px;
+  width: 379px;
+  object-fit: none;
+    }
+img.scaledown {
+  border: 2px solid grey;
+  height: 200px;
+  width: 379px;
+  object-fit: scale-down;
+    }
+img.position {
+  border: 2px solid grey;
+  height: 400px;
+  width: 150px;
+  object-fit: cover;
+  object-position: 100% 10%;
+    }

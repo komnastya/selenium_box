@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object fit</title>
+    <link rel="stylesheet" href="style45.css">
+</head>
+<body>
+<h1>CSS The object-fit Property</h1>
+<p>The CSS <b class="property">object-fit</b> property is used to specify how an <<span>img</span>> or
+    <<span>video</span>> should be <b>resized to fit its container</b>.</p>
+<p>The <b class="property">object-fit</b> property can take one of the following values:</p>
+<ul>
+    <li><b>fill</b>: the image is <b>resized</b> to fill the given dimension. If necessary, the image will be
+        <b>stretched or squished to fit</b> (<ins>default</ins>).
+        <p>This picture has size of 400x379, but it is squished to 200x379:</p>
+        <img src="workplace.jpg" alt="workplace" width="400" height="379" class="fill"><br><br></li>
+    <li><b>contain</b>: the image <b>keeps its aspect ratio</b>, but is <b>resized to fit within the given dimension.</b>
+        <p>This picture has size of 400x379, but it is resized to 200x379:</p>
+        <img src="workplace.jpg" alt="workplace" width="400" height="379" class="contain"><br><br></li>
+    <li><b>cover</b>: the image <b>keeps its aspect ratio</b> and <b>fills the given dimension</b>.
+        The image will <b>be clipped to fit.</b>
+        <p>This picture has size of 400x379, but it is clipped to 200x379:</p>
+        <img src="workplace.jpg" alt="workplace" width="400" height="379" class="cover"><br><br></li>
+    <li><b>none</b>: the image is <b>not resized</b>:<br>
+        <img src="workplace.jpg" alt="workplace" width="400" height="379" class="none"><br><br></li>
+    <li><b>scale-down</b>: the image is <b>scaled down to the smallest version of none or contain</b>:<br>
+        <img src="workplace.jpg" alt="workplace" width="400" height="379" class="scale-down"><br><br></li>
+</ul>
+
+<h1>CSS The object-position Pproperty</h1>
+<p>The CSS <b class="property">object-position</b> property is used to specify how an <<span>img</span>> or
+    <<span>video</span>> should be positioned within its container.</p>
+<p>Here we will use the object-position property to position the image so that only the cap of coffee is shown:</p>
+<img src="workplace.jpg" alt="workplace" width="400" height="379" class="position">
+
+</body>
+</html>
