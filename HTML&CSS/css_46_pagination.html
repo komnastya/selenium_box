@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="style46.css">
+</head>
+
+<body>
+<h1>CSS Pagination</h1>
+
+<h2>Simple Pagination</h2>
+<div class="pagination1">
+  <a href="#">&laquo;</a>
+  <a href="#" id="main">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div><br><br>
+
+<h2>Active and Hoverable Pagination</h2>
+<p>Highlight the current page with an <b class="property">.active</b> class, and use the <b class="property">:hover</b>
+  selector to change the color of each page link when moving the mouse over them:</p>
+
+<h2>Hoverable Transition Effect</h2>
+<p>Add the <b class="property">transition</b> property to the page links to create a transition effect on hover:</p>
+<pre><b>transition:</b> background-color .3s;</pre>
+
+<h2>Space Between Links</h2>
+<p><b>Tip:</b> Add the <b class="property">margin</b> property if you do not want to group the page links:</p>
+<p>To center the pagination, wrap a container element (like "div") around it with <b class="property">text-align:
+  center</b></p>
+<div class="center">
+  <div class="pagination2">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+</div>
+
+</body>
+</html>

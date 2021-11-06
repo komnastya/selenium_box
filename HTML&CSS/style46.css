@@ -1,0 +1,53 @@
+h1 {
+    font-size: 2vw;
+    }
+h2 {
+    font-size: 1.7vw;
+    }
+p, div, pre {
+    font-size: 1.2vw;
+    }
+b.property, pre b {
+    color: Crimson;
+    }
+.pagination1 {
+  display: inline-block;
+    }
+.pagination1 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+    }
+.pagination2 {
+  display: inline-block;
+    }
+.pagination2 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .5s; /* transition property create a transition effect on hover */
+  border: 1px solid grey; /* border property adds borders to the boxes*/
+  margin: 0 4px; /* margin property adds space between boxes */
+    }
+.pagination2 a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+    }
+.pagination2 a:hover:not(.active) {background-color: #ddd;}
+ /*add rounded borders to the first box, which containts << */
+.pagination2 a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+    }
+ /*add rounded borders to the last box, which contains >> */
+.pagination2 a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+    }
+/* To center the pagination, wrap a container element (like <div>) around it with text-align:center */
+.center {
+    text-align:center;
+    }
