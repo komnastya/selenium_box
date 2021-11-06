@@ -11,12 +11,12 @@
 <h2>Right tooltip</h2>
 <p>Move the mouse over the text below:</p>
 
-<div class="tooltipL">Hover over me
+<div class="tooltip">Hover over me
   <span class="tooltiptextL">Left tooltip</span>
 </div>
 
 <h2>Left tooltip</h2>
-<div class="tooltipR">Hover over me
+<div class="tooltip">Hover over me
   <span class="tooltiptextR">Right tooltip</span>
 </div>
 
@@ -25,13 +25,47 @@
     This is to center the tooltip above/below the hoverable text. It is set to the half of the tooltip's width.</p>
 
 <h2>Top tooltip</h2>
-<div class="tooltiptopT">Hover over me
+<div class="tooltip">Hover over me
   <span class="tooltiptextT">Top tooltip</span>
 </div>
 
 <h2>Bottom tooltip</h2>
-<div class="tooltipB">Hover over me
+<div class="tooltip">Hover over me
   <span class="tooltiptextB">Bottom tooltip</span>
+</div>
+<br><br>
+
+<h1>Tooltip Arrows</h1>
+<p>To create an arrow that should appear from a specific side of the tooltip, <b class="property">add "empty" content
+    after tooltip, with the pseudo-element class ::after together with the content property</b>. The arrow itself
+    is created using borders. This will make the tooltip look like a speech bubble.</p>
+<p>This example demonstrates how to add an arrow to the bottom of the tooltip:</p>
+<div class="tooltip">Hover over me
+  <span class="tooltiptextBA">Bottom arrow</span>
+</div>
+
+<h2>Example Explained</h2>
+<p>Position the arrow inside the tooltip: <b class="property">top: 100%</b> will place the arrow at the bottom of
+    the tooltip. <b class="property">left: 50%</b> will center the arrow.</p>
+
+<p><strong>Note:</strong> The <b class="property">border-width</b> property specifies the <b>size of the arrow</b>.
+    If you change this, also change the <b class="property">margin-left</b> value to the same. This will <b>keep the
+        arrow centered</b>.</p>
+
+<p>The <b class="property">border-color</b> is used to <b>transform the content into an arrow</b>. We set the top
+    border to black, and the rest to transparent. If all sides were black, you would end up with a black square box.</p>
+
+<p>This example demonstrates how to add an arrow to the left of the tooltip:</p>
+<div class="tooltip">Hover over me
+  <span class="tooltiptextLA">Left arrow</span>
+</div>
+
+<h1>Fade In Tooltips (Animation)</h1>
+<p>If you want to fade in the tooltip text when it is about to be visible, you can use the CSS <b class="property">
+    transition</b> property together with the <b class="property">opacity</b> property, and go from being completely
+    invisible to 100% visible, in a number of specified seconds (1 second in our example):</p>
+<div class="tooltip">Hover over me
+  <span class="tooltiptextRA">Right arrow</span>
 </div>
 
 </body>

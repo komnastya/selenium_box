@@ -3,24 +3,27 @@ body {
     }
 h1 {
     font-size: 2vw;
-    text-align: center;
     }
 h2 {
     font-size: 1.7vw;
-    text-align: center;
+    text-align: left;
     }
-p, div {
+div {
+    font-size:1.5vw;
+    }
+p {
+    text-align: left;
     font-size:1.5vw;
     }
 b.property {
     color: Crimson;
     }
-.tooltipL {
+.tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
     }
-.tooltipL .tooltiptextL {
+.tooltip .tooltiptextL {
   visibility: hidden;
   width: 16vw;
   background-color: black;
@@ -34,15 +37,10 @@ b.property {
   top: -5px;
   right: 105%;
     }
-.tooltipL:hover .tooltiptextL {
+.tooltip:hover .tooltiptextL {
   visibility: visible;
     }
-.tooltipR {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-    }
-.tooltipR .tooltiptextR {
+ .tooltip .tooltiptextR {
   visibility: hidden;
   width: 16vw;
   background-color: black;
@@ -56,15 +54,10 @@ b.property {
   top: -5px;
   left: 105%;
     }
-.tooltipR:hover .tooltiptextR {
+.tooltip:hover .tooltiptextR {
   visibility: visible;
     }
-.tooltiptopT {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-    }
-.tooltiptopT .tooltiptextT {
+.tooltip .tooltiptextT {
   visibility: hidden;
   width: 16vw;
   background-color: black;
@@ -79,15 +72,10 @@ b.property {
   left: 50%;
   margin-left: -8vw;
     }
-.tooltiptopT:hover .tooltiptextT {
+.tooltip:hover .tooltiptextT {
   visibility: visible;
     }
-.tooltipB {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-    }
-.tooltipB .tooltiptextB {
+.tooltip .tooltiptextB {
   visibility: hidden;
   width: 16vw;
   background-color: black;
@@ -102,6 +90,88 @@ b.property {
   left: 50%;
   margin-left: -8vw;
     }
-.tooltipB:hover .tooltiptextB {
+.tooltip:hover .tooltiptextB {
   visibility: visible;
+    }
+.tooltip .tooltiptextBA {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -100px;
+    }
+.tooltip .tooltiptextBA::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+    }
+.tooltip:hover .tooltiptextBA {
+  visibility: visible;
+    }
+.tooltip .tooltiptextLA {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+    }
+.tooltip .tooltiptextLA::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+    }
+.tooltip:hover .tooltiptextLA {
+  visibility: visible;
+    }
+.tooltip .tooltiptextRA {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+  opacity: 0;
+  transition: opacity 1s;
+    }
+.tooltip .tooltiptextRA::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+    }
+.tooltip:hover .tooltiptextRA {
+  visibility: visible;
+  opacity: 1;
     }
