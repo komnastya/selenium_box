@@ -1,0 +1,52 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    }
+p, ul, div, textarea {
+    font-size: 1.2vw;
+    }
+b.property, li b {
+    color: Crimson;
+    }
+span {
+    color: Blue;
+    }
+div.width {
+  border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  resize: horizontal;
+  overflow: auto;
+    }
+div.height {
+  border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  resize: vertical;
+  overflow: auto;
+    }
+div.both {
+  border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+    }
+textarea#test {
+   resize: none;
+    }
+div.ex1 {
+  margin: 20px;
+  border: 1px solid black;
+  outline: 4px solid red;
+  outline-offset: 15px;
+    }
+div.ex2 {
+  margin: 10px;
+  border: 1px solid black;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+    }

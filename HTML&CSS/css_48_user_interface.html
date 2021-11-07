@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style48.css">
+    <title>User interface</title>
+</head>
+
+<body>
+<h1>User interface</h1>
+<ul>
+    <li><b>outline-offset</b> adds space between an outline and the edge or border of an element</li>
+    <li><b>resize</b> specifies whether or not an element is resizable by the user</li>
+</ul>
+
+<h1>CSS Resizing</h1>
+<p>The <b class="property">resize</b> property specifies if (and how) an element should be resizable by the user.</p>
+<p>The following example lets the user resize <b>only the width</b> of a <<span>div</span>> element:</p>
+<div class="width">
+    Let the user resize <b>only the width</b> of this div element. <br>
+    <b>To resize:</b> Click and drag the bottom right corner of this div element.
+</div>
+
+<p>The following example lets the user resize <b>only the height</b> of a <<span>div</span>> element:</p>
+<div class="height">
+    <p>Let the user resize only the height of this div element.</p>
+    <p><b>To resize:</b> Click and drag the bottom right corner of this div element.</p>
+</div>
+
+<p>The following example lets the user resize <b>both the height and width</b> of a <span>div</span>> element:</p>
+<div class="both">
+  <p>Let the user resize both the height and the width of this div element.</p>
+  <p><b>To resize:</b> Click and drag the bottom right corner of this div element.</p>
+</div>
+
+<p>In many browsers, <b>textarea</b> elements are <b>resizable by default</b>. In this example, we have used the
+    resize property to disable the resizability:</p>
+<textarea id="test">Textarea - Not resizable</textarea>
+<br><br>
+<textarea>Textarea - Resizable (default)</textarea>
+
+<h1>CSS Outline Offset</h1>
+<p>The <b class="property">outline-offset</b> property adds <b>space between an outline and the edge or border of an
+    element</b>.</p>
+<p><b>Note:</b> Outline differs from borders! Unlike border, <b>the outline is <ins>drawn outside the element's
+    border</ins></b>, and <b>may <ins>overlap other content</ins></b>. Also, the outline is <b>NOT a part of the
+    element's dimensions;</b> the <b>element's total width and height is <ins>not affected by the width of the
+    outline</ins></b>.</p>
+<p>The following example uses the outline-offset property to add space between the border and the outline:</p>
+
+<div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+<br>
+<div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+
+</body>
+</html>
