@@ -1,0 +1,32 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    text-align: center;
+    }
+h2.spannn{
+    text-align: left;
+    column-span: all;
+    }
+p, div, ul li{
+    font-size: 1.2vw;
+    }
+b.property, ul li {
+    color: Crimson;
+    }
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: dotted;
+  column-rule-width: 22px;
+  column-rule-color: Crimson;
+  co0lumn-fill: balanced;
+    }
+b.red {
+    color: red;
+    }
+b.blue {
+    color: blue;
+    }
