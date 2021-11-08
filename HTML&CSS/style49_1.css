@@ -1,0 +1,41 @@
+:root {
+  --background: CornSilk;
+  --content: Chocolate;
+    }
+body {
+  background-color: var(--content);
+    }
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    border-bottom: 2px solid var(--content);
+    }
+p, pre, ul li, button {
+    font-size: 1.2vw;
+    }
+b.property {
+    color: Crimson;
+    }
+.container {
+  color: var(--content);
+  background-color: var(--background);
+  padding: 15px;
+    }
+button {
+  background-color: var(--background);
+  color: var(--content);
+  border: 1px solid var(--content);
+  padding: 5px;
+    }
+.over {
+  --content: DarkRed; /* local variable will override global */
+  font-weight: bold;
+  border-width: 3px;
+    }
+.newvar {
+    --new_content: Indigo; /* new local variable */
+    color: var(--new_content);
+    }

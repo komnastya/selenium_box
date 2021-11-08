@@ -1,0 +1,37 @@
+/* Variable declarations */
+:root {
+  --content: MidnightBlue;
+  --background: PapayaWhip;
+    }
+.container {
+  --fontsizep: 16px;
+  --fontsizeh1: 20px;
+    }
+/* Styles */
+body {
+  background-color: var(--content);
+    }
+h1 {
+    font-size: var(--fontsizep);
+    text-align: center;
+    }
+.container {
+    color: var(--content);
+    background-color: var(--background);
+    padding: 15px;
+    }
+b.property {
+    color: Crimson;
+    }
+p {
+    font-size: var(--fontsizep);
+    }
+@media screen and (min-width: 1000px) {
+  .container {
+    --fontsizep: 24px;
+    --fontsizeh1: 32px;
+        }
+  :root {
+    --content: Olive;
+        }
+    }
