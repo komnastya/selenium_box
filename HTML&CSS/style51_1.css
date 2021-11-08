@@ -1,0 +1,33 @@
+body {
+  background-color: linen;
+    }
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    border-bottom: 2px solid black;
+    }
+p, pre, ul {
+    font-size: 1.2vw;
+    }
+b.property  {
+    color: Crimson;
+    }
+.brown {
+    color: brown;
+    }
+.blue {
+    color: blue;
+    }
+.red {
+    color: Red;
+    }
+.green {
+    color: green;
+    }
+@media screen and (min-width: 1500px) {
+  body {
+    background-color: lightyellow;
+  }

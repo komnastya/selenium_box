@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media query</title>
+    <link rel="stylesheet" href="style51_2.css">
+</head>
+
+<body>
+<h1>Media query</h1>
+<p>Media queries are a popular technique for delivering a tailored style sheet to different devices.
+    To demonstrate a simple example, we can change the background color for different devices.</p>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<h1>Media Queries For Columns</h1>
+<p>A common use of media queries, is to create a flexible layout. In this example, we create a layout that varies
+    between four, two and full-width columns, depending on different screen sizes.</p>
+<p><strong>Resize the browser window to see the responsive effect.</strong> On screens that are 1500px wide or less,
+    the columns will resize from four columns to two columns. On screens that are 1000px wide or less, the columns
+    will stack on top of each other instead of next to each other.</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+<p><b>Tip:</b> A more modern way of creating column layouts, is to use CSS Flexbox (see example below). However, it
+    is not supported in Internet Explorer 10 and earlier versions.</p>
+
+<h1>Hide Elements With Media Queries</h1>
+<p>Another common use of media queries, is to hide elements on different screen sizes:</p>
+<div class="example">This div element disappears when the size of window decreases to 1500px or less.</div>
+
+<h1>Change Font Size With Media Queries</h1>
+<p>You can also use media queries to change the font size of an element on different screen sizes:</p>
+<div class="change_size">Variable Font Size.</div>
+
+<h1>Orientation: Portrait / Landscape</h1>
+<p>Media queries can also be used to change layout of a page depending on the orientation of the browser.</p>
+<p>You can have a set of CSS properties that will only apply when the browser window is wider than its height,
+    a so called "Landscape" orientation:</p>
+<p class="orientation">Resize the browser window. When the width of this document is larger than the height,
+    the background color is "lightcyan", otherwise it is "lightyellow":</p>
+<pre class="brown"><b>@media only screen and (orientation: landscape) {...}</b></pre>
+
+<h1>Min Width to Max Width</h1>
+<p>You can also use the <b class="property">(max-width: ..)</b> and <b class="property">(min-width: ..)</b> values
+    to set a minimum width and a maximum width.</p>
+
+<p><b>Using an additional value:</b> In the example below, we add an <b>additional media query</b> to our already existing
+    one using a <b>comma</b> (this will behave <b>like an OR operator)</b>:</p>
+
+<pre>
+    <b class="green">/* When the width is between 600px and 900px OR above 1100px - change the appearance of
+        &#60div&#62 */</b>
+    <b class="brown">@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) { ... } </b></pre>
+
+</body>
+</html>

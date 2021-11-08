@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="style51_1.css">
+</head>
+<body>
+<h1>CSS Media Queries</h1>
+<p>Media queries can be used to check many things, such as:</p>
+<ul>
+    <li>width and height of the viewport</li>
+    <li>width and height of the device</li>
+    <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+    <li>resolution</li>
+</ul>
+
+<h2>Media Query Syntax</h2>
+<p>A media query consists of a media type and can contain one or more expressions, which resolve
+    to either true or false.</p>
+
+<pre class="brown">@media not|only mediatype and (expressions) {
+  <span class="red">CSS-Code</span>;
+    }</pre>
+
+<p>Media Types</p>
+<ul>
+    <li><b>all</b>: used for all media type devices</li>
+    <li><b>print</b>: used for printers</li>
+    <li><b>screen</b>: used for computer screens, tablets, smart-phones etc.</li>
+    <li><b>speech</b>: sed for screenreaders that "reads" the page out loud</li>
+</ul>
+
+<p>The result of the query is true if the specified media type matches the type of device the document is being
+    displayed on and all expressions in the media query are true. When a media query is true, the corresponding
+    style sheet or style rules are applied, following the normal cascading rules.</p>
+<p>Unless you use the not or only operators, the media type is optional and the all type will be implied.</p>
+<p>You can also have different stylesheets for different media:</p>
+<pre><<span class="brown">link <span class="red">rel</span></span><span class="blue">="stylesheet"</span>
+    <span class="red">media</span><span class="blue">="<i>mediatype</i> and|not|only (<i>expressions</i>)"</span>
+    <span class="red">href</span><span class="blue">=<i>"print.css"</i></span>></pre>
+
+<h1>Media Queries Simple Examples</h1>
+<p>One way to use media queries is to have an alternate CSS section right inside your style sheet.</p>
+<p>In this example the background-color is changed from light-yellow to linen if the viewport width is less than 1500
+    pixels (if the viewport is more than 1500 pixels, the background-color will be light-yellow):</p>
+
+</body>
+</html>
