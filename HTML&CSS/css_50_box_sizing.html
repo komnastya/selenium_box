@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style50.css">
+    <title>Box Sizing</title>
+</head>
+<body>
+<h1>Box Sizing</h1>
+<p>The CSS <b class="property">box-sizing</b> property <b>allows us to include the padding and border in an element's
+    total width and height</b>.</p>
+
+<h2>Without the CSS box-sizing Property</h2>
+<p>By default, the width and height of an element is calculated like this:</p>
+<p><b>width + padding + border = actual width of an element</b></p>
+<p><b>height + padding + border = actual height of an element</b></p>
+<p>This means: When you <b>set the width/height of an element</b>, the <b>element often appears bigger</b> than you
+    have set (because the element's border and padding are added to the element's specified width/height).</p>
+<p>The following illustration shows two <<span>div</span>> elements with the same specified width and height:</p>
+<div class="div1">This div is smaller (width is 400px and height is 200px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 400px and height is 200px) because of padding of 50px.</div>
+
+<h2>The <b class="property">box-sizing</b> property solves this problem.</h2>
+<p>The <b class="property">box-sizing</b> property allows us to <b>include the padding and border in an element's total
+    width and height</b>.</p>
+<p>If you set <b class="property">box-sizing: border-box;</b> on an element, padding and border are included in
+    the width and height:</p>
+<div class="div1">Both divs have the same size now!</div>
+<br>
+<div class="div3">This div has width of 400px, height of 200px, and padding of 50px included in width.</div>
+
+<p>Opposite to the <b class="property">border-box</b> value is <b class="property">content-box</b> which is <b>
+    <ins>default</ins></b> which means that <b>the width and height properties (and min/max properties) includes only
+    the content. Border and padding are not included</b>.</p>
+
+</body>
+</html>
