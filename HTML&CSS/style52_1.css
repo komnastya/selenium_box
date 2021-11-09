@@ -1,0 +1,202 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    border-bottom: 2px solid black;
+    }
+p, ul, pre {
+    font-size: 1.2vw;
+    }
+.property {
+    color:Crimson;
+    }
+.blue {
+    color: blue;
+    }
+.red {
+    color: red;
+    }
+.brown {
+    color: brown;
+    }
+div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+    }
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  width: 25%;
+    }
+.flex-container-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: DodgerBlue;
+  width: 25%;
+    }
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+  width: 25%;
+    }
+.flex-container-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: DodgerBlue;
+  width: 25%;
+    }
+.flex-container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-wrap-reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-justify-center {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-flex-end {
+  display: flex;
+  justify-content: flex-end;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-space-around {
+  display: flex;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-space-between {
+  display: flex;
+  justify-content: space-between;
+  background-color: DodgerBlue;
+  width: 100%
+    }
+.flex-container-center {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-flex-start {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-flex-end {
+  display: flex;
+  height: 200px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-stretch {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-baseline {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-content-space-between {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-content-space-around {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-content-stretch {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-content-center {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-content-flex-start {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.flex-container-content-flex-end {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  background-color: DodgerBlue;
+  width: 50%
+    }
+.perfect_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 50%;
+  background-color: DodgerBlue;
+    }
+.perfect_center .div1 {
+  background-color: #f1f1f1;
+  color: black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+    }

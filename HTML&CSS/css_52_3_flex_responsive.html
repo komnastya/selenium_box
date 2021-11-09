@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Responsive</title>
+    <link rel="stylesheet" href="style52_3.css">
+</head>
+
+<body>
+<h1>FLex Responsive</h1>
+<p>If you want to create a <b>two-column layout for most screen sizes</b>, and a <b>one-column layout for small screen
+    sizes (such as phones and tablets)</b>, you can change the <b class="property">flex-direction</b> from
+    <b class="property">row</b> to <b class="property">column</b> at a specific breakpoint (for example, 1200px
+    in the example below):</p>
+<p>The <b class="property">"flex-direction: row;"</b> stacks the flex items horizontally (from left to right).</p>
+<p>The <b class="property">"flex-direction: column;"</b> stacks the flex items vertically (from top to bottom).</p>
+<p><b>Resize the browser window to see that the direction changes when the
+screen size is 1200px wide or smaller.</b></p>
+
+<div class="flex-container1">
+  <div class="flex-item-left1">1</div>
+  <div class="flex-item-right1">2</div>
+</div>
+
+<p>Another way is to change the percentage of the flex property of the <b class="property">flex</b> items to
+    create different layouts for different screen sizes. Note that we also have to include <b class="property">
+        flex-wrap: wrap;</b> on the flex container for this example to work.</p>
+<div class="flex-container2">
+  <div class="flex-item-left2">1</div>
+  <div class="flex-item-right2">2</div>
+</div>
+
+</body>
+</html>

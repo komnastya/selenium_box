@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style52_1.css">
+</head>
+<body>
+<h1>CSS Flexbox Layout Module</h1>
+<p>Before the Flexbox Layout module, there were four layout modes:</p>
+<ul>
+    <li><b>Block</b>, for sections in a webpage </li>
+    <li><b>Inline</b>, for text</li>
+    <li><b>Table</b>, for two-dimensional table data</li>
+    <li><b>Positioned</b>, for explicit position of an element</li>
+</ul>
+<p>The Flexible Box Layout Module, makes it easier to design <b>flexible responsive layout structure without using
+    float or positioning</b>.</p>
+<p>A Flexible Layout must have a parent element with the <b class="property">display</b> property set to
+    <b class="property">flex</b>.</p>
+<pre><span class="red">display</span>: <span class="blue">flex</span>;</pre>
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+<p>This is a flex <b>container</b> (the blue area) with three flex <b>items</b>:</p>
+
+<div class="flex-container-row">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h2>The flex container properties are:</h2>
+<ul>
+    <li><a href="#flex-direction">flex-direction</a></li>
+    <li><a href="#flex-wrap">flex-wrap</a></li>
+    <li><a href="#flex-flow">flex-flow</a></li>
+    <li><a href="#justify-content">justify-content</a></li>
+    <li><a href="#align-items">align-items</a></li>
+    <li><a href="#align-content">align-content</a></li>
+</ul>
+
+<h2 id="flex-direction">The flex-direction Property</h2>
+<p>The <b class="property">flex-direction</b> property defines <b>in which direction the container wants to stack
+    the flex items</b>.</p>
+<p>The <b class="property">"flex-direction: column;"</b> stacks the flex items <b>vertically (from top to bottom)</b>:</p>
+<div class="flex-container-column">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"flex-direction: column-reverse;"</b> stacks the flex items <b>vertically (but from bottom
+    to top)</b>:</p>
+<div class="flex-container-column-reverse">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"flex-direction: row;"</b> stacks the flex items <b>horizontally (from left to right)</b>:</p>
+<div class="flex-container-row">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"flex-direction: row-reverse;"</b> stacks the flex items <b>horizontally (but from right
+    to left)</b>:</p>
+<div class="flex-container-row-reverse">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h2 id="flex-wrap">The flex-wrap Property</h2>
+<p>The <b class="property">flex-wrap</b> property specifies <b>whether the flex items should wrap or not</b>.</p>
+<p>The examples below have 12 flex items, to better demonstrate the flex-wrap property.</p>
+<p>The <b class="property">"flex-wrap: wrap;"</b> specifies that the flex items will wrap if necessary:</p>
+<div class="flex-container-wrap">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>The <b class="property">"flex-wrap: nowrap;"</b> specifies that the flex items will not wrap (<ins>default</ins>):</p>
+<div class="flex-container-nowrap">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>The <b class="property">"flex-wrap: wrap-reverse;"</b> specifies that the flex items will <b>wrap if necessary,
+    in reverse order</b>:</p>
+
+<div class="flex-container-wrap-reverse">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>Try resizing the browser window.</p>
+
+<h2 id="flex-flow">The flex-flow Property</h2>
+<p>The <b class="property">flex-flow</b> property is a <b>shorthand</b> property for setting both the
+    <b class="property">flex-direction</b> and <b class="property">flex-wrap</b> properties.
+<pre><span class="brown">.flex-container</span> {
+    <span class="red">display:</span> <span class="blue">flex</span>;
+    <span class="red">flex-flow:</span> <span class="blue">row wrap</span>;
+    }</pre>
+
+<h2 id="justify-content">The justify-content Property</h2>
+<p>The <b class="property">justify-content</b> property is used to <b>align the flex items</b></p>
+<p>The <b class="property">"justify-content: center;"</b> aligns the flex items <b>at the center of the container</b>:</p>
+<div class="flex-container-justify-center">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"justify-content: flex-start;"</b> aligns the flex items <b>at the beginning of the
+    container</b> (<ins>default</ins>):</p>
+<div class="flex-container-flex-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"justify-content: flex-end;"</b> aligns the flex items <b>at the end of the container</b>:</p>
+<div class="flex-container-flex-end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"justify-content: space-around;"</b> displays the flex items <b>with space before,
+    between, and after the lines</b>:</p>
+<div class="flex-container-space-around">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"justify-content: space-between;"</b> displays the flex items <b>with space between the
+    lines</b>:</p>
+<div class="flex-container-space-between">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h2 id="align-items">The align-items Property</h2>
+<p>The <b class="property">align-items</b> property is used to <b>align the flex items</b>.</p>
+<p>The <b class="property">"align-items: center;"</b> aligns the flex items <b>in the middle of the container</b>:</p>
+<div class="flex-container-center">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"align-items: flex-start;"</b> aligns the flex items <b>at the top of the container</b>:</p>
+<div class="flex-container-flex-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"align-items: flex-end;"</b> aligns the flex items <b>at the bottom of the container</b>:</p>
+<div class="flex-container-flex-end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"align-items: stretch;"</b> <b>stretches the flex items to fill the container</b>
+    (<ins>default)</ins>:</p>
+<div class="flex-container-stretch">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<p>The <b class="property">"align-items: baseline;"</b> <b>aligns the flex items such as their baselines aligns</b>:</p>
+<div class="flex-container-baseline">
+  <div><h1>1</h1></div>
+  <div><h6>2</h6></div>
+  <div><h3>3</h3></div>
+  <div><small>4</small></div>
+</div>
+
+<h2 id="align-content">The align-content Property</h2>
+<p>The <b class="property">align-content</b> property is used to <b>align the flex lines</b>.</p>
+<p>In these examples we use a 600 pixels high container, with the <b class="property">flex-wrap</b> property set to
+    <b class="property">wrap</b>, to better demonstrate the <b class="property">align-content</b> property.</p>
+
+<p>The <b class="property">"align-content: space-between;"</b> <b>displays the flex lines with equal space between
+    them</b>:</p>
+<div class="flex-container-content-space-between">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>The <b class="property">"align-content: space-around;"</b> displays the <b>flex lines with space before, between,
+    and after them</b>:</p>
+<div class="flex-container-content-space-around">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+
+<p>The <b class="property">"align-content: stretch;"</b> <b>stretches the flex lines to take up the
+    remaining space</b> (<ins>default)</ins>:</p>
+<div class="flex-container-content-stretch">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>The <b class="property">"align-content: center;"</b> displays <b>the flex lines in the middle of the container</b>:</p>
+<div class="flex-container-content-center">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>The <b class="property">"align-content: flex-start;"</b> displays the <b>flex lines at the start of the container</b>:</p>
+<div class="flex-container-content-flex-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<p>The <b class="property">"align-content: flex-end;"</b> displays the <b>flex lines at the end of the container</b>:</p>
+<div class="flex-container-content-flex-end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+</div>
+
+<h1>Perfect Centering</h1>
+<p>In the following example we will solve a very common style problem: <b>perfect centering</b>.</p>
+<p><b>SOLUTION</b>: Set both the <b class="property">justify-content</b> and <b class="property">align-items</b>
+    properties to <b class="property">center</b>, and the flex item will be perfectly centered:</p>
+<div class="perfect_center">
+    <div class="div1">Perfect <br> centered</div>
+</div>
+
+</body>
+</html>

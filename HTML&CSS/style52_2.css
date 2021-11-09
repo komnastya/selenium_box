@@ -1,0 +1,33 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    border-bottom: 2px solid black;
+    }
+p, ul {
+    font-size: 1.2vw;
+    }
+.property {
+    color:Crimson;
+    }
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+    }
+.flex-container > div, .flex-container2 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+    }
+.flex-container2 {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+    }
