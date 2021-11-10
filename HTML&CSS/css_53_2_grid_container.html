@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid container</title>
+    <link rel="stylesheet" href="style53_2.css">
+</head>
+
+<body>
+<h1>Grid Container</h1>
+<p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.</p>
+<p>Grid containers consist of grid items, placed inside columns and rows.</p>
+
+<h2>The grid-template-columns Property</h2>
+<p>The <b class="property">grid-template-columns</b> property <b>defines the number of columns in your grid layout</b>,
+    and it <b>can define the width of each column</b>.</p>
+
+<p>The value is a space-separated-list, where each value defines the width of the respective column.</p>
+<p>If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all
+    columns should have the same width:</p>
+<div class="grid-container-one">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+<p><mark><b>Note:</b> If you have more than 4 items in a 4 columns grid, the grid will automatically add a new row
+    to put the items in.</mark></p>
+
+<p>The <b class="property">grid-template-columns</b> property can also be used to <b>specify the size (width) of
+    the columns</b>.</p>
+<div class="grid-container-two">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<h2>The grid-template-rows Property</h2>
+<p>The <b class="property">grid-template-rows</b> property <b>defines the height of each row</b>.</p>
+<p>The value is a space-separated-list, where each value defines the height of the respective row:</p>
+<div class="grid-container-three">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h2>The justify-content Property</h2>
+<p>The <b class="property">justify-content</b> property is used to <b>align the whole grid inside the container</b>.</p>
+<p><mark><b>Note</b>: The grid's total width has to be less than the container's width for the justify-content
+    property to have any effect.</mark></p>
+
+<h3>The value <b class="property">"space-evenly"</b> will <b>give the columns equal amount of space between, and
+    around them</b>:</h3>
+<div class="grid-container-justify-space-evenly">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"space-around"</b> will <b>give the columns equal amount of space around them</b>:</h3>
+<div class="grid-container-justify-space-around">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"space-between"</b> will <b>give the columns equal amount of space between them</b>:</h3>
+<div class="grid-container-justify-space-between">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"center"</b> will <b>align the grid in the middle of the container</b>:</h3>
+<div class="grid-container-justify-center">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"start"</b> will <b>align the grid at the beginning of the container</b>:</h3>
+<div class="grid-container-justify-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"end"</b> will <b>align the grid at the end of the container</b>:</h3>
+<div class="grid-container-justify-end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h2>The align-content Property</h2>
+<p>The <b class="property">align-content</b> property is used to <b>vertically align the whole grid inside the
+    container</b>.</p>
+<h3>The value <b class="property">"center"</b> will <b>align the rows in the middle of the container</b>:</h3>
+<div class="grid-container-align-center">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"space-evenly"</b> will <b>give the rows equal amount of space between, and around
+  them</b>:</h3>
+<div class="grid-container-align-space-evenly">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"space-around"</b> will <b>give the rows equal amount of space around them</b>:</h3>
+<div class="grid-container-align-space-around">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"space-between"</b> will <b>give the rows equal amount of space between them</b>:</h3>
+<div class="grid-container-align-space-between">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"start"</b> will <b>align the rows at the beginning of the container:</b></h3>
+<div class="grid-container-align-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>The value <b class="property">"end"</b> will <b>align the rows at the end of the container:</b></h3>
+<div class="grid-container-align-end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+</body>
+</html>

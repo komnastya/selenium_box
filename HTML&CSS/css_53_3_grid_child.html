@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid child</title>
+    <link rel="stylesheet" href="style53_3.css">
+</head>
+
+<body>
+<h1>Grid child</h1>
+<h2>Child Elements (Items)</h2>
+<p>A grid <ins>container</ins> contains grid <ins>items</ins>.</p>
+<p>By default, a container has one grid item for each column, in each row, but you can style the grid items
+    so that they will span multiple columns and/or rows.</p>
+
+<h2>The grid-column Property:</h2>
+<p>The <b class="property">grid-column</b> property defines on which column(s) to place an item.</p>
+<p>You define <b>where the item will start</b>, and <b>where the item will end</b>.</p>
+
+<p><mark><b>Note</b>: The <b>grid-column</b> property is a <b>shorthand</b> property for the
+    <b>grid-column-start</b> and the <b>grid-column-end</b> properties.</mark></p>
+
+<p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will
+    span.</p>
+<p><b>Make "item1" start on column 1 and end before column 5</b>:</p>
+<pre>.item1 {
+    <b class="property">grid-column: 1 / 5;</b>
+    }
+</pre>
+
+<p>Make "item5" start on column 2 and span 4 columns:</p>
+<pre>.item1 {
+    <b class="property">grid-column: 2 / span 4;</b>
+    }
+</pre>
+<p>Make "item2" start on column 2 and span 4 columns:</p>
+<pre>.item1 {
+    <b class="property">grid-column: 2 / span 3;</b>
+    }
+</pre>
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div class="item5">5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+  <div>13</div>
+  <div>14</div>
+  <div class="item15">15</div>
+</div>
+
+<h2>The grid-row Property:</h2>
+<p>The <b class="property">grid-row</b> property <b>defines on which row to place an item</b>.</p>
+<p>You define where the item will start, and where the item will end.</p>
+<p><mark><b>Note</b>: The <b>grid-row</b> property is a <b>shorthand</b> property for the
+    <b>grid-row-start</b> and the <b>grid-row-end</b> properties.</mark></p>
+<p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will
+    span:</p>
+<p>Make "item6" start on row-line 1 and end on row-line 4:</p>
+<pre>.item6 {
+    <b class="property">grid-row: 1 / 3;</b>
+    <b class="property">grid-column: 6 / 7;</b>
+    }
+</pre>
+<p>Make "item7" start on row 2 and span 2 rows:</p>
+<pre>.item7 {
+    <b class="property">grid-row: 2 / span 2;</b>
+    }
+</pre>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div class="item11">11</div>
+  <div>12</div>
+  <div>13</div>
+  <div>14</div>
+  <div>15</div>
+</div>
+
+<h2>The grid-area Property</h2>
+<p>The <b class="property">grid-area</b> property can be used as a <b>shorthand</b> property for the
+    <b class="property">grid-row-start</b>, <b class="property">grid-column-start</b>,
+    <b class="property">grid-row-end</b> and the <b class="property">grid-column-end</b> properties.</p>
+
+<pre>.item8 {
+    <b class="property">grid-area: 1 / 2 / 5 / 6;</b>
+    } </pre>
+<p>The same result would be with these parameters:</p>
+<pre>.item8 {
+    <b class="property">grid-area: 1 / 2 / span 2 / span 3;</b>
+    } </pre>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div class="item8">8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+  <div>13</div>
+  <div>14</div>
+  <div>15</div>
+</div>
+
+<h2>Naming Grid Items</h2>
+<p>The <b class="property">grid-area</b> property can also be used to <b>assign names to grid items</b>.</p>
+<p>You can refer to the name when you set up the grid layout, by using the <b class="property">grid-template-areas</b>
+    property on the grid container.</p>
+<p><b>item_one, is called "myArea" and will take up the place of all five columns:</b></p>
+<pre><b class="property">.item_one {
+  grid-area: myArea;
+    }
+.grid-container {
+  grid-template-areas: 'myArea myArea myArea myArea myArea';
+    }</b></pre>
+<div class="grid-container-one">
+  <div class="item-one">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<p>Each row is defined by apostrophes (' ')</p>
+<p>The columns in each row is defined inside the apostrophes, separated by a space.</p>
+<p><mark><b>Note:</b> A period sign represents a grid item with no name.</mark></p>
+<p><b>Let "myArea" span two columns in a five columns grid layout (period signs represent items with no name):</b></p>
+<pre><b class="property">.item_one {
+  grid-area: myArea;
+    }
+.grid-container {
+  grid-template-areas: 'myArea myArea . . .';
+    }</b></pre>
+<div class="grid-container-two">
+  <div class="item-one">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+</div>
+
+<p><b>To define two rows, define the column of the second row inside another set of apostrophes:</b></p>
+<pre><b class="property">.item_one {
+  grid-area: myArea;
+    }
+.grid-container {
+  grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+    }</b></pre>
+<div class="grid-container-three">
+  <div class="item-one">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+</div>
+
+<p><b>This grid layout contains six columns and three rows:</b></p>
+<div class="grid-container-four">
+  <div class="item_header">Header</div>
+  <div class="item_menu">Menu</div>
+  <div class="item_main">Main</div>
+  <div class="item_right">Right</div>
+  <div class="item_footer">Footer</div>
+</div>
+
+<h2>The Order of the Items</h2>
+<p>The Grid Layout allows us to position the items anywhere we like.</p>
+<p><mark><b>The first item in the HTML code does not have to appear as the first item in the grid.</b></mark></p>
+<div class="grid-container-five">
+  <div class="item11">1</div>
+  <div class="item22">2</div>
+  <div class="item33">3</div>
+  <div class="item44">4</div>
+  <div class="item55">5</div>
+</div>
+
+<p>You can re-arrange the order for certain screen sizes, by using media queries. <b>Resize the window</b>.</p>
+
+</body>
+</html>

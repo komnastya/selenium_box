@@ -1,0 +1,164 @@
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    }
+h2 {
+    font-size: 1.7vw;
+    border-bottom: 2px solid black;
+    }
+h3 {
+    font-size: 1.5vw;
+    border-bottom: 5px dotted black;
+    }
+p {
+    font-size: 1.2vw;
+    }
+.property, em {
+    color:Crimson;
+    font-weight: bold;
+    }
+div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+    }
+.grid-container-one {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-two {
+  display: grid;
+  grid-template-columns: 200px 400px auto 300px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-three {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px 160px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-justify-space-evenly {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-justify-space-around {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-justify-space-between {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-justify-center {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-justify-start {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-justify-end {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-align-center {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-align-space-evenly {
+  display: grid;
+  height: 400px;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-align-space-around {
+  display: grid;
+  height: 400px;
+  align-content: space-around;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-align-space-between {
+  display: grid;
+  height: 400px;
+  align-content: space-between;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-align-start {
+  display: grid;
+  height: 400px;
+  align-content: start;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
+.grid-container-align-end {
+  display: grid;
+  height: 400px;
+  align-content: end;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 50%;
+    }
