@@ -22,14 +22,14 @@ actions.click(four)
 actions.perform()
 
 # In this example we need to press Ctrl in order to select more than one element:
-driver.get("C:/Users/root/Projects/selenium_box/selectable.html")
+driver.get("C:/Users/root/Projects/selenium_box/tests.html")
 
 time.sleep(2)
-one = driver.find_element_by_name('one')
-two = driver.find_element_by_name('two')
-three = driver.find_element_by_name('three')
-four = driver.find_element_by_name('four')
-five = driver.find_element_by_name('five')
+one = driver.find_element_by_id('one')
+two = driver.find_element_by_id('two')
+three = driver.find_element_by_id('three')
+four = driver.find_element_by_id('four')
+five = driver.find_element_by_id('five')
 
 # The next line presses the CONTROL button and holds it:
 

@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Select option</title>
-    <style>
-    p, form, select, option {
-        font-size: 1.5vw;
-        }
-    select {
-        width: 50%;
-        padding: 16px 20px;
-        border: none;
-        border-radius: 4px;
-        background-color: #f1f1f1;
-    }
+    <link rel="stylesheet" href="tests.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+    $( function() {
+    $( "#selectable" ).selectable();
+    } );
 
-    </style>
+    </script>
 </head>
 <body>
+
+<h1>HTML elements to test selenium methods</h1>
 
 <p>For <i>03_3_select_option</i> example:</p>
 <p>Choose the state:</p>
@@ -33,10 +31,24 @@
         <option value="Hawaii">Hawaii</option>
         <option value="Kansas">Kansas</option>
         <option value="Michigan">Michigan</option>
-
     </select>
 </form>
 
+<p>For <i>01_2Actions_Chains</i> example:</p>
+<ol id="selectable">
+    <li class="ui-state-default" id="one">1</li>
+    <li class="ui-state-default" id="two">2</li>
+    <li class="ui-state-default" id="three">3</li>
+    <li class="ui-state-default" id="four">4</li>
+    <li class="ui-state-default" id="five">5</li>
+    <li class="ui-state-default" id="six">6</li>
+    <li class="ui-state-default" id="seven">7</li>
+    <li class="ui-state-default" id="eight">8</li>
+    <li class="ui-state-default" id="nine">9</li>
+    <li class="ui-state-default" id="ten">10</li>
+    <li class="ui-state-default" id="eleven">11</li>
+    <li class="ui-state-default" id="twelve">12</li>
+</ol>
 
 </body>
 </html>
