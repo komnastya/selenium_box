@@ -23,7 +23,7 @@ actions.click(four)
 actions.perform()
 
 # In this example we need to press Ctrl in order to select more than one element:
-driver.get(str(pathlib.Path.cwd() / 'tests.html'))
+driver.get(str(pathlib.Path(__file__).parent / 'tests.html'))
 
 time.sleep(2)
 one = driver.find_element_by_id('one')
