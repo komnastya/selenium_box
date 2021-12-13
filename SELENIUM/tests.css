@@ -35,6 +35,9 @@ select {
     font-size: 4em;
     text-align: center;
     }
+#selectable li:hover {
+    background: LightGray;
+    }
 #after_float {
     clear: left;
     }
