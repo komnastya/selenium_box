@@ -30,19 +30,6 @@ action3 = ActionChains(driver)
 download = driver.find_element_by_xpath('//*[@id="menu-top"]/li[2]/a')
 action3.double_click(download).perform()
 
-#reset
-
-time.sleep(2)
-action = ActionChains(driver)
-element = driver.find_element_by_xpath('//*[@id="menu-top"]/li[1]/a')
-action.click(on_element=element)
-action.perform()
-another_element = driver.find_element_by_xpath('//*[@id="menu-top"]/li[2]/a')
-action.reset_actions()
-action.click(on_element=another_element)
-action.perform()
-
-
 # context_click method is used to perform a context-click (right click) on an element:
 time.sleep(2)
 action4 = ActionChains(driver)
