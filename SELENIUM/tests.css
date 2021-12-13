@@ -1,7 +1,7 @@
 h1 {
     font-size: 1.7vw;
     }
-p, form, select, option {
+p, form, select, option, label {
     font-size: 1.5vw;
     }
 select {
@@ -34,4 +34,10 @@ select {
     height: 80px;
     font-size: 4em;
     text-align: center;
+    }
+#after_float {
+    clear: left;
+    }
+input {
+    font-size: 1.3vw;
     }
