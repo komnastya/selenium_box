@@ -38,17 +38,3 @@ action4.context_click(blog).perform()
 time.sleep(2)
 
 driver.close()
-
-# List of methods:
-# drag_and_drop
-# drag_and_drop_by_offset
-# key_down
-# key_up
-# move_by_offset
-# move_to_element
-# move_to_element_with_offset
-# perform
-# pause
-# release
-# reset_actions
-# send_keys
