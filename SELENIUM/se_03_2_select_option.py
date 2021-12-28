@@ -1,4 +1,5 @@
 # https://selenium-python.readthedocs.io/navigating.html#filling-in-forms
+import pathlib
 import time
 
 from selenium import webdriver
@@ -7,7 +8,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 driver = webdriver.Chrome()
 actions = ActionChains(driver)
 
-driver.get("C:/Users/root/Projects/selenium_box/tests.html")
+driver.get(str(pathlib.Path(__file__).parent / 'tests.html'))
 
 form = driver.find_element_by_id("states")
 states_in_form = form.find_elements_by_tag_name("option")
