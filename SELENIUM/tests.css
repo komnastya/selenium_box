@@ -44,3 +44,14 @@ select {
 input {
     font-size: 1.3vw;
     }
+.button {
+  border: none;
+  background-color: Bisque;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+}
